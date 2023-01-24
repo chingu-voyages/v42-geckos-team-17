@@ -5,16 +5,16 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Home } from './pages'
 
 // Components
-import { HeaderNav, Footer } from './components'
+import { SharedLayout } from './components'
 
 function App() {
   return (
     <Router>
-      <HeaderNav />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<Home />} />
+        </Route>
       </Routes>
-      <Footer />
     </Router>
   )
 }
