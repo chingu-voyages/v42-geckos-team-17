@@ -13,6 +13,9 @@ module.exports = {
         bg1: '#FAFAFA',
         bg2: '#F2F2F2',
       },
+      fontFamily: {
+        body: ['Inter'],
+      },
     },
   },
   plugins: [],
