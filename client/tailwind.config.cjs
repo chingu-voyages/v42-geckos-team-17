@@ -16,6 +16,9 @@ module.exports = {
       fontFamily: {
         body: ['Inter'],
       },
+      boxShadow: {
+        button: 'inset 0 0 0 1px #000000',
+      },
     },
   },
   plugins: [],
