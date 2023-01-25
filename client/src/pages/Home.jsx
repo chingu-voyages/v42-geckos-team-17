@@ -1,5 +1,6 @@
 import React from 'react'
 import { PrimaryButton, SecondaryButton } from '../styles/ButtonStyles'
+import { TextLink } from '../styles/LinkStyles'
 
 function Home() {
   return (
@@ -12,6 +13,8 @@ function Home() {
       <SecondaryButton>Secondary button</SecondaryButton>
       <PrimaryButton small>Small</PrimaryButton>
       <SecondaryButton small>Small</SecondaryButton>
+      <TextLink>Text link</TextLink>
+      <TextLink small>Small link</TextLink>
     </div>
   )
 }
