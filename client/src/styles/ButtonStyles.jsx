@@ -11,3 +11,11 @@ export const SecondaryButton = styled.button(({ small }) => [
   tw`bg-white text-accent1 text-lg font-medium min-w-[280px] py-5 px-10 shadow-button hover:bg-accent1 hover:text-white transition duration-300`,
   small && tw`font-normal min-w-fit py-3`,
 ])
+
+// Icon button
+export const IconButton = styled.button`
+  ${tw`p-0.5`}
+  &:hover svg path {
+    ${tw`fill-text-200 hover:fill-text-100 transition duration-300`}
+  }
+`

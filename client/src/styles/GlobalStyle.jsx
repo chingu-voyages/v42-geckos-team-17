@@ -5,6 +5,9 @@ const CustomStyles = createGlobalStyle({
   body: {
     ...tw`bg-white font-body`,
   },
+  header: {
+    ...tw`py-4`,
+  },
   h1: {
     ...tw`text-[70px] font-extrabold text-text-200`,
   },
