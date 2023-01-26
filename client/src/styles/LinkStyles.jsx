@@ -14,3 +14,9 @@ export const OutlineLink = styled(Link)`
 `
 
 // Icon link
+export const IconLink = styled(Link)`
+  ${tw`p-0.5`}
+  &:hover svg path {
+    ${tw`fill-text-200 hover:fill-text-100 transition duration-300`}
+  }
+`
