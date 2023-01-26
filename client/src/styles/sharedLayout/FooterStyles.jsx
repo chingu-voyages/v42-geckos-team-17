@@ -8,7 +8,7 @@ export const FooterInner = styled.div`
 `
 // Column 1
 export const Social = styled.div`
-  ${tw`flex flex-col gap-y-14 justify-center items-center sm:justify-between`}
+  ${tw`flex flex-col gap-y-14 justify-center items-center sm:justify-between lg:items-start`}
 `
 
 export const SocialLinks = styled.div`

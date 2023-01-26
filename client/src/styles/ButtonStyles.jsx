@@ -3,13 +3,13 @@ import tw, { styled } from 'twin.macro'
 // Primary button
 export const PrimaryButton = styled.button(({ small }) => [
   tw`min-w-[200px] bg-accent1 text-white text-lg font-medium py-5 px-10 shadow-button sm:min-w-[280px]  hover:bg-white hover:text-accent1 transition duration-300`,
-  small && tw`font-normal min-w-fit py-3`,
+  small && tw`font-normal min-w-fit py-3 sm:min-w-fit`,
 ])
 
 // Secondary button
 export const SecondaryButton = styled.button(({ small }) => [
   tw`min-w-[200px] bg-white text-accent1 text-lg font-medium py-5 px-10 shadow-button sm:min-w-[280px]  hover:bg-accent1 hover:text-white transition duration-300`,
-  small && tw`font-normal min-w-fit py-3`,
+  small && tw`font-normal min-w-fit py-3 sm:min-w-fit`,
 ])
 
 // Icon button
