@@ -9,7 +9,7 @@ const CustomStyles = createGlobalStyle({
     ...tw`py-4`,
   },
   h1: {
-    ...tw`text-[70px] font-extrabold text-text-200`,
+    ...tw`text-5xl leading-[60px] sm:text-[64px] md:text-[70px] font-extrabold text-text-200`,
   },
   h2: {
     ...tw`text-5xl font-bold text-text-200`,
