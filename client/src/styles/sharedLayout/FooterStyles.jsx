@@ -1,23 +1,25 @@
 import tw, { styled } from 'twin.macro'
 
+// Footer container
 export const FooterContainer = styled.footer`
   ${tw`bg-bg2 py-[120px] px-6 md:px-10`}
 `
+// Footer Inner
 export const FooterInner = styled.div`
-  ${tw`max-w-[1170px] mx-auto grid grid-cols-1 gap-y-14 md:grid-cols-[1fr_2fr] lg:grid-cols-[1fr_3fr_2fr] lg:gap-x-14 lg:gap-y-6`}
+  ${tw`max-w-[1170px] mx-auto grid grid-cols-1 gap-y-14 md:grid-cols-[1fr_2fr] lg:grid-cols-[1fr_3fr_2fr] lg:gap-y-6`}
 `
-// Column 1
+// Logo and Social links / Column 1
 export const Social = styled.div`
-  ${tw`flex flex-col gap-y-14 justify-center items-center sm:justify-between lg:items-start`}
+  ${tw`flex flex-col justify-center items-center gap-y-14 sm:justify-between md:items-start`}
 `
-
+// Social links
 export const SocialLinks = styled.div`
   ${tw`flex gap-x-4`}
 `
 
-// Column 2
+// Navigation links / Column 2
 export const Navigation = styled.nav`
-  ${tw`flex flex-col items-center text-center justify-center gap-10 sm:flex-row sm:items-start sm:text-left`}
+  ${tw`flex flex-col items-center justify-evenly gap-10 text-center  sm:flex-row sm:items-start sm:text-left lg:justify-center`}
 
   // Page title
   span {
@@ -29,15 +31,15 @@ export const Navigation = styled.nav`
     ${tw`flex flex-col gap-y-4`}
   }
 `
-// Column 3
+// Subscribtion form / Column 3
 export const SubscribeForm = styled.form`
-  ${tw`flex flex-col gap-2.5 col-span-1 justify-center sm:flex-row sm:items-start md:col-span-2 lg:col-span-1`}
+  ${tw`flex flex-col justify-center gap-2.5 col-span-1 sm:flex-row sm:items-start md:col-span-2 lg:col-span-1 lg:justify-self-end`}
 
   // TODO: move form groups to separate style file
 
   // Input
   input {
-    ${tw`w-full font-normal border-2 border-accent1 px-4 py-3 sm:w-[300px] lg:w-[200px]`}
+    ${tw`w-full font-normal border-2 border-accent1 px-4 py-3 sm:w-[350px] lg:w-full`}
   }
 `
 
