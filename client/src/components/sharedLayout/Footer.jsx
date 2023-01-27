@@ -48,7 +48,7 @@ const navLinks = [
   {
     id: '2',
     title: 'Contact',
-    links: [{ id: '21', name: 'Contact us', href: '/' }],
+    links: [{ id: '21', name: 'Contact us', href: '/contact' }],
   },
 ]
 

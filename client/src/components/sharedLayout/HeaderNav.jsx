@@ -30,7 +30,7 @@ function HeaderNav() {
             <TextLink to="/">Pricing</TextLink>
           </li>
           <li>
-            <TextLink to="/">Contact</TextLink>
+            <TextLink to="/contact">Contact</TextLink>
           </li>
         </NavigationLinks>
         <OutlineLink to="/">Sign In</OutlineLink>
