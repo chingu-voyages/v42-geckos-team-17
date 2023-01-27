@@ -4,4 +4,16 @@ import SharedLayout from './sharedLayout/SharedLayout'
 
 import Hero from './home/Hero'
 
-export { HeaderNav, Footer, SharedLayout, Hero }
+import FormInputGroup from './form/FormInputGroup'
+import FormCheckGroup from './form/FormCheckGroup'
+import FormSelectGroup from './form/FormSelectGroup'
+
+export {
+  HeaderNav,
+  Footer,
+  SharedLayout,
+  Hero,
+  FormInputGroup,
+  FormCheckGroup,
+  FormSelectGroup,
+}
