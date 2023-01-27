@@ -18,6 +18,28 @@ import { TextLink } from '../styles/LinkStyles'
 // Icons
 import { CheckIcon } from '../assets/icons/icons'
 
+// Promotion ata
+const promoData = [
+  {
+    id: '0',
+    title: 'User Friendly Budgeting.',
+    description:
+      ' Our app is easy to use and it gives you an accurate picture of how much money you have available for spending each month.',
+  },
+  {
+    id: '1',
+    title: 'Save Time on Number Crunching.',
+    description:
+      ' Our app is easy to use and it gives you an accurate picture of how much money you have available for spending each month.',
+  },
+  {
+    id: '2',
+    title: 'Analyzes your spending habits.',
+    description:
+      ' You can easily identify where you’re overspending, and how you can bring your spending back into alignment with your values and goals.',
+  },
+]
+
 function Contact() {
   return (
     <ContactSection>
@@ -31,31 +53,15 @@ function Contact() {
               link your accounts and instead track your finances manually.
             </p>
             <ContactPromotionList>
-              <li>
-                <CheckIcon />
-                <div>
-                  <span>User Friendly Budgeting.</span> Our app is easy to use
-                  and it gives you an accurate picture of how much money you
-                  have available for spending each month.
-                </div>
-              </li>
-              <li>
-                <CheckIcon />
-                <div>
-                  <span>Save Time on Number Crunching.</span> Okane app
-                  automates the budgeting process. It syncs to your financial
-                  accounts, so you don’t have to manually enter purchases
-                  yourself.
-                </div>
-              </li>
-              <li>
-                <CheckIcon />
-                <div>
-                  <span>Analyzes your spending habits.</span> You can easily
-                  identify where you’re overspending, and how you can bring your
-                  spending back into alignment with your values and goals.
-                </div>
-              </li>
+              {promoData.map((promoItem) => (
+                <li key={promoItem.id}>
+                  <CheckIcon />
+                  <div>
+                    <span>{promoItem.title}</span>
+                    {promoItem.description}
+                  </div>
+                </li>
+              ))}
             </ContactPromotionList>
           </ContactPromotion>
           {/* End: Promotion / Column 1 */}
