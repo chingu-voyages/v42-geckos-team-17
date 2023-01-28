@@ -98,3 +98,11 @@ export function CheckIcon() {
     </svg>
   )
 }
+
+export function RoundIcon() {
+  return (
+    <svg className="m-0 h-24 w-24">
+      <circle cx="50" cy="50" r="40" fill="#000000" stroke="#000000" />
+    </svg>
+  )
+}
