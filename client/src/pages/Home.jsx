@@ -2,10 +2,14 @@ import React from 'react'
 
 // Components
 import { Hero } from '../components'
+import Downloads from '../components/home/Downloads'
 
 function Home() {
   return (
-    <Hero />
+    <>
+      <Hero />
+      <Downloads />
+    </>
   )
 }
 
