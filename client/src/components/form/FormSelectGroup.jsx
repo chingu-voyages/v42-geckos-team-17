@@ -16,10 +16,10 @@ function FormSelectGroup({
       <select name={name} id={name} onChange={handleChange}>
         {placeholderText && <option value="">{placeholderText}</option>}
         {options.map((optionValue) => (
-            <option key={optionValue} value={optionValue}>
-              {optionValue}
-            </option>
-          ))}
+          <option key={optionValue} value={optionValue}>
+            {optionValue}
+          </option>
+        ))}
       </select>
     </FormSelectGroupContainer>
   )

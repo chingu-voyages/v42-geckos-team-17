@@ -1,11 +1,14 @@
 import React from 'react'
 
 // Components
-import { Hero } from '../components'
+import { Features, Hero } from '../components'
 
 function Home() {
   return (
-    <Hero />
+    <>
+      <Hero />
+      <Features />
+    </>
   )
 }
 

@@ -4,7 +4,7 @@ export const HeroSection = styled.section`
   ${tw`bg-bg2 h-[600px] lg:h-[700px]`}
 `
 export const HeroInner = styled.div`
-  ${tw`h-full flex flex-col justify-center items-center gap-y-4`}
+  ${tw`flex flex-col items-center justify-center h-full gap-y-4`}
 
   // Heading
   h1 {
