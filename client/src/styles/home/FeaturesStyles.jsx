@@ -35,7 +35,7 @@ export const FeaturesGrid = styled.div`
 `
 
 export const GridDiv = styled.div`
-  ${tw`flex flex-col justify-between h-48 p-2 border-2 rounded border-accent1`}
+  ${tw`flex flex-col justify-between h-48 p-2 transition duration-300 border-2 rounded cursor-pointer border-accent1 hover:bg-accent1`}
 
   svg {
     ${tw`ml-auto`}
@@ -43,5 +43,17 @@ export const GridDiv = styled.div`
 
   p {
     ${tw`text-2xl font-semibold text-left text-accent1`}
+  }
+
+  &:hover {
+    svg {
+      circle {
+        ${tw`fill-bg1`}
+      }
+    }
+
+    p {
+      ${tw`text-bg1`}
+    }
   }
 `
