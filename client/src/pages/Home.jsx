@@ -1,13 +1,13 @@
 import React from 'react'
-
 // Components
-import { Features, Hero } from '../components'
+import { Features, Hero, Downloads } from '../components'
 
 function Home() {
   return (
     <>
       <Hero />
       <Features />
+      <Downloads />
     </>
   )
 }
