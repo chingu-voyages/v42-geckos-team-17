@@ -34,13 +34,6 @@ export const Navigation = styled.nav`
 // Subscribtion form / Column 3
 export const SubscribeForm = styled.form`
   ${tw`flex flex-col justify-center gap-2.5 col-span-1 sm:flex-row sm:items-start md:col-span-2 lg:col-span-1 lg:justify-self-end`}
-
-  // TODO: move form groups to separate style file
-
-  // Input
-  input {
-    ${tw`w-full font-normal border-2 border-accent1 px-4 py-3 sm:w-[350px] lg:w-full`}
-  }
 `
 
 // Copyright / Column 4

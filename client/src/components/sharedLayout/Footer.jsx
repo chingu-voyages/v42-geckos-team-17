@@ -3,6 +3,9 @@ import React from 'react'
 // Routing
 import { Link } from 'react-router-dom'
 
+// Components
+import FormInputGroup from '../form/FormInputGroup'
+
 // Styled components
 import {
   FooterContainer,
@@ -97,15 +100,11 @@ function Footer() {
         {/* End: Navigation links column */}
         {/* Start: Subscription form column */}
         <SubscribeForm>
-          <div>
-            <input
-              aria-label="enter you email"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter your email"
-            />
-          </div>
+          <FormInputGroup
+            type="email"
+            name="email"
+            placeholderText="Enter your email"
+          />
           <PrimaryButton small>Go</PrimaryButton>
         </SubscribeForm>
         {/* End: Subscription form column */}
