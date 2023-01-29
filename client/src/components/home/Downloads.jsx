@@ -1,10 +1,14 @@
 import React from 'react'
+
 import {
   DownloadsPosition,
   DownloadsSection,
   GroupButtons,
   DownloadButton,
+  DownloadButtonInnerFlex,
 } from '../../styles/home/DownloadsStyles'
+
+import { WhiteAppleIcon, PlaystoreIcon } from '../../assets/icons/icons'
 
 function Downloads() {
   return (
@@ -16,16 +20,20 @@ function Downloads() {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <GroupButtons>
-          <DownloadButton
-            title="Download on the"
-            subtitle="App store"
-            icon="Apple"
-          />
-          <DownloadButton
-            title="GET IT ON"
-            subtitle="Google Play"
-            icon="Google"
-          />
+          <DownloadButton>
+            <WhiteAppleIcon />
+            <DownloadButtonInnerFlex>
+              <p>Download on the</p>
+              <p>App Store</p>
+            </DownloadButtonInnerFlex>
+          </DownloadButton>
+          <DownloadButton>
+            <PlaystoreIcon />
+            <DownloadButtonInnerFlex>
+              <p>GET IT ON</p>
+              <p>Google Play</p>
+            </DownloadButtonInnerFlex>
+          </DownloadButton>
         </GroupButtons>
       </DownloadsPosition>
     </DownloadsSection>
