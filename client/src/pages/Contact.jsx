@@ -99,7 +99,7 @@ function Contact() {
             <PrimaryButton>Submit</PrimaryButton>
             <span>
               By submitting this form, I confirm that I have read and understood
-              <TextLink> Okane’s privacy policy</TextLink>.
+              <TextLink to="/"> Okane’s privacy policy</TextLink>.
             </span>
           </ContactForm>
           {/* End: Contact Form / Column 1 */}
