@@ -10,7 +10,7 @@ export const FooterInner = styled.div`
 `
 // Logo and Social links / Column 1
 export const Social = styled.div`
-  ${tw`flex flex-col justify-center items-center gap-y-14 sm:justify-between md:items-start`}
+  ${tw`flex flex-col items-center justify-center gap-y-14 sm:justify-between md:items-start`}
 `
 // Social links
 export const SocialLinks = styled.div`
@@ -19,11 +19,11 @@ export const SocialLinks = styled.div`
 
 // Navigation links / Column 2
 export const Navigation = styled.nav`
-  ${tw`flex flex-col items-center justify-evenly gap-10 text-center  sm:flex-row sm:items-start sm:text-left lg:justify-center`}
+  ${tw`flex flex-col items-center gap-10 text-center justify-evenly sm:flex-row sm:items-start sm:text-left lg:justify-center`}
 
   // Page title
   span {
-    ${tw`block text-text-200 text-sm font-bold mb-6`}
+    ${tw`block mb-6 text-sm font-bold text-text-200`}
   }
 
   // Links list
@@ -38,5 +38,5 @@ export const SubscribeForm = styled.form`
 
 // Copyright / Column 4
 export const Copyrights = styled.span`
-  ${tw`text-xs text-text-100 col-span-1 col-start-1 justify-self-center md:col-span-2 lg:col-start-3 lg:justify-self-end`}
+  ${tw`col-span-1 col-start-1 text-xs text-text-100 justify-self-center md:col-span-2 lg:col-start-3 lg:justify-self-end`}
 `

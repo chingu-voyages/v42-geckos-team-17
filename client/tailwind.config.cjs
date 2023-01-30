@@ -13,6 +13,8 @@ module.exports = {
         bg1: '#FAFAFA',
         bg2: '#F2F2F2',
         bg3: '#FFFFFE',
+        error: '#EE374A',
+        link: '#7C89FF',
       },
       fontFamily: {
         body: ['Inter'],

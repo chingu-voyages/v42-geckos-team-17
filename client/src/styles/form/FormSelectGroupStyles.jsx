@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro'
 
 export const FormSelectGroupContainer = styled.div`
-  ${tw`flex flex-col gap-y-2`}
+  ${tw`relative flex flex-col gap-y-2`}
 
   // Label
   label {
@@ -10,10 +10,15 @@ export const FormSelectGroupContainer = styled.div`
 
   // Select
   select {
-    ${tw`w-fit flex border border-text-100 rounded-md px-4 py-3 font-normal`}
+    ${tw`flex px-4 py-3 font-normal border rounded-md w-fit border-text-100`}
   }
 
   select:focus {
     ${tw`border border-accent1`}
+  }
+
+  // Error span
+  span {
+    ${tw`absolute bottom-0 left-0 px-1 text-xs translate-y-5 text-error`}
   }
 `
