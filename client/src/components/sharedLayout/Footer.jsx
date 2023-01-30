@@ -65,7 +65,7 @@ function Footer() {
 
     // If the field is empty
     if (email === '') {
-      setError('Please enter your email')
+      setError('Please enter your email.')
     }
 
     // If the field is not empty, remove error message

@@ -10,6 +10,9 @@ import FormInputGroup from './form/FormInputGroup'
 import FormCheckGroup from './form/FormCheckGroup'
 import FormSelectGroup from './form/FormSelectGroup'
 
+import ContactInfo from './contact/ContactInfo'
+import ContactForm from './contact/ContactForm'
+
 export {
   HeaderNav,
   Footer,
@@ -20,4 +23,6 @@ export {
   FormInputGroup,
   FormCheckGroup,
   FormSelectGroup,
+  ContactForm,
+  ContactInfo,
 }
