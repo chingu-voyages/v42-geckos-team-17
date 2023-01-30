@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Styled Components
-import { SecondaryHeading, Paragraph } from '../../styles/TypographyStyles'
+import { SecondaryHeading } from '../../styles/TypographyStyles'
 import { Container, SectionHeadingContainer } from '../../styles/LayoutStyles'
 import {
   DownloadsPosition,
@@ -9,6 +9,7 @@ import {
   GroupButtons,
   DownloadButton,
   DownloadButtonInnerFlex,
+  DownloadParagraph,
 } from '../../styles/home/DownloadsStyles'
 
 // Icons
@@ -21,10 +22,10 @@ function Downloads() {
         <DownloadsPosition>
           <SectionHeadingContainer center>
             <SecondaryHeading>Download our app</SecondaryHeading>
-            <Paragraph>
+            <DownloadParagraph>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </Paragraph>
+            </DownloadParagraph>
           </SectionHeadingContainer>
           <GroupButtons>
             <DownloadButton>
