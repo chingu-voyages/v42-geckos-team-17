@@ -12,6 +12,7 @@ import ContactInfo from './contact/ContactInfo'
 import Hero from './home/Hero'
 import Features from './home/Features'
 import Downloads from './home/Downloads'
+import PromotionStats from './home/PromotionStats'
 
 export {
   HeaderNav,
@@ -22,4 +23,8 @@ export {
   Hero,
   Features,
   Downloads,
+  PromotionStats,
+  // FormInputGroup,
+  // FormCheckGroup,
+  // FormSelectGroup,
 }
