@@ -1,11 +1,18 @@
 // Styled Components
-import { Container } from '../../styles/LayoutStyles'
+import { Container, SectionHeadingContainer } from '../../styles/LayoutStyles'
+import {
+  SecondaryHeading,
+  TertiaryHeading,
+  Paragraph,
+} from '../../styles/TypographyStyles'
 import {
   FeaturesSection,
   FeaturesInner,
   FeaturesGrid,
   GridDiv,
 } from '../../styles/home/FeaturesStyles'
+
+// Icons
 import { RoundIcon } from '../../assets/icons/icons'
 
 function Features() {
@@ -13,43 +20,44 @@ function Features() {
     <FeaturesSection>
       <Container>
         <FeaturesInner>
-          <h1>Our Best Features</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna incididunt dolor
-            aliqua.
-          </p>
+          {/* Start: Section heading */}
+          <SectionHeadingContainer>
+            <SecondaryHeading>Our Best Features</SecondaryHeading>
+            <Paragraph>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna incididunt
+              dolor aliqua.
+            </Paragraph>
+          </SectionHeadingContainer>
+          {/* End: Section heading */}
+          {/* Start: Features */}
           <FeaturesGrid>
             <GridDiv>
               <RoundIcon />
-              <p>Bank Integration</p>
+              <TertiaryHeading>Bank Integration</TertiaryHeading>
             </GridDiv>
             <GridDiv>
               <RoundIcon />
-              <p>Security</p>
+              <TertiaryHeading>Security</TertiaryHeading>
             </GridDiv>
             <GridDiv>
               <RoundIcon />
-
-              <p>Tracking</p>
+              <TertiaryHeading>Tracking</TertiaryHeading>
             </GridDiv>
             <GridDiv>
               <RoundIcon />
-
-              <p>24/7 Support</p>
+              <TertiaryHeading>24/7 Support</TertiaryHeading>
             </GridDiv>
             <GridDiv>
               <RoundIcon />
-
-              <p>Budgeting</p>
+              <TertiaryHeading>Budgeting</TertiaryHeading>
             </GridDiv>
-
             <GridDiv>
               <RoundIcon />
-
-              <p>Statistics</p>
+              <TertiaryHeading>Statistics</TertiaryHeading>
             </GridDiv>
           </FeaturesGrid>
+          {/* End: Features */}
         </FeaturesInner>
       </Container>
     </FeaturesSection>

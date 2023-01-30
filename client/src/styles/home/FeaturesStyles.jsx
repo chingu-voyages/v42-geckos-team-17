@@ -5,16 +5,6 @@ export const FeaturesSection = styled.section`
 `
 export const FeaturesInner = styled.div`
   ${tw`flex flex-col h-full gap-y-4`}
-
-  // Heading
-  h1 {
-    ${tw`text-5xl text-center md:text-left`}
-  }
-
-  // Paragraph
-  p {
-    ${tw`lg:max-w-[540px] block md:text-xl text-center md:text-left `}
-  }
 `
 
 export const FeaturesGrid = styled.div`
@@ -41,10 +31,6 @@ export const GridDiv = styled.div`
     ${tw`ml-auto`}
   }
 
-  p {
-    ${tw`text-2xl font-semibold text-left text-accent1`}
-  }
-
   &:hover {
     svg {
       circle {
@@ -52,7 +38,7 @@ export const GridDiv = styled.div`
       }
     }
 
-    p {
+    h3 {
       ${tw`text-bg1`}
     }
   }
