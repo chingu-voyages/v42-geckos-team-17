@@ -1,23 +1,15 @@
 import tw, { styled } from 'twin.macro'
 
 export const DownloadsSection = styled.section`
-  ${tw`bg-bg2 py-24 px-10`}
+  ${tw`py-24 bg-bg2`}
 `
 
 export const DownloadsPosition = styled.div`
-  ${tw`mx-auto max-w-xl`}
-  // title
-  h2 {
-    ${tw`text-center`}
-  }
-  // sub-title
-  p:only-of-type {
-    ${tw`mx-auto my-8 w-[90%] text-center text-black`}
-  }
+  ${tw`max-w-xl mx-auto`}
 `
 
 export const GroupButtons = styled.div`
-  ${tw`mb-2 flex flex-col justify-center gap-12 pt-8 md:flex-row`}
+  ${tw`flex flex-col justify-center gap-12 pt-8 mb-2 md:flex-row`}
 `
 
 export const DownloadButton = styled.button`
