@@ -33,7 +33,7 @@ export const Navigation = styled.nav`
 `
 // Subscribtion form / Column 3
 export const SubscribeForm = styled.form`
-  ${tw`flex flex-col justify-center gap-2.5 col-span-1 sm:flex-row sm:items-start md:col-span-2 lg:col-span-1 lg:justify-self-end`}
+  ${tw`flex flex-col justify-center gap-y-6 gap-x-2.5 col-span-1 sm:flex-row sm:items-start md:col-span-2 lg:col-span-1 lg:justify-self-end`}
 `
 
 // Copyright / Column 4
