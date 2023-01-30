@@ -9,7 +9,7 @@ export const DownloadsPosition = styled.div`
 `
 
 export const GroupButtons = styled.div`
-  ${tw`flex flex-col justify-center gap-12 pt-8 mb-2 md:flex-row`}
+  ${tw`flex flex-col justify-center gap-12 pt-8 mt-8 mb-2 md:flex-row`}
 `
 
 export const DownloadButton = styled.button`
@@ -35,3 +35,11 @@ export const DownloadButton = styled.button`
 export const DownloadButtonInnerFlex = styled.div`
   ${tw`flex flex-col`}
 `
+
+// Paragraph
+export const DownloadParagraph = styled.p(({ app }) => [
+  tw`text-lg font-normal text-text-100 mt-4 w-[95%]`,
+
+  // Webapp
+  app && tw`text-sm font-medium`,
+])
