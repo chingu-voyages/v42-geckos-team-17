@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro'
 
 export const FeaturesSection = styled.section`
-  ${tw`bg-bg1 h-[1542px] md:h-[966px] lg:h-[800px] py-12 md:py-20`}
+  ${tw`bg-bg1 h-[1600px] md:h-[966px] lg:h-[800px] py-12 md:py-20`}
 `
 export const FeaturesInner = styled.div`
   ${tw`flex flex-col h-full gap-y-4`}
