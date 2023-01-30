@@ -1,8 +1,7 @@
 import React from 'react'
 
 // Components
-import ContactInfo from '../components/contact/ContactInfo'
-import ContactForm from '../components/contact/ContactForm'
+import { ContactInfo, ContactForm } from '../components'
 
 // Styled components
 import { ContactSection, ContactInner } from '../styles/contact/ContactStyles'
