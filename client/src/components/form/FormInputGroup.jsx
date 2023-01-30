@@ -10,6 +10,7 @@ function FormInputGroup({
   value,
   handleChange,
   placeholderText,
+  errorMsg,
 }) {
   return (
     <FormInputGroupContainer>
@@ -22,6 +23,7 @@ function FormInputGroup({
         onChange={handleChange}
         placeholder={placeholderText || name}
       />
+      <span>{errorMsg}</span>
     </FormInputGroupContainer>
   )
 }
