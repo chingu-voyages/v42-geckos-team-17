@@ -8,6 +8,8 @@ const CustomStyles = createGlobalStyle({
   header: {
     ...tw`py-4`,
   },
+
+  // TODO: delete h1, h2. h3, p
   h1: {
     ...tw`text-5xl leading-[60px] sm:text-[64px] md:text-[70px] font-extrabold text-text-200`,
   },

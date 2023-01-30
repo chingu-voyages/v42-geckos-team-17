@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 // Routing
 import { Link } from 'react-router-dom'
@@ -56,6 +56,27 @@ const navLinks = [
 ]
 
 function Footer() {
+  const [error, setError] = useState('')
+  const [email, setEmail] = useState('')
+
+  // Handle submit
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    // If the field is empty
+    if (email === '') {
+      setError('Please enter your email.')
+    }
+
+    // If the field is not empty, remove error message
+    if (email !== '') {
+      setError('')
+    }
+
+    // Empty email field
+    setEmail('')
+  }
+
   return (
     <FooterContainer>
       <FooterInner>
@@ -99,11 +120,14 @@ function Footer() {
         </Navigation>
         {/* End: Navigation links column */}
         {/* Start: Subscription form column */}
-        <SubscribeForm>
+        <SubscribeForm onSubmit={(e) => handleSubmit(e)}>
           <FormInputGroup
             type="email"
             name="email"
+            value={email}
+            handleChange={(e) => setEmail(e.currentTarget.value)}
             placeholderText="Enter your email"
+            errorMsg={error}
           />
           <PrimaryButton small>Go</PrimaryButton>
         </SubscribeForm>

@@ -5,7 +5,7 @@ export const FormCheckGroupContainer = styled.div`
 
   // Input
   input {
-    ${tw`h-6 w-6 border border-text-100`}
+    ${tw`w-6 h-6 border border-text-100`}
   }
 
   // Label

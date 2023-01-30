@@ -17,7 +17,7 @@ export const ContactPromotion = styled.div`
 
 // Promotion List
 export const ContactPromotionList = styled.ul`
-  ${tw`flex flex-col justify-center gap-y-6 py-4`}
+  ${tw`flex flex-col justify-center py-4 gap-y-6`}
 
   // List item 
   li {
@@ -25,7 +25,7 @@ export const ContactPromotionList = styled.ul`
 
     // Icon
     svg {
-      ${tw`shrink-0 h-8 w-8 stroke-text-100`}
+      ${tw`w-8 h-8 shrink-0 stroke-text-100`}
     }
 
     // Title
@@ -35,12 +35,12 @@ export const ContactPromotionList = styled.ul`
   }
 `
 // Contact Form / Column 2
-export const ContactForm = styled.form`
-  ${tw`flex flex-col gap-8 border border-text-100 rounded-md px-4 py-10 sm:grid sm:grid-cols-2 sm:px-6`}
+export const ContactFormContainer = styled.form`
+  ${tw`flex flex-col gap-8 px-4 py-10 border rounded-md border-text-100 sm:grid sm:grid-cols-2 sm:px-6`}
 
   // Form title
   h3 {
-    ${tw`col-span-2 text-center font-bold`}
+    ${tw`col-span-2 font-bold text-center`}
   }
 
   // Email input, Phone input, Check groups
@@ -56,12 +56,12 @@ export const ContactForm = styled.form`
   }
 
   // Span
-  span {
+  & > span {
     ${tw`col-span-2 text-center text-text-100`}
 
     // Link
     a {
-      ${tw`text-blue-400`}
+      ${tw`text-link`}
     }
   }
 `

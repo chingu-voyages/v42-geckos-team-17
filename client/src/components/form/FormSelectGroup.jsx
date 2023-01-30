@@ -9,6 +9,7 @@ function FormSelectGroup({
   options,
   handleChange,
   placeholderText,
+  errorMsg,
 }) {
   return (
     <FormSelectGroupContainer>
@@ -21,6 +22,7 @@ function FormSelectGroup({
           </option>
         ))}
       </select>
+      <span>{errorMsg}</span>
     </FormSelectGroupContainer>
   )
 }
