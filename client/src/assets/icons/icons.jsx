@@ -100,12 +100,23 @@ export function CheckIcon() {
 }
 
 export function RoundIcon() {
-   return (
-     <svg className="m-0 h-24 w-24">
-       <circle cx="50" cy="50" r="40" fill="#000000" stroke="#000000" />
-     </svg>
-   )
- }
+  return (
+    <svg className="m-0 h-24 w-24">
+      <circle cx="50" cy="50" r="40" fill="#000000" stroke="#000000" />
+    </svg>
+  )
+}
+
+export function TriangleIcon() {
+  return (
+    <svg className="fill-accent1">
+      <path
+        xmlns="http://www.w3.org/2000/svg"
+        d="M18 27L35.3205 0.75H0.679504L18 27Z"
+      />
+    </svg>
+  )
+}
 
 export function WhiteAppleIcon() {
   return (
@@ -239,4 +250,3 @@ export function PlaystoreIcon() {
     </svg>
   )
 }
-
