@@ -12,6 +12,7 @@ module.exports = {
         accent2: '#000000',
         bg1: '#FAFAFA',
         bg2: '#F2F2F2',
+        bg3: '#FFFFFE',
       },
       fontFamily: {
         body: ['Inter'],

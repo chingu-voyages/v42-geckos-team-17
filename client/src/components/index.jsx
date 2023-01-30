@@ -4,6 +4,7 @@ import SharedLayout from './sharedLayout/SharedLayout'
 
 import Hero from './home/Hero'
 import Features from './home/Features'
+import Downloads from './home/Downloads'
 
 import FormInputGroup from './form/FormInputGroup'
 import FormCheckGroup from './form/FormCheckGroup'
@@ -15,6 +16,7 @@ export {
   SharedLayout,
   Hero,
   Features,
+  Downloads,
   FormInputGroup,
   FormCheckGroup,
   FormSelectGroup,
