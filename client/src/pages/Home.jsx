@@ -1,6 +1,6 @@
 import React from 'react'
 // Components
-import { Features, Hero, Downloads, PromotionStats } from '../components'
+import { Features, Hero, Downloads, FAQ, PromotionStats } from '../components'
 
 function Home() {
   return (
@@ -9,6 +9,7 @@ function Home() {
       <Features />
       <Downloads />
       <PromotionStats />
+      <FAQ />
     </>
   )
 }
