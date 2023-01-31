@@ -10,18 +10,21 @@ import {
   StatsAndImageContainer,
   ImageContainer,
 } from '../../styles/home/PromotionStyles'
-import { Container } from '../../styles/LayoutStyles'
+import { Container, SectionHeadingContainer } from '../../styles/LayoutStyles'
+import { SecondaryHeading, Paragraph } from '../../styles/TypographyStyles'
 
 function PromotionStats() {
   return (
     <PromotionSection>
       <Container>
         <PromotionInner>
-          <h2>The best app to track expenses</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna.
-          </p>
+          <SectionHeadingContainer>
+            <SecondaryHeading>The best app to track expenses</SecondaryHeading>
+            <Paragraph>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna.
+            </Paragraph>
+          </SectionHeadingContainer>
           <StatsAndImageContainer>
             <Stats>
               <DownloadStats>

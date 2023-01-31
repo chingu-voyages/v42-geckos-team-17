@@ -35,11 +35,3 @@ export const DownloadButton = styled.button`
 export const DownloadButtonInnerFlex = styled.div`
   ${tw`flex flex-col`}
 `
-
-// Paragraph
-export const DownloadParagraph = styled.p(({ app }) => [
-  tw`text-lg font-normal text-text-100 mt-4 w-[95%]`,
-
-  // Webapp
-  app && tw`text-sm font-medium`,
-])

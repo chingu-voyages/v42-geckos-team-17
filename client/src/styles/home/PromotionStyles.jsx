@@ -5,15 +5,7 @@ export const PromotionSection = styled.section`
 `
 
 export const PromotionInner = styled.div`
-  ${tw`h-full flex flex-col justify-center items-center gap-y-4`}
-
-  h2 {
-    ${tw`text-center sm:text-left sm:self-start`}
-  }
-
-  p {
-    ${tw`text-center sm:text-left sm:self-start lg:w-1/2 mt-6 text-accent1`}
-  }
+  ${tw`h-full flex flex-col justify-center gap-y-4`}
 `
 
 export const StatsAndImageContainer = styled.div`
