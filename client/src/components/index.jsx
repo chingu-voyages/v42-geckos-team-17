@@ -1,7 +1,4 @@
 // Shared Layout
-
-import HeaderNav from './sharedLayout/HeaderNav'
-import Footer from './sharedLayout/Footer'
 import SharedLayout from './sharedLayout/SharedLayout'
 
 // Contact
@@ -16,13 +13,7 @@ import PromotionStats from './home/PromotionStats'
 import FAQ from './home/faq/FAQ'
 import CTA from './home/CTA'
 
-import FormInputGroup from './form/FormInputGroup'
-import FormCheckGroup from './form/FormCheckGroup'
-import FormSelectGroup from './form/FormSelectGroup'
-
 export {
-  HeaderNav,
-  Footer,
   SharedLayout,
   ContactForm,
   ContactInfo,
@@ -30,12 +21,6 @@ export {
   Features,
   Downloads,
   FAQ,
-  FormInputGroup,
-  FormCheckGroup,
-  FormSelectGroup,
   PromotionStats,
   CTA,
-  // FormInputGroup,
-  // FormCheckGroup,
-  // FormSelectGroup,
 }
