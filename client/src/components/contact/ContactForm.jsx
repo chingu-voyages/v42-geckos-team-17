@@ -5,6 +5,7 @@ import FormInputGroup from '../form/FormInputGroup'
 import FormCheckGroup from '../form/FormCheckGroup'
 
 // Styled components
+import { TertiaryHeading } from '../../styles/TypographyStyles'
 import { ContactFormContainer } from '../../styles/contact/ContactStyles'
 import { PrimaryButton } from '../../styles/ButtonStyles'
 import { TextLink } from '../../styles/LinkStyles'
@@ -120,7 +121,7 @@ function ContactForm() {
   }
   return (
     <ContactFormContainer onSubmit={(e) => handleSubmit(e)}>
-      <h3>Fill in your details</h3>
+      <TertiaryHeading>Fill in your details</TertiaryHeading>
       {/* Start: First name input */}
       <FormInputGroup
         label="First name"
