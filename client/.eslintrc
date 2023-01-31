@@ -12,6 +12,7 @@
   "plugins": ["react"],
   "rules": {
     "react/button-has-type": "off",
+    "react/no-array-index-key": "off",
     "react/react-in-jsx-scope": "off",
     "import/no-extraneous-dependencies": [
       "error",

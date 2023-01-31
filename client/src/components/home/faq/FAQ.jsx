@@ -14,8 +14,12 @@ function FAQ() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <FAQGrid>
-            {faqData.map((obj) => (
-              <FAQBlock question={obj.question} answer={obj.answer} />
+            {faqData.map((obj, index) => (
+              <FAQBlock
+                key={`faq-block-${index}`}
+                question={obj.question}
+                answer={obj.answer}
+              />
             ))}
           </FAQGrid>
         </FAQInner>
