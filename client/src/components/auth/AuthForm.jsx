@@ -28,7 +28,7 @@ function AuthForm({ isSignIn }) {
       {/* Start: Auth options */}
       <SolidLink to="/">
         <GoogleIcon />
-        {isSignIn ? 'Sign In with Google' : 'Sign Up with Google'}
+        Google
       </SolidLink>
       <SolidLink to="/">
         <FacebookIcon />
@@ -43,14 +43,17 @@ function AuthForm({ isSignIn }) {
         placeholderText="email@example.com"
       />
       {/* End: Email input */}
-      {/* Start: Email input */}
+      {/* Start: Password input */}
       <FormInputGroup
         label="Password"
         type="password"
         name="password"
         placeholderText="********"
       />
-      {/* End: Email input */}
+      {/* End: Password input */}
+      {/* Start: Forgot password link */}
+      {isSignIn && <TextLink to="/">Forgot password?</TextLink>}
+      {/* End: Forgot password link */}
       {/* Start: Currency */}
       {!isSignIn && (
         <FormSelectGroup
@@ -64,9 +67,6 @@ function AuthForm({ isSignIn }) {
       {/* Start: Submit button */}
       <PrimaryButton>Submit</PrimaryButton>
       {/* End: Submit button */}
-      {/* Start: Forgot password link */}
-      {isSignIn && <TextLink to="/">Forgot password?</TextLink>}
-      {/* End: Forgot password link */}
       <span>
         By submitting this form, I confirm that I have read and understood
         <TextLink to="/"> Okane’s privacy policy</TextLink>.

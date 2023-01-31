@@ -10,7 +10,7 @@ export const TextLink = styled(Link)(({ small }) => [
 ])
 
 export const SolidLink = styled(Link)`
-  ${tw`flex items-center justify-center px-10 py-3 text-lg font-normal text-white transition duration-300 rounded-md gap-x-4 bg-accent1 whitespace-nowrap shadow-button hover:bg-white hover:text-accent1`}
+  ${tw`flex min-h-[52px] items-center justify-center px-6 py-3 text-lg font-normal text-white transition duration-300 rounded-md gap-x-4 bg-accent1 whitespace-nowrap shadow-button hover:bg-white hover:text-accent1`}
 
   svg {
     ${tw`shrink-0`}

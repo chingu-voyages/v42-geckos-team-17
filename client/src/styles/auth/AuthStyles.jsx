@@ -9,7 +9,7 @@ export const AuthInner = styled.div`
 `
 // Form / Column 1
 export const AuthFormContainer = styled.form`
-  ${tw`w-fit max-w-[600px] grid grid-cols-2 sm:grid-cols-[3fr_1fr] items-center gap-x-4 gap-y-4 sm:gap-y-8 px-6 py-10 border rounded-md border-text-100`}
+  ${tw`w-fit max-w-[600px] grid grid-cols-2 items-center gap-x-4 gap-y-4 sm:gap-y-8 px-6 py-10 border rounded-md border-text-100`}
 
   // First link
   a:nth-of-type(1) {
@@ -24,7 +24,7 @@ export const AuthFormContainer = styled.form`
 
   // Forgot password link
   a:nth-of-type(4) {
-    ${tw`col-span-2 text-link justify-self-center sm:col-span-1 sm:justify-self-end`}
+    ${tw`col-span-2 pb-5 text-link justify-self-center md:justify-self-end`}
   }
 
   // Inputs
@@ -36,14 +36,13 @@ export const AuthFormContainer = styled.form`
     ${tw`pt-5`}
   }
 
-  div:nth-of-type(2),
   div:nth-of-type(3) {
     ${tw`pb-5`}
   }
 
   // Submit button
   button {
-    ${tw`col-span-2 sm:col-span-1`}
+    ${tw`w-full col-span-2`}
   }
 
   // Span
@@ -54,5 +53,5 @@ export const AuthFormContainer = styled.form`
 
 // Image / Column 2
 export const AuthImage = styled.img`
-  ${tw`hidden max-w-[350px] justify-self-end lg:inline-block xl:max-w-none`}
+  ${tw`hidden max-w-[420px] justify-self-end lg:inline-block xl:max-w-none`}
 `
