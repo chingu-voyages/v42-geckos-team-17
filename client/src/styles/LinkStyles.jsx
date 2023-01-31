@@ -3,20 +3,36 @@ import { Link } from 'react-router-dom'
 
 // Text link
 export const TextLink = styled(Link)(({ small }) => [
-  tw`text-text-100 text-lg hover:text-text-200 transition duration-300`,
+  tw`text-lg transition duration-300 text-text-100 hover:text-text-200`,
 
   // Small link
   small && tw`text-sm`,
 ])
 
+export const SolidLink = styled(Link)`
+  ${tw`flex items-center justify-center px-10 py-3 text-lg font-normal text-white transition duration-300 rounded-md gap-x-4 bg-accent1 whitespace-nowrap shadow-button hover:bg-white hover:text-accent1`}
+
+  svg {
+    ${tw`shrink-0`}
+  }
+
+  svg path {
+    ${tw`fill-white`}
+  }
+
+  &:hover svg path {
+    ${tw`fill-accent1`}
+  }
+`
+
 export const OutlineLink = styled(Link)`
-  ${tw`bg-white text-accent1 text-lg font-normal whitespace-nowrap py-3 px-10 shadow-button rounded-md hover:bg-accent1 hover:text-white transition duration-300`}
+  ${tw`px-10 py-3 text-lg font-normal transition duration-300 bg-white rounded-md text-accent1 whitespace-nowrap shadow-button hover:bg-accent1 hover:text-white`}
 `
 
 // Icon link
 export const IconLink = styled(Link)`
   ${tw`p-0.5`}
   &:hover svg path {
-    ${tw`fill-text-200 hover:fill-text-100 transition duration-300`}
+    ${tw`transition duration-300 fill-text-200 hover:fill-text-100`}
   }
 `

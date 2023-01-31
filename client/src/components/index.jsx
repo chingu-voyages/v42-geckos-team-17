@@ -13,6 +13,9 @@ import PromotionStats from './home/PromotionStats'
 import FAQ from './home/faq/FAQ'
 import CTA from './home/CTA'
 
+// Auth
+import AuthForm from './auth/AuthForm'
+
 export {
   SharedLayout,
   ContactForm,
@@ -23,4 +26,5 @@ export {
   FAQ,
   PromotionStats,
   CTA,
+  AuthForm,
 }
