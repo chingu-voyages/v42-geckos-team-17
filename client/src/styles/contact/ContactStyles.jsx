@@ -40,7 +40,7 @@ export const ContactFormContainer = styled.form`
 
   // Form title
   h3 {
-    ${tw`col-span-2 font-bold text-center`}
+    ${tw`col-span-2`}
   }
 
   // Email input, Phone input, Check groups

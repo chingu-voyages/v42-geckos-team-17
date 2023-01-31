@@ -1,6 +1,8 @@
 import React from 'react'
 
 // Styled components
+import { SectionHeadingContainer } from '../../styles/LayoutStyles'
+import { Paragraph, SecondaryHeading } from '../../styles/TypographyStyles'
 import {
   ContactPromotion,
   ContactPromotionList,
@@ -34,11 +36,15 @@ const promoData = [
 function ContactInfo() {
   return (
     <ContactPromotion>
-      <h2>Are you ready to achieve your budget goals?</h2>
-      <p>
-        Okane App tracks your net worth and gives you the option to not link
-        your accounts and instead track your finances manually.
-      </p>
+      <SectionHeadingContainer>
+        <SecondaryHeading>
+          Are you ready to achieve your budget goals?
+        </SecondaryHeading>
+        <Paragraph>
+          Okane App tracks your net worth and gives you the option to not link
+          your accounts and instead track your finances manually.
+        </Paragraph>
+      </SectionHeadingContainer>
       <ContactPromotionList>
         {promoData.map((promoItem) => (
           <li key={promoItem.id}>

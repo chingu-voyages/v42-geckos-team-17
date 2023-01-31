@@ -10,7 +10,7 @@ export const FormSelectGroupContainer = styled.div`
 
   // Select
   select {
-    ${tw`flex px-4 py-3 font-normal border rounded-md w-fit border-text-100`}
+    ${tw`flex w-full px-4 py-3 font-normal border rounded-md border-text-100`}
   }
 
   select:focus {

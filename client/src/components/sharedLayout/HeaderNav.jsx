@@ -33,7 +33,7 @@ function HeaderNav() {
             <TextLink to="/contact">Contact</TextLink>
           </li>
         </NavigationLinks>
-        <OutlineLink to="/">Sign In</OutlineLink>
+        <OutlineLink to="signin">Sign In</OutlineLink>
         <IconButton type="button" aria-label="navigation">
           <HamburgerIcon aria-hidden="true" />
         </IconButton>
