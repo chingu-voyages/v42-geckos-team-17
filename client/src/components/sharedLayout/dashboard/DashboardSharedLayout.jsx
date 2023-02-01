@@ -8,11 +8,15 @@ import { DashboardContainer } from '../../../styles/LayoutStyles'
 
 // Components
 import VerticalNav from './VerticalNav'
+import TopMobileNav from './TopMobileNav'
+import BottomMobileNav from './BottomMobileNav'
 
 function DashboardSharedLayout() {
   return (
     <DashboardContainer>
       <VerticalNav />
+      <TopMobileNav />
+      <BottomMobileNav />
       <main>
         <Outlet />
       </main>
