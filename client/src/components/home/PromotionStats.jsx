@@ -28,16 +28,16 @@ function PromotionStats() {
           <StatsAndImageContainer>
             <Stats>
               <DownloadStats>
-                <h2>500K+</h2>
-                <p>DOWNLOADS</p>
+                <SecondaryHeading as="span">500K+</SecondaryHeading>
+                <Paragraph>DOWNLOADS</Paragraph>
               </DownloadStats>
               <AwardStats>
-                <h2>125+</h2>
-                <p>AWARDS</p>
+                <SecondaryHeading as="span">125+</SecondaryHeading>
+                <Paragraph>AWARDS</Paragraph>
               </AwardStats>
               <MoneyStats>
-                <h2>100M$+</h2>
-                <p>MONEY SAVED</p>
+                <SecondaryHeading as="span">100M$+</SecondaryHeading>
+                <Paragraph>MONEY SAVED</Paragraph>
               </MoneyStats>
             </Stats>
             <ImageContainer>

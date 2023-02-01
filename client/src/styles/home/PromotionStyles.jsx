@@ -1,24 +1,24 @@
 import tw, { styled } from 'twin.macro'
 
 export const PromotionSection = styled.section`
-  ${tw`bg-bg2 pt-20 pb-24 sm:py-24 bg-bg1`}
+  ${tw`pt-20 pb-24 bg-bg2 sm:py-24 bg-bg1`}
 `
 
 export const PromotionInner = styled.div`
-  ${tw`h-full flex flex-col justify-center gap-y-4`}
+  ${tw`flex flex-col justify-center h-full gap-y-4`}
 `
 
 export const StatsAndImageContainer = styled.div`
-  ${tw`flex flex-col-reverse md:flex-row w-full gap-8 mt-12`}
+  ${tw`flex flex-col-reverse w-full gap-8 mt-12 md:flex-row`}
 `
 
 export const Stats = styled.div`
-  ${tw`relative h-64 sm:h-10 md:h-96 w-full rounded-md  md:my-0`}
+  ${tw`relative w-full h-64 rounded-md sm:h-10 md:h-96 md:my-0`}
   h3 {
     ${tw`font-bold `}
   }
   p {
-    ${tw`text-accent1 font-semibold mt-0 `}
+    ${tw`mt-0 font-semibold text-accent1 `}
   }
 `
 
@@ -37,6 +37,6 @@ export const MoneyStats = styled.div`
 export const ImageContainer = styled.div`
   ${tw`w-full rounded-md sm:px-12 md:px-0`}
   img {
-    ${tw`sm:h-96 object-cover w-full rounded-md`}
+    ${tw`object-cover w-full rounded-md sm:h-96`}
   }
 `
