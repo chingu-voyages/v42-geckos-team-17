@@ -39,7 +39,7 @@ export const ContactFormContainer = styled.form`
   ${tw`flex flex-col gap-8 px-4 py-10 border rounded-md border-text-100 sm:grid sm:grid-cols-2 sm:px-6`}
 
   // Form title
-  h3 {
+  h2 {
     ${tw`col-span-2`}
   }
 

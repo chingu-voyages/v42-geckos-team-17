@@ -14,11 +14,8 @@ export const StatsAndImageContainer = styled.div`
 
 export const Stats = styled.div`
   ${tw`relative w-full h-64 rounded-md sm:h-10 md:h-96 md:my-0`}
-  h3 {
-    ${tw`font-bold `}
-  }
   p {
-    ${tw`mt-0 font-semibold text-accent1 `}
+    ${tw`font-semibold`}
   }
 `
 
