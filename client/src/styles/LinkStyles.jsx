@@ -2,11 +2,14 @@ import tw, { styled } from 'twin.macro'
 import { Link } from 'react-router-dom'
 
 // Text link
-export const TextLink = styled(Link)(({ small }) => [
-  tw`text-lg transition duration-300 text-text-100 hover:text-text-200`,
+export const TextLink = styled(Link)(({ small, big }) => [
+  tw`text-lg transition duration-300 text-text-100 hover:text-text-200 capitalize`,
 
   // Small link
   small && tw`text-sm`,
+
+  // Big link
+  big && tw`text-2xl`,
 ])
 
 export const SolidLink = styled(Link)`

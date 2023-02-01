@@ -15,6 +15,11 @@ export const Social = styled.div`
 // Social links
 export const SocialLinks = styled.div`
   ${tw`flex gap-x-4`}
+
+  // Remove left padding from the first link
+  & > a {
+    ${tw`pl-0`}
+  }
 `
 
 // Navigation links / Column 2

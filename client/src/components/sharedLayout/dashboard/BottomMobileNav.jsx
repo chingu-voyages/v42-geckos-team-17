@@ -9,39 +9,21 @@ import {
 } from '../../../styles/dashboard/MobileNavStyles'
 
 // Icons
-import {
-  HomeIcon,
-  AccountsIcon,
-  TransactionIcon,
-  StatsIcon,
-  PlusIcon,
-} from '../../../assets/icons/dashboardIcons'
+import { PlusIcon } from '../../../assets/icons/dashboardIcons'
+
+// Links data
+import dashboardLinks from '../../../assets/links/dashboard'
 
 function BottomMobileNav() {
   return (
     <BottomMobileNavContainer>
       {/* Start: Nav Links */}
       <Navigation>
-        <li>
-          <IconLink to="/">
-            <HomeIcon />
-          </IconLink>
-        </li>
-        <li>
-          <IconLink to="/">
-            <AccountsIcon />
-          </IconLink>
-        </li>
-        <li>
-          <IconLink to="/">
-            <TransactionIcon />
-          </IconLink>
-        </li>
-        <li>
-          <IconLink to="/">
-            <StatsIcon />
-          </IconLink>
-        </li>
+        {dashboardLinks.map((link) => (
+          <li key={link.name}>
+            <IconLink to={link.href}>{link.icon}</IconLink>
+          </li>
+        ))}
       </Navigation>
       {/* End: Nav Links */}
       {/* Start: Add button */}

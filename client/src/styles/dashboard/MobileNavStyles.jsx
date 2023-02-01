@@ -32,10 +32,10 @@ export const Navigation = styled.ul`
 
   // 2nd and 3nd links
   & > li:nth-of-type(2) > a {
-    ${tw`mr-10 sm:mr-8`}
+    ${tw`mr-10 sm:mr-12`}
   }
   & > li:nth-of-type(3) > a {
-    ${tw`ml-10 sm:ml-8`}
+    ${tw`ml-10 sm:ml-16`}
   }
 `
 export const AddButton = styled.button`
