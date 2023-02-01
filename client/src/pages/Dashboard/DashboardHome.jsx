@@ -1,14 +1,7 @@
 import React from 'react'
 
-import { PromotionStats } from '../../components/index'
-
 function DashboardHome() {
-  return (
-    <div>
-      <PromotionStats />
-      <PromotionStats />
-    </div>
-  )
+  return <div>DashboardHome</div>
 }
 
 export default DashboardHome
