@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro'
 
 export const VerticalNavContainer = styled.header`
-  ${tw`fixed bg-bg2 w-[100px] h-screen min-h-[645px] hidden md:block rounded-tr-3xl rounded-br-3xl`}
+  ${tw`fixed bg-bg2 w-[100px] h-screen hidden md:block rounded-tr-3xl rounded-br-3xl`}
 `
 
 export const VerticalNavInner = styled.nav`
@@ -14,7 +14,7 @@ export const VerticalNavInner = styled.nav`
 `
 
 export const Navigation = styled.ul`
-  ${tw`w-full flex flex-col items-center gap-y-8 py-16 px-2.5`}
+  ${tw`w-full flex flex-col items-center gap-y-8 py-8 px-2.5`}
 `
 
 export const VerticalNavInnerFooter = styled.div`

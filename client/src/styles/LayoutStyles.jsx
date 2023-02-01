@@ -24,6 +24,6 @@ export const DashboardContainer = styled.div`
   ${tw`flex`}
 
   main {
-    ${tw`grow mx-auto pt-[90px] pb-[45px] p-6 max-w-[1000px] md:pl-[124px]`}
+    ${tw`grow mx-auto pt-[150px] pb-[90px] sm:pb-[115px] p-6 max-w-[1000px] md:pb-[45px] md:pl-[124px] md:pt-[90px]`}
   }
 `
