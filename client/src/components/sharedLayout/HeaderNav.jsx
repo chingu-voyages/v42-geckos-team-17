@@ -19,6 +19,9 @@ import {
 import Logo from '../../assets/logo'
 import { HamburgerIcon, CloseIcon } from '../../assets/icons/icons'
 
+// Links data
+import { headerLinks } from '../../assets/links/navigation'
+
 function HeaderNav() {
   // Toggle mobile menu
   const [navIsOpen, setNavIsOpen] = useState(false)
@@ -41,15 +44,11 @@ function HeaderNav() {
         {/* End: Logo link */}
         {/* Start: Nav links (Desktop only) */}
         <NavigationLinks>
-          <li>
-            <TextLink to="/about">About</TextLink>
-          </li>
-          <li>
-            <TextLink to="/">Pricing</TextLink>
-          </li>
-          <li>
-            <TextLink to="/contact">Contact</TextLink>
-          </li>
+          {headerLinks.map((link) => (
+            <li key={link.name}>
+              <TextLink to={link.href}>{link.name}</TextLink>
+            </li>
+          ))}
         </NavigationLinks>
         {/* End: Nav links (Desktop only) */}
         {/* Start: Sign in/up button (Desktop only) */}
@@ -65,7 +64,7 @@ function HeaderNav() {
         </IconButton>
         {/* End: Hamburger/close button (Small screens only) */}
         {/* Start: Mobile nav (Small screens only) */}
-        {navIsOpen && <MobileNav />}
+        {navIsOpen && <MobileNav setNavIsOpen={setNavIsOpen} />}
         {/* End: Mobile nav (Small screens only) */}
       </Navigation>
     </NavHeader>

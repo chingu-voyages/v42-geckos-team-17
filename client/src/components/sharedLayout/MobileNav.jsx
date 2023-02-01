@@ -10,49 +10,39 @@ import {
   SocialLinks,
 } from '../../styles/sharedLayout/MobileNavStyles'
 
-// Icons
-import {
-  TwitterIcon,
-  InstagramIcon,
-  YoutubeIcon,
-  FacebookIcon,
-} from '../../assets/icons/icons'
+// Links data
+import { headerLinks } from '../../assets/links/navigation'
+import socialLinks from '../../assets/links/social'
 
-const MobileNav = () => {
+const MobileNav = ({ setNavIsOpen }) => {
   return ReactDOM.createPortal(
     <Overlay>
       <MobileNavInner>
         <NavigationLinks>
-          <li>
-            <TextLink big to="/about">
-              About
-            </TextLink>
-          </li>
-          <li>
-            <TextLink big to="/">
-              Pricing
-            </TextLink>
-          </li>
-          <li>
-            <TextLink big to="/contact">
-              Contact
-            </TextLink>
-          </li>
+          {headerLinks.map((link) => (
+            <li key={link.name}>
+              <TextLink big onClick={() => setNavIsOpen(false)} to={link.href}>
+                {link.name}
+              </TextLink>
+            </li>
+          ))}
         </NavigationLinks>
-        <OutlineLink to="signin">Sign In</OutlineLink>
+        <OutlineLink onClick={() => setNavIsOpen(false)} to="signin">
+          Sign In
+        </OutlineLink>
         <SocialLinks>
-          <IconLink to="/" aria-label="twitter">
-            <TwitterIcon />
-          </IconLink>
-          <IconLink to="/" aria-label="facebook">
-            <FacebookIcon />
-          </IconLink>
-          <IconLink to="/" aria-label="youtube">
-            <YoutubeIcon />
-          </IconLink>
-          <IconLink to="/" aria-label="instagram">
-            <InstagramIcon />
-          </IconLink>
+          {socialLinks.map((link) => (
+            <IconLink
+              onClick={() => setNavIsOpen(false)}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={link.name}
+              to={link.href}
+              aria-label={link.name}
+            >
+              {link.icon}
+            </IconLink>
+          ))}
         </SocialLinks>
       </MobileNavInner>
     </Overlay>,

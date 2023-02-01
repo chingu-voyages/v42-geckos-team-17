@@ -14,14 +14,10 @@ import {
 } from '../../../styles/dashboard/VerticalNavStyles'
 
 // Icons
-import {
-  OkaneMiniIcon,
-  HomeIcon,
-  AccountsIcon,
-  TransactionIcon,
-  StatsIcon,
-  LightIcon,
-} from '../../../assets/icons/dashboardIcons'
+import { OkaneMiniIcon, LightIcon } from '../../../assets/icons/dashboardIcons'
+
+// Links data
+import dashboardLinks from '../../../assets/links/dashboard'
 
 // Images
 import userImg from '../../../assets/images/user.png'
@@ -37,26 +33,11 @@ function VerticalNav() {
         {/* End: Logo */}
         {/* Start: Nav Links */}
         <Navigation>
-          <li>
-            <IconLink to="/">
-              <HomeIcon />
-            </IconLink>
-          </li>
-          <li>
-            <IconLink to="/">
-              <AccountsIcon />
-            </IconLink>
-          </li>
-          <li>
-            <IconLink to="/">
-              <TransactionIcon />
-            </IconLink>
-          </li>
-          <li>
-            <IconLink to="/">
-              <StatsIcon />
-            </IconLink>
-          </li>
+          {dashboardLinks.map((link) => (
+            <li key={link.name}>
+              <IconLink to={link.href}>{link.icon}</IconLink>
+            </li>
+          ))}
         </Navigation>
         {/* End: Nav Links */}
         <VerticalNavInnerFooter>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 // Text link
 export const TextLink = styled(Link)(({ small, big }) => [
-  tw`text-lg transition duration-300 text-text-100 hover:text-text-200`,
+  tw`text-lg transition duration-300 text-text-100 hover:text-text-200 capitalize`,
 
   // Small link
   small && tw`text-sm`,
