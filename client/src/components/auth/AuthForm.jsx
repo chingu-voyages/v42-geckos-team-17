@@ -1,5 +1,8 @@
 import React from 'react'
 
+// Routing
+import { useNavigate } from 'react-router-dom'
+
 // Components
 import FormInputGroup from '../form/FormInputGroup'
 import FormSelectGroup from '../form/FormSelectGroup'
@@ -17,8 +20,16 @@ import { PrimaryButton } from '../../styles/ButtonStyles'
 const currency = ['usd', 'eur', 'yuan']
 
 function AuthForm({ isSignIn }) {
+  const navigate = useNavigate()
+
+  // Handle submit
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    navigate('/dashboard')
+  }
+
   return (
-    <AuthFormContainer>
+    <AuthFormContainer onSubmit={(e) => handleSubmit(e)}>
       {/* Start: Form header */}
       <TertiaryHeading>{isSignIn ? 'Sign In' : 'Sign Up'}</TertiaryHeading>
       <TextLink to={`${isSignIn ? '/signup' : '/signin'}`}>

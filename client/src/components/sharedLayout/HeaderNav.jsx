@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import { TextLink, OutlineLink } from '../../styles/LinkStyles'
 import { IconButton } from '../../styles/ButtonStyles'
 import {
+  NavHeader,
   Navigation,
   NavigationLinks,
 } from '../../styles/sharedLayout/HeaderNavStyles'
@@ -17,7 +18,7 @@ import { HamburgerIcon } from '../../assets/icons/icons'
 
 function HeaderNav() {
   return (
-    <header>
+    <NavHeader>
       <Navigation>
         <Link to="/" aria-label="okane home page">
           <Logo />
@@ -38,7 +39,7 @@ function HeaderNav() {
           <HamburgerIcon aria-hidden="true" />
         </IconButton>
       </Navigation>
-    </header>
+    </NavHeader>
   )
 }
 

@@ -1,5 +1,6 @@
-// Shared Layout
+// Shared Layouts
 import SharedLayout from './sharedLayout/SharedLayout'
+import DashboardSharedLayout from './sharedLayout/dashboard/DashboardSharedLayout'
 
 // Contact
 import ContactForm from './contact/ContactForm'
@@ -18,6 +19,7 @@ import AuthForm from './auth/AuthForm'
 
 export {
   SharedLayout,
+  DashboardSharedLayout,
   ContactForm,
   ContactInfo,
   Hero,
