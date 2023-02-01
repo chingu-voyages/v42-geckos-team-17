@@ -1,5 +1,9 @@
 import tw, { styled } from 'twin.macro'
 
+export const NavHeader = styled.header`
+  ${tw`py-4`}
+`
+
 export const Navigation = styled.nav`
   ${tw`max-w-[1360px] min-h-[64px] mx-auto flex justify-between items-center gap-x-10 px-6 md:px-10`}
 
@@ -15,5 +19,5 @@ export const Navigation = styled.nav`
 `
 
 export const NavigationLinks = styled.ul`
-  ${tw`gap-x-8 hidden md:flex md:w-full md:justify-end`}
+  ${tw`hidden gap-x-8 md:flex md:w-full md:justify-end`}
 `
