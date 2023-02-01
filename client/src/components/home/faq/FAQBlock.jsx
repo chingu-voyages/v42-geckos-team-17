@@ -1,6 +1,11 @@
 import { useState } from 'react'
-import { TriangleIcon } from '../../../assets/icons/icons'
+
+// Styled components
 import { AnswerDiv, FAQDiv, QuestionDiv } from '../../../styles/home/FAQStyles'
+import { Paragraph } from '../../../styles/TypographyStyles'
+
+// Icons
+import { TriangleIcon } from '../../../assets/icons/icons'
 
 function FAQBlock({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false)
@@ -9,10 +14,10 @@ function FAQBlock({ question, answer }) {
   return (
     <FAQDiv onClick={handleClick} isOpen={isOpen}>
       <QuestionDiv className="flex">
-        <p>{question}</p>
+        <Paragraph>{question}</Paragraph>
         <TriangleIcon />
       </QuestionDiv>
-      <AnswerDiv>{isOpen ? <p>{answer}</p> : null}</AnswerDiv>
+      <AnswerDiv>{isOpen ? <Paragraph>{answer}</Paragraph> : null}</AnswerDiv>
     </FAQDiv>
   )
 }
