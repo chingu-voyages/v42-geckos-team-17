@@ -37,7 +37,7 @@ function ContactInfo() {
   return (
     <ContactPromotion>
       <SectionHeadingContainer>
-        <SecondaryHeading>
+        <SecondaryHeading as="h1">
           Are you ready to achieve your budget goals?
         </SecondaryHeading>
         <Paragraph>

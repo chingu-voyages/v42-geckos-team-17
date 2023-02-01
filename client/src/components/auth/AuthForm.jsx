@@ -31,7 +31,9 @@ function AuthForm({ isSignIn }) {
   return (
     <AuthFormContainer onSubmit={(e) => handleSubmit(e)}>
       {/* Start: Form header */}
-      <TertiaryHeading>{isSignIn ? 'Sign In' : 'Sign Up'}</TertiaryHeading>
+      <TertiaryHeading as="h1">
+        {isSignIn ? 'Sign In' : 'Sign Up'}
+      </TertiaryHeading>
       <TextLink to={`${isSignIn ? '/signup' : '/signin'}`}>
         {isSignIn ? 'No Account? Sign up' : 'Have Account? Sign in'}
       </TextLink>

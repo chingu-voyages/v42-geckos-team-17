@@ -121,7 +121,7 @@ function ContactForm() {
   }
   return (
     <ContactFormContainer onSubmit={(e) => handleSubmit(e)}>
-      <TertiaryHeading>Fill in your details</TertiaryHeading>
+      <TertiaryHeading as="h2">Fill in your details</TertiaryHeading>
       {/* Start: First name input */}
       <FormInputGroup
         label="First name"
