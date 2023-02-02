@@ -4,7 +4,7 @@ import {
   SecondaryHeading,
   TertiaryHeading,
 } from '../../styles/TypographyStyles'
-import { HeaderSection } from '../../styles/pricing/HeaderStyle'
+import { HeaderSection } from '../../styles/pricing/HeaderStyles'
 
 function Header() {
   return (

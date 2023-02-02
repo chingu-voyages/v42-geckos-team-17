@@ -6,7 +6,8 @@ import {
   CTASection,
   CTATertiaryHeadingDark,
   CTATertiaryHeadingLight,
- GroupButtons } from '../../styles/home/CTAStyles'
+  GroupButtons,
+} from '../../styles/home/CTAStyles'
 
 function CTA() {
   return (
