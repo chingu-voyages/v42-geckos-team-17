@@ -7,6 +7,11 @@ export const NavHeader = styled.header`
 export const Navigation = styled.nav`
   ${tw`max-w-[1360px] min-h-[64px] mx-auto flex justify-between items-center gap-x-10 px-6 md:px-10`}
 
+  // Logo
+  & > a:nth-of-type(1) {
+    ${tw`z-[999]`}
+  }
+
   // Hide 'Sign in' link for medium&small screens
   a:last-of-type {
     ${tw`hidden md:inline-block`}
@@ -14,7 +19,7 @@ export const Navigation = styled.nav`
 
   // Hide 'Hamburger' button for larger screens
   button {
-    ${tw`inline-block md:hidden`}
+    ${tw`inline-block md:hidden z-[999]`}
   }
 `
 

@@ -21,39 +21,10 @@ import { PrimaryButton } from '../../styles/ButtonStyles'
 
 // Icons
 import Logo from '../../assets/logo'
-import {
-  TwitterIcon,
-  FacebookIcon,
-  YoutubeIcon,
-  InstagramIcon,
-} from '../../assets/icons/icons'
 
-// Navigation links data
-const navLinks = [
-  {
-    id: '0',
-    title: 'About',
-    links: [
-      { id: '01', name: 'Company', href: '/' },
-      { id: '02', name: 'Locations', href: '/' },
-      { id: '03', name: 'Our team', href: '/' },
-    ],
-  },
-  {
-    id: '1',
-    title: 'Pricing',
-    links: [
-      { id: '11', name: 'Options', href: '/' },
-      { id: '12', name: 'Testimonials', href: '/' },
-      { id: '13', name: 'FAQ', href: '/' },
-    ],
-  },
-  {
-    id: '2',
-    title: 'Contact',
-    links: [{ id: '21', name: 'Contact us', href: '/contact' }],
-  },
-]
+// Links data
+import socialLinks from '../../assets/links/social'
+import { footerLinks } from '../../assets/links/navigation'
 
 function Footer() {
   const [error, setError] = useState('')
@@ -86,24 +57,23 @@ function Footer() {
             <Logo />
           </Link>
           <SocialLinks>
-            <IconLink to="/" aria-label="twitter">
-              <TwitterIcon />
-            </IconLink>
-            <IconLink to="/" aria-label="facebook">
-              <FacebookIcon />
-            </IconLink>
-            <IconLink to="/" aria-label="youtube">
-              <YoutubeIcon />
-            </IconLink>
-            <IconLink to="/" aria-label="instagram">
-              <InstagramIcon />
-            </IconLink>
+            {socialLinks.map((link) => (
+              <IconLink
+                key={link.name}
+                to={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={link.name}
+              >
+                {link.icon}
+              </IconLink>
+            ))}
           </SocialLinks>
         </Social>
         {/* End: Social links and Logo Column */}
         {/* Start: Navigation links column */}
         <Navigation>
-          {navLinks.map((navColumn) => (
+          {footerLinks.map((navColumn) => (
             <div key={navColumn.id}>
               <span>{navColumn.title}</span>
               <ul>
@@ -123,7 +93,7 @@ function Footer() {
         <SubscribeForm onSubmit={(e) => handleSubmit(e)}>
           <FormInputGroup
             type="email"
-            name="email"
+            name="emailToSub"
             value={email}
             handleChange={(e) => setEmail(e.currentTarget.value)}
             placeholderText="Enter your email"
