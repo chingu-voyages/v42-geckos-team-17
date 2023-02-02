@@ -28,7 +28,7 @@ function HeaderNav() {
             <TextLink to="/about">About</TextLink>
           </li>
           <li>
-            <TextLink to="/">Pricing</TextLink>
+            <TextLink to="/pricing">Pricing</TextLink>
           </li>
           <li>
             <TextLink to="/contact">Contact</TextLink>

@@ -17,6 +17,9 @@ import CTA from './home/CTA'
 // Auth
 import AuthForm from './auth/AuthForm'
 
+// Price
+import Header from './pricing/Header'
+
 export {
   SharedLayout,
   DashboardSharedLayout,
@@ -29,6 +32,7 @@ export {
   PromotionStats,
   CTA,
   AuthForm,
+  Header,
   // FormInputGroup,
   // FormCheckGroup,
   // FormSelectGroup,
