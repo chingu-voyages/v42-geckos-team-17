@@ -1,7 +1,12 @@
-import { Header } from '../components'
+import { Header, PricePlans } from '../components'
 
 function Pricing() {
-  return <Header />
+  return (
+    <>
+      <Header />
+      <PricePlans />
+    </>
+  )
 }
 
 export default Pricing

@@ -19,6 +19,7 @@ import AuthForm from './auth/AuthForm'
 
 // Price
 import Header from './pricing/Header'
+import PricePlans from './pricing/pricePlans/PricePlans'
 
 export {
   SharedLayout,
@@ -33,6 +34,7 @@ export {
   CTA,
   AuthForm,
   Header,
+  PricePlans,
   // FormInputGroup,
   // FormCheckGroup,
   // FormSelectGroup,
