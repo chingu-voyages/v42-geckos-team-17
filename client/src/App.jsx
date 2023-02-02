@@ -2,7 +2,15 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 // Pages
-import { Home, About, Contact, SignIn, SignUp, DashboardHome } from './pages'
+import {
+  Home,
+  About,
+  Contact,
+  SignIn,
+  SignUp,
+  DashboardHome,
+  Pricing,
+} from './pages'
 
 // Components
 import { SharedLayout, DashboardSharedLayout } from './components'
@@ -17,6 +25,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="signin" element={<SignIn />} />
           <Route path="signup" element={<SignUp />} />
+          <Route path="pricing" element={<Pricing />} />
         </Route>
         <Route path="/dashboard" element={<DashboardSharedLayout />}>
           <Route index element={<DashboardHome />} />
