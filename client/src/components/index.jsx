@@ -22,6 +22,7 @@ import Header from './pricing/Header'
 import PricePlans from './pricing/pricePlans/PricePlans'
 import Testimonials from './pricing/testimonials/Testimonials'
 import TrustedCompanies from './pricing/TrustedCompanies'
+import PricingFAQ from './pricing/PricingFAQ'
 
 export {
   SharedLayout,
@@ -39,6 +40,7 @@ export {
   PricePlans,
   Testimonials,
   TrustedCompanies,
+  PricingFAQ,
   // FormInputGroup,
   // FormCheckGroup,
   // FormSelectGroup,

@@ -1,6 +1,7 @@
 import {
   Header,
   PricePlans,
+  PricingFAQ,
   Testimonials,
   TrustedCompanies,
 } from '../components'
@@ -12,6 +13,7 @@ function Pricing() {
       <PricePlans />
       <Testimonials />
       <TrustedCompanies />
+      <PricingFAQ />
     </>
   )
 }
