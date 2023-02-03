@@ -1,4 +1,6 @@
 import PricePlanCard from './PricePlanCard'
+
+// Data
 import { pricePlaneData } from '../../../assets/data/pricePlansData'
 
 // Styled Components

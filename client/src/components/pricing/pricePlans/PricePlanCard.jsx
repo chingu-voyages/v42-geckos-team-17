@@ -19,10 +19,13 @@ function PricePlanCard({ type, description, price, features }) {
   return (
     <PricePlanCardDiv>
       {type === 'Pro' && <BestValueDiv>Best Value</BestValueDiv>}
+      {/* Start: Card heading */}
       <CardHeaderDiv>
         <TertiaryHeading>{type}</TertiaryHeading>
         <Paragraph>{description}</Paragraph>
       </CardHeaderDiv>
+      {/* End: Card heading */}
+      {/* Start: Card body */}
       <CardBodyDiv>
         <SecondaryHeading> {price}</SecondaryHeading>
         <Paragraph>
@@ -32,6 +35,8 @@ function PricePlanCard({ type, description, price, features }) {
         <PrimaryButton>Select</PrimaryButton>
         {type === 'Pro' && <Paragraph>Try it free for 7 days!</Paragraph>}
       </CardBodyDiv>
+      {/* End: Card body */}
+      {/* Start: Card footer */}
       <CardFooterDiv>
         {features.map((feature, index) => (
           <div key={`feature-${index}`}>
@@ -40,6 +45,7 @@ function PricePlanCard({ type, description, price, features }) {
           </div>
         ))}
       </CardFooterDiv>
+      {/* End: Card footer */}
     </PricePlanCardDiv>
   )
 }

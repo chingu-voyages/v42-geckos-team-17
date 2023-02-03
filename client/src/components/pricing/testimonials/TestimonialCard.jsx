@@ -9,9 +9,12 @@ import { Paragraph } from '../../../styles/TypographyStyles'
 function TestimonialCard({ name, position, company, testimonial }) {
   return (
     <TestimonialsCardDiv>
+      {/* Start: Card body */}
       <TestimonialsCardBody>
         <Paragraph>&quot; {testimonial} &quot;</Paragraph>
       </TestimonialsCardBody>
+      {/* End: Card body */}
+      {/* Start: Card footer */}
       <TestimonialCardFooter>
         <Paragraph>
           <span>{name}</span>
@@ -20,6 +23,7 @@ function TestimonialCard({ name, position, company, testimonial }) {
           <span>{company}</span>
         </Paragraph>
       </TestimonialCardFooter>
+      {/* End: Card footer */}
     </TestimonialsCardDiv>
   )
 }

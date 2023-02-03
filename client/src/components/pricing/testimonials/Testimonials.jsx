@@ -1,4 +1,6 @@
 import TestimonialCard from './TestimonialCard'
+
+// Data
 import { TestimonialsData } from '../../../assets/data/TestimonialData'
 
 // Styled Components
