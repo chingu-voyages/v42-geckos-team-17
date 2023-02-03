@@ -20,7 +20,7 @@ function TrustedCompanies() {
       <Container>
         {/* Start: Section heading */}
         <SectionHeadingContainer center>
-          <TertiaryHeading>
+          <TertiaryHeading as="h2">
             Trusted by these relationship-minded companies.
           </TertiaryHeading>
         </SectionHeadingContainer>

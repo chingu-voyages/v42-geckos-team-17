@@ -11,10 +11,10 @@ function Header() {
     <HeaderSection>
       <Container>
         <SectionHeadingContainer>
-          <SecondaryHeading>
+          <SecondaryHeading as="h1">
             Teams of all sizes create predictably better content with Okane.
           </SecondaryHeading>
-          <TertiaryHeading>
+          <TertiaryHeading as="span">
             Pick a plan that fits your needs. We scale up with you.
           </TertiaryHeading>
         </SectionHeadingContainer>

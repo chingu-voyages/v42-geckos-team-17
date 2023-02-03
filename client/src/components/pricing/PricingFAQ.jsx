@@ -7,7 +7,7 @@ import {
   PricingFAQInner,
   PricingFAQSection,
 } from '../../styles/pricing/PricingFAQStyles'
-import { SecondaryHeading } from '../../styles/TypographyStyles'
+import { Paragraph, SecondaryHeading } from '../../styles/TypographyStyles'
 
 // Data
 import { pricingFaqData } from '../../assets/data/pricingFaqData'
@@ -20,6 +20,10 @@ function PricingFAQ() {
           {/* Start: Section heading */}
           <SectionHeadingContainer center>
             <SecondaryHeading>Plans & Billing FAQs:</SecondaryHeading>
+            <Paragraph>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </Paragraph>
           </SectionHeadingContainer>
           {/* End: Section heading */}
           {/* Start: FAQ block */}
