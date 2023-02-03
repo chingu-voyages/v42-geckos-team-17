@@ -5,7 +5,7 @@ export const TrustedCompaniesSection = styled.section`
 `
 
 export const CompaniesGrid = styled.div`
-  ${tw`grid grid-cols-2 gap-1 my-8 md:gap-4 lg:grid-cols-3`}
+  ${tw`grid grid-cols-2 justify-items-center gap-1 my-8 md:gap-4 lg:grid-cols-3`}
 `
 
 export const CompanyCard = styled.div`
