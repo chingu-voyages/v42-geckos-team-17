@@ -21,6 +21,7 @@ import AuthForm from './auth/AuthForm'
 import Header from './pricing/Header'
 import PricePlans from './pricing/pricePlans/PricePlans'
 import Testimonials from './pricing/testimonials/Testimonials'
+import TrustedCompanies from './pricing/TrustedCompanies'
 
 export {
   SharedLayout,
@@ -37,6 +38,7 @@ export {
   Header,
   PricePlans,
   Testimonials,
+  TrustedCompanies,
   // FormInputGroup,
   // FormCheckGroup,
   // FormSelectGroup,

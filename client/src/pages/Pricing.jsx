@@ -1,4 +1,9 @@
-import { Header, PricePlans, Testimonials } from '../components'
+import {
+  Header,
+  PricePlans,
+  Testimonials,
+  TrustedCompanies,
+} from '../components'
 
 function Pricing() {
   return (
@@ -6,6 +11,7 @@ function Pricing() {
       <Header />
       <PricePlans />
       <Testimonials />
+      <TrustedCompanies />
     </>
   )
 }
