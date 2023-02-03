@@ -1,10 +1,11 @@
-import { Header, PricePlans } from '../components'
+import { Header, PricePlans, Testimonials } from '../components'
 
 function Pricing() {
   return (
     <>
       <Header />
       <PricePlans />
+      <Testimonials />
     </>
   )
 }
