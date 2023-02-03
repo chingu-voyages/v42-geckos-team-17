@@ -9,11 +9,11 @@ export const FAQInner = styled.div`
 `
 
 export const FAQGrid = styled.div`
-  ${tw`grid grid-cols-1 gap-2 justify-items-center w-full`}
+  ${tw`grid w-full grid-cols-1 gap-2 justify-items-center`}
 `
 
 export const FAQDiv = styled.div`
-  ${tw`flex flex-col justify-center md:justify-between border-2 bg-white rounded-md min-h-[80px] p-4 h-fit w-full lg:w-[800px] border-accent1`}
+  ${tw`flex flex-col justify-center cursor-pointer md:justify-between border-2 bg-white rounded-md min-h-[80px] p-4 h-fit w-full lg:w-[800px] border-accent1`}
 
   ${({ isOpen }) =>
     isOpen &&
