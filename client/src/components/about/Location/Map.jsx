@@ -7,12 +7,14 @@ import 'leaflet/dist/leaflet.css' // <- Leaflet styles, without it we have weird
 // Components
 import CustomMarker from './CustomMarker'
 
+// Choose tile from here https://leaflet-extras.github.io/leaflet-providers/preview/
+
 function Map({ offices, activeOffice }) {
   return (
-    <MapContainer center={activeOffice.geometry.coordinates} zoom={8}>
+    <MapContainer center={activeOffice.geometry.coordinates} zoom={14}>
       <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png"
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
       />
 
       {offices.map((office) => (
