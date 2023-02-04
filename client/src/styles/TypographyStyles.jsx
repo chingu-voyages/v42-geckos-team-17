@@ -30,6 +30,16 @@ export const TertiaryHeading = styled.h3(({ app }) => [
   app && tw`text-lg sm:text-lg`,
 ])
 
+// H4
+// Website: inside section element, example Location section
+// Webapp:
+export const QuaternaryHeading = styled.h3(({ app }) => [
+  tw`text-2xl font-bold text-text-200`,
+
+  // Webapp
+  app && tw``,
+])
+
 // Paragraph
 export const Paragraph = styled.p(({ app }) => [
   tw`text-lg font-normal text-text-100`,

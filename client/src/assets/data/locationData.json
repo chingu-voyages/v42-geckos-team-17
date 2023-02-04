@@ -1,0 +1,30 @@
+{
+  "locations": [
+    {
+      "id": "5c88fa8cf4afda39709c2958",
+      "country": "Canada",
+      "adddress_part1": "Okane West Office",
+      "adddress_part2": "131 Yonge St",
+      "adddress_part3": "Toronto, Ontario M5C 1W4",
+      "phone": "+1 416 364 1111",
+      "email": " toronto-support@okane.com",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.65102, -79.37849]
+      }
+    },
+    {
+      "id": "5c88fa8cf4afda39709c2957",
+      "country": "India",
+      "adddress_part1": "Okane New Delhi Office",
+      "adddress_part2": "127, Hanuman Rd, Hanuman Road Area",
+      "adddress_part3": "New Delhi, Delhi 110001",
+      "phone": "+91 11 234 1111",
+      "email": " new-delhi-contact@okane.com",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [28.62556, 77.21619]
+      }
+    }
+  ]
+}

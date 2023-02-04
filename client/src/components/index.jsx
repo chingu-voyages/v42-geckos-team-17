@@ -26,7 +26,7 @@ import PricingFAQ from './pricing/PricingFAQ'
 
 // About
 import AboutSection from './about/AboutSection'
-import Location from './about/Location'
+import Location from './about/Location/Location'
 
 export {
   SharedLayout,
