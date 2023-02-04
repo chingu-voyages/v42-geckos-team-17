@@ -1,6 +1,13 @@
 import React from 'react'
-import AboutSection from '../components/about/AboutSection'
+
+// Components
+import { AboutSection, Location } from '../components'
 
 export default function About() {
-  return <AboutSection />
+  return (
+    <>
+      <AboutSection />
+      <Location />
+    </>
+  )
 }
