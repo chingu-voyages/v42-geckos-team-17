@@ -1,6 +1,6 @@
 import tw, { styled } from 'twin.macro'
 
-export const AboutSectionStyles = styled.div`
+export const AboutContainer = styled.section`
   ${tw`bg-bg2 py-12 sm:py-20 lg:py-24 `}
 `
 
