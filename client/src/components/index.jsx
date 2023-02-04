@@ -24,6 +24,10 @@ import Testimonials from './pricing/testimonials/Testimonials'
 import TrustedCompanies from './pricing/TrustedCompanies'
 import PricingFAQ from './pricing/PricingFAQ'
 
+// About
+import AboutSection from './about/AboutSection'
+import Location from './about/Location'
+
 export {
   SharedLayout,
   DashboardSharedLayout,
@@ -41,7 +45,6 @@ export {
   Testimonials,
   TrustedCompanies,
   PricingFAQ,
-  // FormInputGroup,
-  // FormCheckGroup,
-  // FormSelectGroup,
+  AboutSection,
+  Location,
 }
