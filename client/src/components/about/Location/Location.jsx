@@ -24,7 +24,7 @@ function Location() {
       <Container>
         {/* Start: Section Heading */}
         <SectionHeadingContainer>
-          <SecondaryHeading as="h1">Where to find us</SecondaryHeading>
+          <SecondaryHeading>Where to find us</SecondaryHeading>
           <Paragraph>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna.

@@ -4,7 +4,7 @@ import React from 'react'
 import { SecondaryHeading, Paragraph } from '../../styles/TypographyStyles'
 
 import {
-  AboutSectionStyles,
+  AboutContainer,
   DetailAndImageContainer,
   ImageContainer,
 } from '../../styles/about/AboutStyles'
@@ -12,7 +12,7 @@ import { Container, SectionHeadingContainer } from '../../styles/LayoutStyles'
 
 export default function AboutSection() {
   return (
-    <AboutSectionStyles>
+    <AboutContainer>
       <Container>
         <DetailAndImageContainer>
           <SectionHeadingContainer full>
@@ -35,6 +35,6 @@ export default function AboutSection() {
           </ImageContainer>
         </DetailAndImageContainer>
       </Container>
-    </AboutSectionStyles>
+    </AboutContainer>
   )
 }

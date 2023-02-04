@@ -27,6 +27,7 @@ import PricingFAQ from './pricing/PricingFAQ'
 // About
 import AboutSection from './about/AboutSection'
 import Location from './about/Location/Location'
+import Team from './about/Team/Team'
 
 export {
   SharedLayout,
@@ -47,4 +48,5 @@ export {
   PricingFAQ,
   AboutSection,
   Location,
+  Team,
 }
