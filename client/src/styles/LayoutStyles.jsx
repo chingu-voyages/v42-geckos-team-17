@@ -6,7 +6,7 @@ export const Container = styled.div`
 `
 
 // Website section's 'h2+p' container style
-export const SectionHeadingContainer = styled.div(({ center }) => [
+export const SectionHeadingContainer = styled.div(({ center, full }) => [
   tw`flex flex-col items-center text-center gap-y-5 md:items-start md:text-start`,
 
   css`
@@ -14,6 +14,13 @@ export const SectionHeadingContainer = styled.div(({ center }) => [
       ${tw`md:max-w-[540px]`}
     }
   `,
+
+  full &&
+    css`
+      p {
+        ${tw`md:max-w-none`}
+      }
+    `,
 
   // Centered
   center && tw`mx-auto md:items-center md:text-center`,
