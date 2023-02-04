@@ -9,7 +9,7 @@ import CustomMarker from './CustomMarker'
 
 function Map({ offices, activeOffice }) {
   return (
-    <MapContainer center={activeOffice.geometry.coordinates} zoom={10}>
+    <MapContainer center={activeOffice.geometry.coordinates} zoom={8}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'

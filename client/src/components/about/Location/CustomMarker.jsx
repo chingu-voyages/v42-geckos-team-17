@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react'
 
+// Styled components
+
 // Leaflet
 import { Marker, Popup, useMap } from 'react-leaflet'
 import { Icon } from 'leaflet'
+import { Paragraph } from '../../../styles/TypographyStyles'
 
 // Icon for marker
 export const icon = new Icon({
@@ -16,21 +19,23 @@ function CustomMarker({ office, activeOffice }) {
 
   // If active office changes / location button clicked
   useEffect(() => {
-    map.flyTo(activeOffice.geometry.coordinates, 12)
+    map.flyTo(activeOffice.geometry.coordinates, 14)
   }, [activeOffice])
 
   return (
-    <Marker
-      position={office.geometry.coordinates}
-      icon={icon}
-      eventHandlers={{
-        click: (e) => {
-          map.flyTo(e.latlng, 14)
-        },
-      }}
-    >
+    <Marker position={office.geometry.coordinates} icon={icon}>
       <Popup>
-        {office.country} <br /> {office.adddress_part1}
+        <Paragraph>
+          {office.adddress_part1}
+          <br />
+          {office.adddress_part2}
+          <br />
+          {office.adddress_part3}
+        </Paragraph>
+        <Paragraph>
+          P : {office.phone}
+          <br />M : {office.email}
+        </Paragraph>
       </Popup>
     </Marker>
   )
