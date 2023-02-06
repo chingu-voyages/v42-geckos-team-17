@@ -81,3 +81,5 @@ const categories = [
     color: '#cfdbd5',
   },
 ]
+
+export default categories
