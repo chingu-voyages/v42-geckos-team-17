@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 // Redux
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { signUp, signIn } from '../../features/user/userSlice'
 
 // Routing
@@ -24,25 +24,105 @@ import { PrimaryButton } from '../../styles/ButtonStyles'
 const currency = ['usd', 'eur', 'yuan']
 
 function AuthForm({ isSignIn }) {
+  // Routing
   const navigate = useNavigate()
-  const { isLoading } = useSelector((store) => store.user)
+
+  // Redux
   const dispatch = useDispatch()
+
+  // Loading (Simulate loading)
+  const [isLoading, setIsLoading] = useState(false)
+
+  // Error
+  const [errorData, setErrorData] = useState({
+    emailErr: '',
+    passwordErr: '',
+    currencyErr: '',
+  })
+
+  // Form
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+    currency: '',
+  })
 
   // Handle submit
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    // If sign in
-    if (isSignIn) {
-      dispatch(signIn({ email: 'anna@contact.com' }))
+    // Temporary error data variable
+    let temporaryErrorData = errorData
+
+    ////////////////////////////////////
+    // Validate email
+    if (formData.email === '') {
+      temporaryErrorData = {
+        ...temporaryErrorData,
+        emailErr: 'Please enter your email.',
+      }
+    } else {
+      temporaryErrorData = {
+        ...temporaryErrorData,
+        emailErr: '',
+      }
     }
 
-    // If sign up
+    // Validate password
+    if (formData.password === '') {
+      temporaryErrorData = {
+        ...temporaryErrorData,
+        passwordErr: 'Please enter your password.',
+      }
+    } else {
+      temporaryErrorData = {
+        ...temporaryErrorData,
+        passwordErr: '',
+      }
+    }
+
+    // Validate currency
     if (!isSignIn) {
-      dispatch(signUp({ email: 'anna@contact.com', currency: 'eur' }))
+      if (formData.currency === '') {
+        temporaryErrorData = {
+          ...temporaryErrorData,
+          currencyErr: 'Please choose currency.',
+        }
+      } else {
+        temporaryErrorData = {
+          ...temporaryErrorData,
+          currencyErr: '',
+        }
+      }
     }
 
-    // navigate('/dashboard')
+    setErrorData({ ...errorData, ...temporaryErrorData })
+
+    ////////////////////////////////////
+    // If no errors
+    if (
+      temporaryErrorData.emailErr === '' &&
+      temporaryErrorData.passwordErr === '' &&
+      temporaryErrorData.currencyErr === ''
+    ) {
+      // If sign in
+      if (isSignIn) {
+        dispatch(signIn({ email: formData.email }))
+      }
+
+      // If sign up
+      if (!isSignIn) {
+        dispatch(signUp({ email: formData.email, currency: formData.currency }))
+      }
+
+      // Simulate loading
+      setIsLoading(true)
+      const timer = setTimeout(() => {
+        setIsLoading(false)
+        navigate('/dashboard')
+      }, 3000)
+      return () => clearTimeout(timer)
+    }
   }
 
   return (
@@ -70,6 +150,11 @@ function AuthForm({ isSignIn }) {
         label="Email"
         type="email"
         name="email"
+        value={formData.email}
+        handleChange={(e) =>
+          setFormData({ ...formData, email: e.currentTarget.value })
+        }
+        errorMsg={errorData.emailErr}
         placeholderText="email@example.com"
       />
       {/* End: Email input */}
@@ -78,6 +163,11 @@ function AuthForm({ isSignIn }) {
         label="Password"
         type="password"
         name="password"
+        value={formData.password}
+        handleChange={(e) =>
+          setFormData({ ...formData, password: e.currentTarget.value })
+        }
+        errorMsg={errorData.passwordErr}
         placeholderText="********"
       />
       {/* End: Password input */}
@@ -91,11 +181,16 @@ function AuthForm({ isSignIn }) {
           name="currency"
           options={currency}
           placeholderText="Choose currency"
+          value={formData.currency}
+          handleChange={(e) =>
+            setFormData({ ...formData, currency: e.currentTarget.value })
+          }
+          errorMsg={errorData.currencyErr}
         />
       )}
       {/* End: Currency */}
       {/* Start: Submit button */}
-      <PrimaryButton>Submit</PrimaryButton>
+      <PrimaryButton>{isLoading ? 'Loading...' : 'Submit'}</PrimaryButton>
       {/* End: Submit button */}
       <span>
         By submitting this form, I confirm that I have read and understood

@@ -19,6 +19,6 @@ export const FormSelectGroupContainer = styled.div`
 
   // Error span
   span {
-    ${tw`absolute bottom-0 left-0 px-1 text-xs translate-y-5 text-error`}
+    ${tw`absolute bottom-0 left-0 px-1 text-xs text-error`}
   }
 `
