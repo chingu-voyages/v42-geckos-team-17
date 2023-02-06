@@ -1,5 +1,9 @@
 import React from 'react'
 
+// Redux
+import { useSelector, useDispatch } from 'react-redux'
+import { signUp, signIn } from '../../features/user/userSlice'
+
 // Routing
 import { useNavigate } from 'react-router-dom'
 
@@ -21,11 +25,24 @@ const currency = ['usd', 'eur', 'yuan']
 
 function AuthForm({ isSignIn }) {
   const navigate = useNavigate()
+  const { isLoading } = useSelector((store) => store.user)
+  const dispatch = useDispatch()
 
   // Handle submit
   const handleSubmit = (e) => {
     e.preventDefault()
-    navigate('/dashboard')
+
+    // If sign in
+    if (isSignIn) {
+      dispatch(signIn({ email: 'anna@contact.com' }))
+    }
+
+    // If sign up
+    if (!isSignIn) {
+      dispatch(signUp({ email: 'anna@contact.com', currency: 'eur' }))
+    }
+
+    // navigate('/dashboard')
   }
 
   return (

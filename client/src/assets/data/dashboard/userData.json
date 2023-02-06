@@ -1,0 +1,8 @@
+{
+  "user": {
+    "email": "jsmith@contact.com",
+    "token": "supersecretdummytoken",
+    "image": "/user.png",
+    "currency": "usd"
+  }
+}
