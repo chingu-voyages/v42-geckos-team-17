@@ -1,6 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+// Redux
+import { useSelector } from 'react-redux'
+
 // Styled Components
 import { OutlineLink, TextLink, IconLink } from '../../styles/LinkStyles'
 import {
@@ -15,6 +18,9 @@ import { headerLinks } from '../../assets/links/navigation'
 import socialLinks from '../../assets/links/social'
 
 const MobileNav = ({ setNavIsOpen }) => {
+  // Check if user is signed in
+  const { user } = useSelector((store) => store.user)
+
   return ReactDOM.createPortal(
     <Overlay>
       <MobileNavInner>
@@ -27,9 +33,15 @@ const MobileNav = ({ setNavIsOpen }) => {
             </li>
           ))}
         </NavigationLinks>
-        <OutlineLink onClick={() => setNavIsOpen(false)} to="signin">
-          Sign In
-        </OutlineLink>
+        {user ? (
+          <OutlineLink onClick={() => setNavIsOpen(false)} to="dashboard">
+            Dashboard
+          </OutlineLink>
+        ) : (
+          <OutlineLink onClick={() => setNavIsOpen(false)} to="signin">
+            Sign In
+          </OutlineLink>
+        )}
         <SocialLinks>
           {socialLinks.map((link) => (
             <IconLink

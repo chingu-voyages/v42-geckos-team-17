@@ -12,7 +12,6 @@ import userData from '../../assets/data/dashboard/userData.json'
 
 // Initial State
 const initialState = {
-  isLoading: false,
   user: getUserFromLocalStorage(),
   currency: '',
 }
@@ -21,7 +20,6 @@ const initialState = {
 export const signUp = createAsyncThunk(
   'user/signUp',
   async (user, thunkAPI) => {
-    console.log(user)
     return {
       email: user.email,
       currency: user.currency,
@@ -58,31 +56,15 @@ const userSlice = createSlice({
   },
   extraReducers: (builder) => {
     // Sign up
-    builder.addCase(signUp.pending, (state) => {
-      state.isLoading = true
-    })
     builder.addCase(signUp.fulfilled, (state, { payload }) => {
-      console.log(payload)
-      state.isLoading = false
       state.user = payload
       addUserToLocalStorage(payload)
-    })
-    builder.addCase(signUp.rejected, (state) => {
-      state.isLoading = false
     })
 
     // Sign in
-    builder.addCase(signIn.pending, (state) => {
-      state.isLoading = true
-    })
     builder.addCase(signIn.fulfilled, (state, { payload }) => {
-      console.log(payload)
-      state.isLoading = false
       state.user = payload
       addUserToLocalStorage(payload)
-    })
-    builder.addCase(signIn.rejected, (state) => {
-      state.isLoading = false
     })
   },
 })

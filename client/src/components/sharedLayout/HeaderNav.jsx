@@ -1,4 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
+
+// Redux
+import { useSelector } from 'react-redux'
 
 // Routing
 import { Link } from 'react-router-dom'
@@ -23,6 +26,9 @@ import { HamburgerIcon, CloseIcon } from '../../assets/icons/icons'
 import { headerLinks } from '../../assets/links/navigation'
 
 function HeaderNav() {
+  // Check if user is signed in
+  const { user } = useSelector((store) => store.user)
+
   // Toggle mobile menu
   const [navIsOpen, setNavIsOpen] = useState(false)
 
@@ -52,7 +58,11 @@ function HeaderNav() {
         </NavigationLinks>
         {/* End: Nav links (Desktop only) */}
         {/* Start: Sign in/up button (Desktop only) */}
-        <OutlineLink to="signin">Sign In</OutlineLink>
+        {user ? (
+          <OutlineLink to="dashboard">Dashboard</OutlineLink>
+        ) : (
+          <OutlineLink to="signin">Sign In</OutlineLink>
+        )}
         {/* End: Sign in/up button (Desktop only) */}
         {/* Start: Hamburger/close button (Small screens only) */}
         <IconButton
