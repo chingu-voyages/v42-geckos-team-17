@@ -13,24 +13,23 @@ import userData from '../../assets/data/dashboard/userData.json'
 // Initial State
 const initialState = {
   user: getUserFromLocalStorage(),
-  currency: '',
 }
 
 // Sign up
 export const signUp = createAsyncThunk('user/signUp', async (user) => ({
-    email: user.email,
-    currency: user.currency,
-    token: userData.user.token,
-    image: userData.user.image,
-  }))
+  email: user.email,
+  currency: user.currency,
+  token: userData.user.token,
+  image: userData.user.image,
+}))
 
 // Sign in
 export const signIn = createAsyncThunk('user/signIn', async (user) => ({
-    email: user.email,
-    currency: userData.user.currency,
-    token: userData.user.token,
-    image: userData.user.image,
-  }))
+  email: user.email,
+  currency: userData.user.currency,
+  token: userData.user.token,
+  image: userData.user.image,
+}))
 
 const userSlice = createSlice({
   name: 'user',

@@ -47,7 +47,7 @@ function VerticalNav() {
           </IconButton>
           {/* End: Theme Switcher */}
           {/* Start: User Link */}
-          <IconLink to="/" aria-label="user account">
+          <IconLink to="profile" aria-label="user account">
             <img src={userImg} alt="User Name" />
           </IconLink>
           {/* End: User Link */}

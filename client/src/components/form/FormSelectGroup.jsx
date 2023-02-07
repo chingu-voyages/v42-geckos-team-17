@@ -17,6 +17,7 @@ function FormSelectGroup({
   handleChange,
   placeholderText,
   errorMsg,
+  webapp,
 }) {
   const [selectedOption, setSelectedOption] = useState(placeholderText)
 
@@ -25,8 +26,8 @@ function FormSelectGroup({
   }, [selectedOption])
 
   return (
-    <FormSelectGroupContainer>
-      <label htmlFor={name}>{label}</label>
+    <FormSelectGroupContainer webapp={webapp}>
+      {label && <label htmlFor={name}>{label}</label>}
       <Listbox value={selectedOption} onChange={setSelectedOption}>
         <Listbox.Button>
           {selectedOption}
@@ -35,17 +36,19 @@ function FormSelectGroup({
           </span>
         </Listbox.Button>
         <Listbox.Options>
-          <Listbox.Option
-            className={({ active }) =>
-              `relative cursor-default select-none py-2 pl-10 pr-4 ${
-                active ? 'bg-link text-white' : 'text-text-200'
-              }`
-            }
-            key={placeholderText}
-            value={placeholderText}
-          >
-            {placeholderText}
-          </Listbox.Option>
+          {placeholderText && (
+            <Listbox.Option
+              className={({ active }) =>
+                `relative cursor-default select-none py-2 pl-10 pr-4 ${
+                  active ? 'bg-link text-white' : 'text-text-200'
+                }`
+              }
+              key={placeholderText}
+              value={placeholderText}
+            >
+              {placeholderText}
+            </Listbox.Option>
+          )}
           {options.map((option) => (
             <Listbox.Option
               className={({ active }) =>
