@@ -46,7 +46,7 @@ export const AuthFormContainer = styled.form`
   }
 
   // Span
-  span {
+  & > span {
     ${tw`col-span-2 pt-8 text-center`}
   }
 `

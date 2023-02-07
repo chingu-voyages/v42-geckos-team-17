@@ -1,11 +1,12 @@
+/* eslint-disable consistent-return */
 import React, { useState } from 'react'
 
 // Redux
 import { useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import { signUp, signIn } from '../../features/user/userSlice'
 
 // Routing
-import { useNavigate } from 'react-router-dom'
 
 // Components
 import FormInputGroup from '../form/FormInputGroup'
@@ -54,7 +55,7 @@ function AuthForm({ isSignIn }) {
     // Temporary error data variable
     let temporaryErrorData = errorData
 
-    ////////////////////////////////////
+    /// /////////////////////////////////
     // Validate email
     if (formData.email === '') {
       temporaryErrorData = {
@@ -83,7 +84,10 @@ function AuthForm({ isSignIn }) {
 
     // Validate currency
     if (!isSignIn) {
-      if (formData.currency === '') {
+      if (
+        formData.currency === '' ||
+        formData.currency === 'Choose currency:'
+      ) {
         temporaryErrorData = {
           ...temporaryErrorData,
           currencyErr: 'Please choose currency.',
@@ -98,7 +102,7 @@ function AuthForm({ isSignIn }) {
 
     setErrorData({ ...errorData, ...temporaryErrorData })
 
-    ////////////////////////////////////
+    /// /////////////////////////////////
     // If no errors
     if (
       temporaryErrorData.emailErr === '' &&
@@ -180,10 +184,10 @@ function AuthForm({ isSignIn }) {
           label="Currency"
           name="currency"
           options={currency}
-          placeholderText="Choose currency"
+          placeholderText="Choose currency:"
           value={formData.currency}
-          handleChange={(e) =>
-            setFormData({ ...formData, currency: e.currentTarget.value })
+          handleChange={(selectedCurrency) =>
+            setFormData({ ...formData, currency: selectedCurrency })
           }
           errorMsg={errorData.currencyErr}
         />

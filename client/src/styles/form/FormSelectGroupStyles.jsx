@@ -8,17 +8,27 @@ export const FormSelectGroupContainer = styled.div`
     ${tw`text-lg`}
   }
 
-  // Select
-  select {
-    ${tw`flex w-full px-4 py-3 font-normal border rounded-md border-text-100`}
+  // Select button
+  & > button {
+    ${tw`relative flex w-full px-4 py-3 font-normal border rounded-md border-text-100 focus:border-text-200 focus:outline-none focus:ring-1 focus:ring-text-200`}
   }
 
-  select:focus {
-    ${tw`border border-accent1`}
+  // Dropdown Icon
+  & > button > span {
+    ${tw`absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none`}
+  }
+
+  // Dropdown list
+  & > ul {
+    ${tw`absolute z-10 w-full py-1 mt-1 overflow-auto text-base bg-white border rounded-md shadow-lg snap-y border-text-200 max-h-48 ring-1 ring-black ring-opacity-5 focus:outline-none`}
+  }
+
+  & > ul > li {
+    ${tw``}
   }
 
   // Error span
-  span {
+  & > span {
     ${tw`absolute bottom-0 left-0 px-1 text-xs text-error`}
   }
 `
