@@ -7,5 +7,15 @@ import SignUp from './SignUp'
 import Pricing from './Pricing'
 // Webapp
 import DashboardHome from './Dashboard/DashboardHome'
+import DashboardProfile from './Dashboard/DashboardProfile'
 
-export { Home, About, Contact, SignIn, SignUp, Pricing, DashboardHome }
+export {
+  Home,
+  About,
+  Contact,
+  SignIn,
+  SignUp,
+  Pricing,
+  DashboardHome,
+  DashboardProfile,
+}

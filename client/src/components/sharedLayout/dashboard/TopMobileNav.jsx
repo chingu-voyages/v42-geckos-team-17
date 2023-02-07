@@ -25,7 +25,7 @@ function TopMobileNav() {
           <OkaneMiniIcon />
         </Link>
         {/* End: Logo */}
-        <IconLink to="/" aria-label="user account">
+        <IconLink to="profile" aria-label="user account">
           <img src={userImg} alt="User Name" />
         </IconLink>
         {/* End: User Link */}
