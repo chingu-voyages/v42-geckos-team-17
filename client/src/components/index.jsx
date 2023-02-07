@@ -29,6 +29,9 @@ import AboutSection from './about/AboutSection'
 import Location from './about/Location/Location'
 import Team from './about/Team/Team'
 
+// Dashboard/Profile
+import ProfileForm from './dashboard/ProfileForm'
+
 export {
   SharedLayout,
   DashboardSharedLayout,
@@ -49,4 +52,5 @@ export {
   AboutSection,
   Location,
   Team,
+  ProfileForm,
 }

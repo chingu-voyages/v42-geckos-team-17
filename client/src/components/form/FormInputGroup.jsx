@@ -11,9 +11,10 @@ function FormInputGroup({
   handleChange,
   placeholderText,
   errorMsg,
+  webapp,
 }) {
   return (
-    <FormInputGroupContainer>
+    <FormInputGroupContainer webapp={webapp}>
       {label && <label htmlFor={name}>{label}</label>}
       <input
         type={type}
