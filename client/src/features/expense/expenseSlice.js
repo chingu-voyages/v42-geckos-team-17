@@ -11,27 +11,21 @@ const initialState = {
 }
 
 // Get all expenses
-export const getAll = createAsyncThunk('expense/getAll', async (thunkAPI) => {
-  return {
+export const getAll = createAsyncThunk('expense/getAll', async () => ({
     expenses: userExpensesData.expenses,
-  }
-})
+  }))
 
 // Get to 5
-export const getTop = createAsyncThunk('expense/getTop', async (thunkAPI) => {
-  return {
+export const getTop = createAsyncThunk('expense/getTop', async () => ({
     expenses: userExpensesData.expenses,
-  }
-})
+  }))
 
 // Add new expense
 export const addNewExpense = createAsyncThunk(
   'expense/addNewExpense',
-  async (expense, thunkAPI) => {
-    return {
+  async (expense) => ({
       expense,
-    }
-  }
+    })
 )
 
 const expenseSlice = createSlice({

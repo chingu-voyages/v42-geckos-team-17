@@ -13,50 +13,38 @@ const initialState = {
 }
 
 // Get totals
-export const getTotals = createAsyncThunk(
-  'expense/getTotals',
-  async (thunkAPI) => {
-    return {
-      totalAvailable: '6000',
-      totalMonSpend: '2478',
-      totalMonSaved: '1600',
-      totalSaved: '2000',
-      totalCash: '1567',
-    }
-  }
-)
+export const getTotals = createAsyncThunk('expense/getTotals', async () => ({
+    totalAvailable: '6000',
+    totalMonSpend: '2478',
+    totalMonSaved: '1600',
+    totalSaved: '2000',
+    totalCash: '1567',
+  }))
 
 // Get accounts
-export const getAccounts = createAsyncThunk(
-  'expense/getAccounts',
-  async (thunkAPI) => {
-    return {
-      accounts: [
-        {
-          id: 'account-1',
-          name: 'Bank Account 1',
-          decorationId: 'decorationStringProp1',
-          amount: '2000',
-        },
-        {
-          id: 'account-2',
-          name: 'Bank Account 2',
-          decorationId: 'decorationStringProp2',
-          amount: '1450',
-        },
-      ],
-    }
-  }
-)
+export const getAccounts = createAsyncThunk('expense/getAccounts', async () => ({
+    accounts: [
+      {
+        id: 'account-1',
+        name: 'Bank Account 1',
+        decorationId: 'decorationStringProp1',
+        amount: '2000',
+      },
+      {
+        id: 'account-2',
+        name: 'Bank Account 2',
+        decorationId: 'decorationStringProp2',
+        amount: '1450',
+      },
+    ],
+  }))
 
 // Add new account
 export const addNewAccount = createAsyncThunk(
   'expense/addNewAccount',
-  async (account, thunkAPI) => {
-    return {
+  async (account) => ({
       account,
-    }
-  }
+    })
 )
 
 const accountSlice = createSlice({

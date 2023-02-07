@@ -17,40 +17,30 @@ const initialState = {
 }
 
 // Sign up
-export const signUp = createAsyncThunk(
-  'user/signUp',
-  async (user, thunkAPI) => {
-    return {
-      email: user.email,
-      currency: user.currency,
-      token: userData.user.token,
-      image: userData.user.image,
-    }
-  }
-)
+export const signUp = createAsyncThunk('user/signUp', async (user) => ({
+    email: user.email,
+    currency: user.currency,
+    token: userData.user.token,
+    image: userData.user.image,
+  }))
 
 // Sign in
-export const signIn = createAsyncThunk(
-  'user/signIn',
-  async (user, thunkAPI) => {
-    return {
-      email: user.email,
-      currency: userData.user.currency,
-      token: userData.user.token,
-      image: userData.user.image,
-    }
-  }
-)
+export const signIn = createAsyncThunk('user/signIn', async (user) => ({
+    email: user.email,
+    currency: userData.user.currency,
+    token: userData.user.token,
+    image: userData.user.image,
+  }))
 
 const userSlice = createSlice({
   name: 'user',
   initialState,
   reducers: {
     signOut: (state) => {
-      //Remove from state
+      // Remove from state
       state.user = null
 
-      //Remove from local storage
+      // Remove from local storage
       removeUserFromLocalStorage()
     },
   },
