@@ -26,7 +26,7 @@ function ProfileForm() {
 
   // Form
   const [formData, setFormData] = useState({
-    email: user.email,
+    email: user ? user.email : '',
     password: '',
     currency: '',
   })
