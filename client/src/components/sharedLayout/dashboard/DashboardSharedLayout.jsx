@@ -10,6 +10,7 @@ import { DashboardContainer } from '../../../styles/LayoutStyles'
 import VerticalNav from './VerticalNav'
 import TopMobileNav from './TopMobileNav'
 import BottomMobileNav from './BottomMobileNav'
+import HeroHeader from './HeroHeader'
 
 function DashboardSharedLayout() {
   return (
@@ -18,6 +19,7 @@ function DashboardSharedLayout() {
       <TopMobileNav />
       <BottomMobileNav />
       <main>
+        <HeroHeader />
         <Outlet />
       </main>
     </DashboardContainer>
