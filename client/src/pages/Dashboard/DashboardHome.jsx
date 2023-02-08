@@ -1,7 +1,14 @@
 import React from 'react'
 
+// Components
+import { UserStats } from '../../components'
+
 function DashboardHome() {
-  return <div>DashboardHome</div>
+  return (
+    <>
+      <UserStats />
+    </>
+  )
 }
 
 export default DashboardHome
