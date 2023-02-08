@@ -1,0 +1,172 @@
+{
+  "transactions": [
+    {
+      "id": "transaction-0",
+      "categoryId": "transport",
+      "amount": "3.99",
+      "from": "cash"
+    },
+    {
+      "id": "transaction-1",
+      "categoryId": "shopping",
+      "amount": "15.99",
+      "from": "account"
+    },
+    {
+      "id": "transaction-2",
+      "categoryId": "goingOut",
+      "amount": "25.00",
+      "from": "cash"
+    },
+    {
+      "id": "transaction-3",
+      "categoryId": "courses",
+      "amount": "15.17",
+      "from": "cash"
+    },
+    {
+      "id": "transaction-4",
+      "categoryId": "groceries",
+      "amount": "65.89",
+      "from": "account"
+    },
+    {
+      "id": "transaction-5",
+      "categoryId": "courses",
+      "amount": "99.99",
+      "from": "account"
+    },
+    {
+      "id": "transaction-6",
+      "categoryId": "goingOut",
+      "amount": "9.99",
+      "from": "account"
+    },
+    {
+      "id": "transaction-7",
+      "categoryId": "transport",
+      "amount": "3.99",
+      "from": "cash"
+    },
+    {
+      "id": "transaction-8",
+      "categoryId": "shopping",
+      "amount": "15.99",
+      "from": "account"
+    },
+    {
+      "id": "transaction-9",
+      "categoryId": "transport",
+      "amount": "3.99",
+      "from": "account"
+    },
+    {
+      "id": "transaction-10",
+      "categoryId": "travel",
+      "amount": "259.00",
+      "from": "cash"
+    },
+    {
+      "id": "transaction-11",
+      "categoryId": "shopping",
+      "amount": "15.17",
+      "from": "cash"
+    },
+    {
+      "id": "transaction-12",
+      "categoryId": "groceries",
+      "amount": "54.99",
+      "from": "account"
+    },
+    {
+      "id": "transaction-13",
+      "categoryId": "other",
+      "amount": "15.17",
+      "from": "cash"
+    },
+    {
+      "id": "transaction-14",
+      "categoryId": "decor",
+      "amount": "154.99",
+      "from": "cash"
+    },
+    {
+      "id": "transaction-15",
+      "categoryId": "shopping",
+      "amount": "25.00",
+      "from": "account"
+    },
+    {
+      "id": "transaction-16",
+      "categoryId": "shopping",
+      "amount": "15.17",
+      "from": "account"
+    },
+    {
+      "id": "transaction-17",
+      "categoryId": "groceries",
+      "amount": "65.89",
+      "from": "cash"
+    },
+    {
+      "id": "transaction-18",
+      "categoryId": "beauty",
+      "amount": "39.89",
+      "from": "account"
+    },
+    {
+      "id": "transaction-19",
+      "categoryId": "transport",
+      "amount": "3.99",
+      "from": "account"
+    },
+    {
+      "id": "transaction-20",
+      "categoryId": "shopping",
+      "amount": "15.99",
+      "from": "account"
+    },
+    {
+      "id": "transaction-21",
+      "categoryId": "shopping",
+      "amount": "15.17",
+      "from": "cash"
+    },
+    {
+      "id": "transaction-22",
+      "categoryId": "groceries",
+      "amount": "54.99",
+      "from": "cash"
+    },
+    {
+      "id": "transaction-23",
+      "categoryId": "transport",
+      "amount": "3.99",
+      "from": "account"
+    },
+    {
+      "id": "transaction-24",
+      "categoryId": "beauty",
+      "amount": "39.89",
+      "from": "account"
+    },
+    {
+      "id": "transaction-25",
+      "categoryId": "transport",
+      "amount": "3.99",
+      "from": "cash"
+    },
+    {
+      "id": "transaction-26",
+      "categoryId": "courses",
+      "amount": "99.99",
+      "from": "account"
+    },
+    {
+      "id": "transaction-27",
+      "categoryId": "goingOut",
+      "amount": "9.99",
+      "from": "cash"
+    }
+  ]
+}
