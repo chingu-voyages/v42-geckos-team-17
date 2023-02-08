@@ -1,0 +1,34 @@
+{
+  "income": [
+    {
+      "id": "income-0",
+      "amount": "2000.00",
+      "data": "1/1"
+    },
+    {
+      "id": "income-1",
+      "amount": "500.00",
+      "data": "7/1"
+    },
+    {
+      "id": "income-2",
+      "amount": "1500.00",
+      "data": "16/1"
+    },
+    {
+      "id": "income-3",
+      "amount": "700.00",
+      "data": "18/1"
+    },
+    {
+      "id": "income-4",
+      "amount": "200.00",
+      "data": "25/1"
+    },
+    {
+      "id": "income-5",
+      "amount": "1200.00",
+      "data": "29/1"
+    }
+  ]
+}
