@@ -50,12 +50,12 @@ export const DoughnutLegend = styled.ul`
     ${tw`flex flex-col`}
 
     span:nth-of-type(1) {
-      ${tw`font-bold capitalize`}
+      ${tw`capitalize`}
     }
   }
 
   // Expense price
   & > li > span {
-    ${tw`flex-1 font-bold text-end`}
+    ${tw`flex-1 text-end`}
   }
 `
