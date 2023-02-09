@@ -13,13 +13,12 @@ import DoughnutChart from './DoughnutChart'
 import { SecondaryHeading } from '../../../../styles/TypographyStyles'
 import {
   UserStatsContainer,
-  UserStatsHeading,
   ButtonsContainer,
   ChartsContainer,
 } from '../../../../styles/dashboard/home/userStatsStyles'
 import { SecondaryButton } from '../../../../styles/ButtonStyles'
 
-const UserStats = () => {
+function UserStats() {
   const [isBarChart, setIsBarChart] = useState(true)
 
   // Redux
@@ -38,10 +37,10 @@ const UserStats = () => {
   return (
     <UserStatsContainer>
       {/* Start: Section heading */}
-      <UserStatsHeading>
+      <div>
         <SecondaryHeading app>My statistics</SecondaryHeading>
-        <span>January 2023</span>
-      </UserStatsHeading>
+        <span>Last 30 days</span>
+      </div>
       {/* End: Section heading */}
       {/* Start: Buttons */}
       <ButtonsContainer>
@@ -50,14 +49,14 @@ const UserStats = () => {
           onClick={() => setIsBarChart(false)}
           small
         >
-          Top 5 expenses
+          Expenses
         </SecondaryButton>
         <SecondaryButton
           active={isBarChart}
           onClick={() => setIsBarChart(true)}
           small
         >
-          Current month's income
+          Income
         </SecondaryButton>
       </ButtonsContainer>
       {/* End: Buttons */}
