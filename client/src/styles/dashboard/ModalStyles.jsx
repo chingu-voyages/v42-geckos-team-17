@@ -1,11 +1,11 @@
 import tw, { styled } from 'twin.macro'
 
 export const Overlay = styled.div`
-  ${tw`fixed top-0 left-0 flex justify-center items-center h-screen w-full bg-modal`}
+  ${tw`fixed sm:py-8 top-0 left-0 flex justify-center items-center h-screen w-full bg-modal`}
 `
 
 export const ModalContainer = styled.div`
-  ${tw`relative min-w-0 overflow-x-scroll sm:min-w-[640px] px-4 py-6 sm:p-12 pt-16 bg-white flex flex-col gap-2 sm:gap-6`}
+  ${tw`relative h-full min-w-0 overflow-x-scroll sm:min-w-[640px] px-4 py-6 sm:p-12 pt-16 bg-white flex flex-col gap-2 sm:gap-6`}
 
   // Close button
   &>button {
