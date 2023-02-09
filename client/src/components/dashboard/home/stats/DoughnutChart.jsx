@@ -1,8 +1,23 @@
 import React from 'react'
 
-// Chartjs
+// Hex to rgb converter
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
 import { Doughnut } from 'react-chartjs-2'
+import hexToRGB from '../../../../utils/hexToRGB'
+
+// Categories data
+import categories from '../../../../assets/data/dashboard/categoriesData'
+
+// Components
+import LegendItem from './LegendItem'
+
+// Styled components
+import {
+  DoughnutChartContainer,
+  DoughnutLegend,
+} from '../../../../styles/dashboard/home/userStatsStyles'
+
+// Chartjs
 
 ChartJS.register(ArcElement, Tooltip, Legend)
 
@@ -15,35 +30,42 @@ const options = {
   },
 }
 
-const DoughnutChart = ({ expenses }) => {
+function DoughnutChart({ expenses }) {
+  // Get array of corresponding color for each expense
+  const colors = expenses
+    .map((expense) => expense.categoryId)
+    .map((categoryName) => {
+      const {color} = categories.find(
+        (category) => category.id === categoryName
+      )
+      return [color, hexToRGB(color, 0.2)]
+    })
+
   const data = {
     labels: expenses.map((expenseItem) => expenseItem.categoryId),
     datasets: [
       {
-        label: 'percentage in %',
+        label: 'spend in %',
         data: expenses.map((expenseItem) => +expenseItem.percent),
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)',
-        ],
-        borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
-        ],
+        backgroundColor: [...colors.map((color) => color[1])],
+        borderColor: [...colors.map((color) => color[0])],
         borderWidth: 1,
       },
     ],
   }
 
-  return <Doughnut options={options} data={data} />
+  return (
+    <DoughnutChartContainer>
+      <div className="doughnut">
+        <Doughnut options={options} data={data} />
+      </div>
+      <DoughnutLegend>
+        {expenses.map((expenseItem) => (
+          <LegendItem key={expenseItem.id} expenseItem={expenseItem} />
+        ))}
+      </DoughnutLegend>
+    </DoughnutChartContainer>
+  )
 }
 
 export default DoughnutChart

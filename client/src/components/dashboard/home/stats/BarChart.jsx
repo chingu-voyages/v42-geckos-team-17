@@ -59,7 +59,6 @@ const horizontalBarOptions = {
 }
 
 const BarChart = ({ income }) => {
-  console.log(income)
   // Data for chart js
   const data = {
     labels: income.map((incomeItem) => incomeItem.date),
