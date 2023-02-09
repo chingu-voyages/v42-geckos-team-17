@@ -13,6 +13,7 @@ module.exports = {
         bg1: '#FAFAFA',
         bg2: '#F2F2F2',
         bg3: '#FFFFFE',
+        modal: 'rgba(0, 0, 0, 0.85)',
         error: '#EE374A',
         link: '#7C89FF',
       },
