@@ -32,6 +32,9 @@ import Team from './about/Team/Team'
 // Dashboard/Profile
 import ProfileForm from './dashboard/ProfileForm'
 
+// Dashboard/Stats
+import UserStats from './dashboard/home/stats/UserStats'
+
 export {
   SharedLayout,
   DashboardSharedLayout,
@@ -53,4 +56,5 @@ export {
   Location,
   Team,
   ProfileForm,
+  UserStats,
 }

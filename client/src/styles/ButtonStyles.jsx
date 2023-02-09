@@ -7,9 +7,10 @@ export const PrimaryButton = styled.button(({ small }) => [
 ])
 
 // Secondary button
-export const SecondaryButton = styled.button(({ small }) => [
+export const SecondaryButton = styled.button(({ small, active }) => [
   tw`min-w-[200px] bg-white text-accent1 text-lg font-medium py-5 px-10 shadow-button rounded-md sm:min-w-[280px]  hover:bg-accent1 hover:text-white transition duration-300`,
   small && tw`py-3 font-normal min-w-fit sm:min-w-fit`,
+  active && tw`bg-accent1 text-white`,
 ])
 
 // Icon button

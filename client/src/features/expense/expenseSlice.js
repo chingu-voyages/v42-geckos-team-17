@@ -3,6 +3,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 // Data
 // Maybe need to be changed for Chartjs
 import userExpensesData from '../../assets/data/dashboard/userExpensesData.json'
+import topExpense from '../../assets/data/dashboard/userTopExpensesData.json'
 
 // Initial State
 const initialState = {
@@ -12,20 +13,20 @@ const initialState = {
 
 // Get all expenses
 export const getAll = createAsyncThunk('expense/getAll', async () => ({
-    expenses: userExpensesData.expenses,
-  }))
+  expenses: userExpensesData.expenses,
+}))
 
 // Get to 5
 export const getTop = createAsyncThunk('expense/getTop', async () => ({
-    expenses: userExpensesData.expenses,
-  }))
+  expenses: topExpense.expenses,
+}))
 
 // Add new expense
 export const addNewExpense = createAsyncThunk(
   'expense/addNewExpense',
   async (expense) => ({
-      expense,
-    })
+    expense,
+  })
 )
 
 const expenseSlice = createSlice({

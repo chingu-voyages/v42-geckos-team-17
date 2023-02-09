@@ -39,7 +39,7 @@ const categories = [
     color: '#FFDDD2',
   },
   {
-    id: 'goingOut',
+    id: 'going out',
     name: 'goingOut',
     icon: <GoingOutIcon />,
     color: '#FF8FA3',
