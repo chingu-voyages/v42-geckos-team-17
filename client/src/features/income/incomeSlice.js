@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
 // Data
-import incomeData from '../../assets/data/dashboard/userIncomeData.json'
+import incomeData from '../../assets/data/dashboard/userIncomeData'
 
 // Initial State
 const initialState = {
@@ -10,7 +10,7 @@ const initialState = {
 
 // Get all income
 export const getAll = createAsyncThunk('income/getAll', async () => ({
-  income: incomeData.income,
+  income: incomeData,
 }))
 
 // Add new income
