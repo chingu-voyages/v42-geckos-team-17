@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from 'react'
 
+// Components
+import Modal from '../../dashboard/modal/Modal'
+
+// Redux
+import { useDispatch, useSelector } from 'react-redux'
+import { openModal, setType } from '../../../features/modal/ModalSlice'
+
 // Routing
 import { useLocation } from 'react-router-dom'
 
@@ -9,18 +16,34 @@ import { PrimaryHeading } from '../../../styles/TypographyStyles'
 import { PrimaryButton } from '../../../styles/ButtonStyles'
 
 function HeroHeader() {
+  const dispatch = useDispatch()
   const currentPage = useLocation()
   const [page, setPage] = useState({ title: '' })
 
-  const modalHandler = () => {}
+  // Modal
+  const { isOpen, type } = useSelector((store) => store.modal)
+
+  // No scrolling when Modal is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+  }, [isOpen])
+
+  const modalHandler = (type) => {
+    dispatch(openModal())
+    dispatch(setType(type))
+  }
 
   useEffect(() => {
     if (currentPage.pathname === '/dashboard')
-      setPage({ title: 'Dashboard', modalHandler })
+      setPage({ title: 'Dashboard', type: 'account' })
     if (currentPage.pathname === '/dashboard/accounts')
-      setPage({ title: 'Accounts', modalHandler })
+      setPage({ title: 'Accounts', type: 'account' })
     if (currentPage.pathname === '/dashboard/transactions')
-      setPage({ title: 'Transactions', modalHandler })
+      setPage({ title: 'Transactions', type: 'expense' })
     if (currentPage.pathname === '/dashboard/profile')
       setPage({ title: 'Profile' })
   }, [currentPage])
@@ -28,7 +51,14 @@ function HeroHeader() {
   return (
     <HeroHeaderContainer>
       <PrimaryHeading app>{page.title}</PrimaryHeading>
-      {page.modalHandler && <PrimaryButton>Add new</PrimaryButton>}
+      {page.type && (
+        <PrimaryButton onClick={() => modalHandler(page.type)}>
+          Add new
+        </PrimaryButton>
+      )}
+      {/* Start: Modal */}
+      {isOpen && <Modal />}
+      {/* End: Modal */}
     </HeroHeaderContainer>
   )
 }
