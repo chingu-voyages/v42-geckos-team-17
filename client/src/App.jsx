@@ -11,6 +11,7 @@ import {
   DashboardHome,
   Pricing,
   DashboardProfile,
+  Error,
 } from './pages'
 
 // Components
@@ -27,6 +28,7 @@ function App() {
           <Route path="signin" element={<SignIn />} />
           <Route path="signup" element={<SignUp />} />
           <Route path="pricing" element={<Pricing />} />
+          <Route path="*" element={<Error />} />
         </Route>
         <Route path="/dashboard" element={<DashboardSharedLayout />}>
           <Route index element={<DashboardHome />} />
