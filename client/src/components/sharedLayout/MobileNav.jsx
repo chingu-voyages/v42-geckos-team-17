@@ -27,7 +27,11 @@ const MobileNav = ({ setNavIsOpen }) => {
         <NavigationLinks>
           {headerLinks.map((link) => (
             <li key={link.name}>
-              <TextLink big onClick={() => setNavIsOpen(false)} to={link.href}>
+              <TextLink
+                big="true"
+                onClick={() => setNavIsOpen(false)}
+                to={link.href}
+              >
                 {link.name}
               </TextLink>
             </li>

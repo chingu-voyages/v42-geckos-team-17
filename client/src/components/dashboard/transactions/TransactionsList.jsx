@@ -10,16 +10,31 @@ import * as TractionsData from '../../../assets/data/dashboard/userTransactionsD
 // component
 import TransactionItem from './TransactionItem'
 
-function TransitionList() {
-  const [transactions, setList] = useState(TractionsData.transactions)
+// get changing trasaction content based of info
+function getList(info) {
+  let title = 'My Transactions'
+  let list = TractionsData.transactions
+
+  if (info === 'Home') {
+    title = 'Last Trasactions'
+    list = list.slice(0, 5)
+  }
+
+  return { title, list }
+}
+
+function TransitionList({ transactionsLoc }) {
+  let info = getList(transactionsLoc)
+  const [transactions, setList] = useState(info.list)
 
   useEffect(() => {
-    setList(TractionsData.transactions)
+    info = getList(transactionsLoc)
+    setList(info.list)
   }, [])
 
   return (
     <TransactionContainer>
-      <SecondaryHeading app>My Transactions</SecondaryHeading>
+      <SecondaryHeading app>{info.title}</SecondaryHeading>
       {transactions.map((obj) => (
         <TransactionItem key={obj.id} item={obj} />
       ))}
