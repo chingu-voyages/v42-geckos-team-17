@@ -14,7 +14,7 @@
     },
     {
       "id": "transaction-2",
-      "categoryId": "goingOut",
+      "categoryId": "going out",
       "amount": "25.00",
       "from": "cash"
     },
@@ -38,7 +38,7 @@
     },
     {
       "id": "transaction-6",
-      "categoryId": "goingOut",
+      "categoryId": "going out",
       "amount": "9.99",
       "from": "account"
     },
@@ -164,7 +164,7 @@
     },
     {
       "id": "transaction-27",
-      "categoryId": "goingOut",
+      "categoryId": "going out",
       "amount": "9.99",
       "from": "cash"
     }
