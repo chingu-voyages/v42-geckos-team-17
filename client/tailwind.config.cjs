@@ -16,7 +16,7 @@ module.exports = {
         bg4: '#2D314D', // Dark blue
         modal: 'rgba(0, 0, 0, 0.85)',
         error: '#EE374A', // Red
-        link: '#7C89FF', // Text link
+        link: '#2AB6D9', // Text link
       },
       fontFamily: {
         body: ['Inter'],

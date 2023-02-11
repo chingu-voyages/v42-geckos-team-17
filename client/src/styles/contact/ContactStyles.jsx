@@ -2,7 +2,7 @@ import tw, { styled } from 'twin.macro'
 
 // Contact section container
 export const ContactSection = styled.section`
-  ${tw`py-8 md:py-20`}
+  ${tw`border-b border-bg2`}
 `
 
 // Contact section Inner container

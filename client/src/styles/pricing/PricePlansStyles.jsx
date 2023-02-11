@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro'
 
 export const PricePlansSection = styled.section`
-  ${tw`py-6 bg-bg1 h-fit md:py-12`}
+  ${tw`bg-bg3 h-fit`}
 `
 
 export const PricePlansInner = styled.div`
@@ -19,7 +19,7 @@ export const PricePlansInner = styled.div`
 `
 
 export const PricePlanCardDiv = styled.div`
-  ${tw`relative flex flex-col w-full h-full gap-4 px-6 py-20 border-2 min-w-fit border-accent1`}
+  ${tw`relative flex flex-col w-full h-full gap-4 px-6 py-20 border min-w-fit border-bg4`}
 
   p {
     ${tw`text-text-200`}
@@ -27,7 +27,7 @@ export const PricePlanCardDiv = styled.div`
 `
 
 export const CardHeaderDiv = styled.div`
-  ${tw`flex flex-col w-full h-48 gap-4 text-center min-h-fit md:text-left`}
+  ${tw`flex flex-col w-full gap-4 text-center min-h-fit md:text-left`}
 
   h3 {
     ${tw`font-bold`}
@@ -47,9 +47,12 @@ export const CardFooterDiv = styled.div`
 
   div {
     ${tw`flex gap-2 text-lg font-normal`}
+    svg {
+      ${tw`shrink-0`}
+    }
   }
 `
 
 export const BestValueDiv = styled.div`
-  ${tw`absolute top-0 right-0 w-full py-2.5 text-lg text-center bg-accent1 text-bg1 h-14`}
+  ${tw`absolute top-0 right-0 w-full py-2.5 text-lg text-center bg-bg4 text-white h-14`}
 `

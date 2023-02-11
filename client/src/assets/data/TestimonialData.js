@@ -1,44 +1,44 @@
 export const TestimonialsData = [
   {
     name: 'Logan Anderson',
-    position: 'Analyst',
-    company: 'Coverdale Fury',
+    position: 'Freelancer',
+    company: 'Brooklyn',
     testimonial:
-      'I used Okane during the research phase of multiple media plans and was able to source lists of podcasts for partnerships and optimize my audience targeting across Facebook, Twitter and Google Ads.',
+      'We LOVE Okane Tracker!!! We have been using it for 5 years and it has helped us stay on budget and become completely debt free! I didn’t want an app that actually synced with my bank accounts, just one where we could be mindful to track what we are spending, and that is exactly what this does. We paid the extra $5.99 for the premium account so that my husband and I could sync our accounts. That has been SO helpful.',
   },
   {
     name: 'Rob Bonham',
-    position: 'Digital Marketing Success Manager',
-    company: 'Milestone, Inc.',
+    position: 'Artist',
+    company: 'Berlin',
     testimonial:
-      'Okane allowed us to see where our most relevant prospects live online. With that data we can now target content to include those social channels/pages/accounts where engagement is most likely.',
+      "This app is perfect. It doesn't have flashy colored icons and it's been just a joy to use them. Some features I need: recurring transactions, future transactions, custom categories, pie chart, category budgets, and most importantly, the ability to make negative transactions (returns and refunds) as part of the original expense category! It's all here! Wish I'd found it sooner.",
   },
   {
     name: 'Justin Adelson',
-    position: 'Founder',
-    company: 'Perfect Pixel Marketing',
+    position: 'Founder of bakery',
+    company: 'Tokyo',
     testimonial:
-      'Leveraging Okane’s data helped me acquire new leads through Facebook ads at 27% of the average cost per lead! And it helped me discover and expand my audiences for clients with niche products and services.',
+      'This app is perfect for what I need. I love how simple and easy it is to use. Now I can look at the summaries page and think “wow I spent a lot of money in the ‘online shopping’ category. I wonder what I spend it on?”. Thank you!',
   },
   {
     name: 'Mark Traphagen',
-    position: 'VP of Product Marketing and Training',
-    company: 'SEO Clarity',
+    position: 'Developer',
+    company: 'Shenzhen',
     testimonial:
-      "Thanks to Okane we found at least 20 influential Twitter accounts we wouldn't have thought of otherwise who signed up for our tool",
+      'I’ve had this app for a couple of years now, and I can definitely so it’s worth it. It works as intended. It’s free but you can pay a one time premium which I like. Everything is done manually, except for the report, which is really nice.',
   },
   {
     name: 'Daniel Nestle',
-    position: 'VP Marketing Communications',
-    company: 'Mitsubishi Heavy Industries America',
+    position: 'Gardener',
+    company: 'Alanya',
     testimonial:
-      'We use Okane to identify partnership opportunities for marketing our thought leadership content to niche audiences; to validate our channel and media choices for advertising, and for social media execution.',
+      'I’ve downloaded and tried more than a dozen expense tracking apps and most didn’t work for me. At first this one seemed too simple, but it helped me to save $1000. Highly recommend especially if you’re trying to track receipts, payments and income. ',
   },
   {
     name: 'Bob Goricki',
-    position: 'Director of Digital Marketing',
-    company: 'Marcum LLP',
+    position: 'Freelancer',
+    company: 'Texas',
     testimonial:
-      "When presented with a new prospect or opportunity with a current client, we use Okane to learn about their target audience, find the best fit for PR/digital advertising opportunities, and explore YouTube/Podcasts (I haven't seen a tool compile those channels in one place).We've used it for multiple new business pitches to suggest industry placements the client should be considering - making us look like we have a deep knowledge of their industry without hours of in-depth research.",
+      'This is easy to use. You have to enter your transactions manually. Categories and transactions are easy to input and easy to understand.',
   },
 ]
