@@ -12,6 +12,7 @@ import {
   Pricing,
   DashboardProfile,
   Error,
+  DashboardTransactions,
 } from './pages'
 
 // Components
@@ -32,6 +33,7 @@ function App() {
         </Route>
         <Route path="/dashboard" element={<DashboardSharedLayout />}>
           <Route index element={<DashboardHome />} />
+          <Route path="transactions" element={<DashboardTransactions />} />
           <Route path="profile" element={<DashboardProfile />} />
         </Route>
       </Routes>

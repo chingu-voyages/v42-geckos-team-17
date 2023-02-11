@@ -9,6 +9,7 @@ import Error from './Error'
 // Webapp
 import DashboardHome from './Dashboard/DashboardHome'
 import DashboardProfile from './Dashboard/DashboardProfile'
+import DashboardTransactions from './Dashboard/DashboardTransactions'
 
 export {
   Home,
@@ -20,4 +21,5 @@ export {
   DashboardHome,
   DashboardProfile,
   Error,
+  DashboardTransactions,
 }

@@ -1,53 +1,11 @@
-import React, { useEffect, useState } from 'react'
-
-// Components
-import Modal from '../../dashboard/modal/Modal'
-
-// Redux
-import { useDispatch, useSelector } from 'react-redux'
-import { openModal, setType } from '../../../features/modal/ModalSlice'
-
-// Routing
-import { useLocation } from 'react-router-dom'
+import React from 'react'
 
 // Styled components
 import { HeroHeaderContainer } from '../../../styles/dashboard/HeroHeaderStyles'
 import { PrimaryHeading } from '../../../styles/TypographyStyles'
 import { PrimaryButton } from '../../../styles/ButtonStyles'
 
-function HeroHeader() {
-  const dispatch = useDispatch()
-  const currentPage = useLocation()
-  const [page, setPage] = useState({ title: '' })
-
-  // Modal
-  const { isOpen, type } = useSelector((store) => store.modal)
-
-  // No scrolling when Modal is open
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = 'unset'
-    }
-  }, [isOpen])
-
-  const modalHandler = (type) => {
-    dispatch(openModal())
-    dispatch(setType(type))
-  }
-
-  useEffect(() => {
-    if (currentPage.pathname === '/dashboard')
-      setPage({ title: 'Dashboard', type: 'account' })
-    if (currentPage.pathname === '/dashboard/accounts')
-      setPage({ title: 'Accounts', type: 'account' })
-    if (currentPage.pathname === '/dashboard/transactions')
-      setPage({ title: 'Transactions', type: 'expense' })
-    if (currentPage.pathname === '/dashboard/profile')
-      setPage({ title: 'Profile' })
-  }, [currentPage])
-
+function HeroHeader({ page, modalHandler }) {
   return (
     <HeroHeaderContainer>
       <PrimaryHeading app>{page.title}</PrimaryHeading>
@@ -56,9 +14,6 @@ function HeroHeader() {
           Add new
         </PrimaryButton>
       )}
-      {/* Start: Modal */}
-      {isOpen && <Modal />}
-      {/* End: Modal */}
     </HeroHeaderContainer>
   )
 }
