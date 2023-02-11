@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro'
 
 export const TestimonialsSection = styled.section`
-  ${tw`py-6 bg-bg1 h-fit md:py-12`}
+  ${tw`bg-gradient-to-r from-bg1 to-bg2 h-fit`}
 `
 
 export const TestimonialsInner = styled.div`
@@ -13,7 +13,7 @@ export const TestimonialsGrid = styled.div`
 `
 
 export const TestimonialsCardDiv = styled.div`
-  ${tw`flex flex-col justify-between p-6 rounded shadow-xl cursor-pointer h-fit border-accent1 `}
+  ${tw`flex flex-col justify-between p-6 rounded shadow-xl cursor-pointer bg-bg3 h-fit border-accent1 `}
 `
 
 export const TestimonialsCardBody = styled.div`

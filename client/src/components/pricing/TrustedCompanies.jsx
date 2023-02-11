@@ -21,7 +21,7 @@ function TrustedCompanies() {
         {/* Start: Section heading */}
         <SectionHeadingContainer center>
           <TertiaryHeading as="h2">
-            Trusted by these relationship-minded companies.
+            Trusted by people from these companies.
           </TertiaryHeading>
         </SectionHeadingContainer>
         {/* End: Section heading */}

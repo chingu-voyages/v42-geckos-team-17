@@ -11,7 +11,7 @@ function TestimonialCard({ name, position, company, testimonial }) {
     <TestimonialsCardDiv>
       {/* Start: Card body */}
       <TestimonialsCardBody>
-        <Paragraph>&quot; {testimonial} &quot;</Paragraph>
+        <Paragraph>&quot;{testimonial}&quot;</Paragraph>
       </TestimonialsCardBody>
       {/* End: Card body */}
       {/* Start: Card footer */}

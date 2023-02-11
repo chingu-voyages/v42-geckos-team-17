@@ -12,10 +12,11 @@ function Header() {
       <Container>
         <SectionHeadingContainer>
           <SecondaryHeading as="h1">
-            Teams of all sizes create predictably better content with Okane.
+            Okane offers a variety of plans to meet your needs.
           </SecondaryHeading>
           <TertiaryHeading as="span">
-            Pick a plan that fits your needs. We scale up with you.
+            As a Okane member, you are charged monthly on the date you signed
+            up.
           </TertiaryHeading>
         </SectionHeadingContainer>
       </Container>

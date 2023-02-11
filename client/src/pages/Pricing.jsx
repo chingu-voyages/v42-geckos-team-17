@@ -12,8 +12,8 @@ function Pricing() {
       <Header />
       <PricePlans />
       <Testimonials />
-      <TrustedCompanies />
       <PricingFAQ />
+      <TrustedCompanies />
     </>
   )
 }
