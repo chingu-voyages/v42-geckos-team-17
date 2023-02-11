@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro'
 
 export const HeroSection = styled.section`
-  ${tw`bg-bg2 h-[600px] lg:h-[700px]`}
+  ${tw`bg-gradient-to-r from-bg1 to-bg2 h-[600px] lg:h-[700px]`}
 `
 export const HeroInner = styled.div`
   ${tw`flex flex-col items-center justify-center h-full gap-y-4`}
@@ -9,11 +9,16 @@ export const HeroInner = styled.div`
   // Heading
   h1 {
     ${tw`text-center`}
+
+    // First word
+    & > span {
+      ${tw`text-transparent bg-clip-text bg-gradient-to-r from-accent1 to-accent2`}
+    }
   }
 
   // Paragraph
   p {
-    ${tw`hidden max-w-[540px] sm:block lg:text-xl text-center`}
+    ${tw`max-w-[540px] lg:text-xl text-center`}
   }
 
   // Button

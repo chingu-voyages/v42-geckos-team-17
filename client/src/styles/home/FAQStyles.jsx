@@ -1,11 +1,11 @@
 import tw, { styled } from 'twin.macro'
 
 export const FAQSection = styled.section`
-  ${tw`py-12 bg-bg2 h-fit md:py-20`}
+  ${tw`bg-bg3 h-fit`}
 `
 
 export const FAQInner = styled.div`
-  ${tw`flex flex-col items-center h-fit gap-y-6`}
+  ${tw`flex flex-col items-center h-fit gap-y-8`}
 `
 
 export const FAQGrid = styled.div`
@@ -13,7 +13,7 @@ export const FAQGrid = styled.div`
 `
 
 export const FAQDiv = styled.div`
-  ${tw`flex flex-col justify-center cursor-pointer md:justify-between border-2 bg-white rounded-md min-h-[80px] p-4 h-fit w-full lg:w-[800px] border-accent1`}
+  ${tw`flex flex-col justify-center cursor-pointer md:justify-between border border-bg4 bg-bg3 rounded-md min-h-[80px] p-4 h-fit w-full lg:w-[800px]`}
 
   ${({ isOpen }) =>
     isOpen &&
@@ -25,10 +25,14 @@ export const FAQDiv = styled.div`
 
 export const QuestionDiv = styled.div`
   p {
-    ${tw`font-semibold text-left w-fit`}
+    ${tw`font-semibold text-left text-text-200 w-fit`}
   }
   svg {
-    ${tw`w-[38px] h-[35px] ml-auto mr-0 my-auto`}
+    ${tw`w-[38px] h-[35px] ml-auto mr-0 my-auto origin-center`}
+
+    path {
+      ${tw`stroke-bg4`}
+    }
   }
 `
 

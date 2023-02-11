@@ -2,13 +2,16 @@ import React from 'react'
 
 // Styled components
 import { SecondaryHeading, Paragraph } from '../../styles/TypographyStyles'
-
+import { TextLink } from '../../styles/LinkStyles'
 import {
   AboutContainer,
   DetailAndImageContainer,
   ImageContainer,
 } from '../../styles/about/AboutStyles'
 import { Container, SectionHeadingContainer } from '../../styles/LayoutStyles'
+
+// Image
+import teamImage from '../../assets/images/team_image.svg'
 
 export default function AboutSection() {
   return (
@@ -18,20 +21,21 @@ export default function AboutSection() {
           <SectionHeadingContainer full>
             <SecondaryHeading as="h1">Our amazing story</SecondaryHeading>
             <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.consectetur adipiscing elit.
+              Okane is a relatively young company, which was founded in 2023.
+              Our app is all about helping people to manage their expenses, yet
+              it's functionality goes beyond simple money tracker. We show
+              people different ways to manage their money wisely.
             </Paragraph>
             <Paragraph>
-              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Bro do eiusmod tempor incididunt Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua.consectetur adipiscing elit.
+              The app was build during the wonderful{' '}
+              <TextLink to="https://www.chingu.io">voyage</TextLink> which was
+              organized by Jim Medlock and his awesome team. Thanks to this
+              opportunity we gained confidence and levelled up soft and
+              technical skills.
             </Paragraph>
           </SectionHeadingContainer>
           <ImageContainer>
-            <img src="https://picsum.photos/1200/1300" alt="" />
+            <img src={teamImage} alt="" />
           </ImageContainer>
         </DetailAndImageContainer>
       </Container>

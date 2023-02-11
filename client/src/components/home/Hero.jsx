@@ -2,7 +2,7 @@ import React from 'react'
 
 // Styled Components
 import { Container, SectionHeadingContainer } from '../../styles/LayoutStyles'
-import { PrimaryButton } from '../../styles/ButtonStyles'
+import { SecondaryButton } from '../../styles/ButtonStyles'
 import { HeroSection, HeroInner } from '../../styles/home/HeroStyles'
 import { PrimaryHeading, Paragraph } from '../../styles/TypographyStyles'
 
@@ -12,13 +12,15 @@ function Hero() {
       <Container>
         <HeroInner>
           <SectionHeadingContainer center>
-            <PrimaryHeading>Track. Earn. Save.</PrimaryHeading>
+            <PrimaryHeading>
+              <span>Track.</span> Earn. Save.
+            </PrimaryHeading>
             <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Tracking your spending is often the first step in getting your
+              finances in order.
             </Paragraph>
           </SectionHeadingContainer>
-          <PrimaryButton>Start free trial</PrimaryButton>
+          <SecondaryButton>Start free trial</SecondaryButton>
         </HeroInner>
       </Container>
     </HeroSection>

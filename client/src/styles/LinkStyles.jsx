@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 // Text link
 export const TextLink = styled(Link)(({ small, big }) => [
-  tw`text-lg transition duration-300 text-text-100 hover:text-text-200 capitalize`,
+  tw`text-lg capitalize transition duration-300 text-text-100 hover:text-text-200`,
 
   // Small link
   small && tw`text-sm`,
@@ -12,8 +12,8 @@ export const TextLink = styled(Link)(({ small, big }) => [
   big && tw`text-2xl`,
 ])
 
-export const SolidLink = styled(Link)`
-  ${tw`flex min-h-[52px] items-center justify-center px-6 py-3 text-lg font-normal text-white transition duration-300 rounded-md gap-x-4 bg-accent1 whitespace-nowrap shadow-button hover:bg-white hover:text-accent1`}
+export const PrimaryLink = styled(Link)`
+  ${tw`flex min-h-[52px] items-center justify-center px-6 py-3 text-lg font-normal text-white transition duration-300 rounded-md gap-x-4 bg-bg4 whitespace-nowrap shadow-button hover:bg-bg3 hover:text-text-200`}
 
   svg {
     ${tw`shrink-0`}
@@ -24,12 +24,12 @@ export const SolidLink = styled(Link)`
   }
 
   &:hover svg path {
-    ${tw`fill-accent1`}
+    ${tw`fill-bg4`}
   }
 `
 
-export const OutlineLink = styled(Link)`
-  ${tw`px-10 py-3 text-lg font-normal transition duration-300 bg-white rounded-md text-accent1 whitespace-nowrap shadow-button hover:bg-accent1 hover:text-white`}
+export const SecondaryLink = styled(Link)`
+  ${tw`px-10 py-3 text-lg font-normal text-center transition duration-300 rounded-md bg-bg3 text-text-200 whitespace-nowrap shadow-button hover:bg-bg4 hover:text-white`}
 `
 
 // Icon link

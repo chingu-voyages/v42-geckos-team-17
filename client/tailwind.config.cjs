@@ -5,23 +5,24 @@ module.exports = {
     extend: {
       colors: {
         text: {
-          100: '#525252',
-          200: '#000000',
+          100: '#9597A5',
+          200: '#2D314D',
         },
-        accent1: '#000000',
-        accent2: '#000000',
-        bg1: '#FAFAFA',
-        bg2: '#F2F2F2',
-        bg3: '#FFFFFE',
+        accent1: 'rgb(51, 211, 94)', // Green
+        accent2: 'rgb(42, 182, 217)', // Blue
+        bg1: 'rgba(51, 211, 94, 0.1)', // Transparent green
+        bg2: 'rgba(42, 182, 217, 0.1)', // Transparent blue
+        bg3: '#FFFFFE', // White
+        bg4: '#2D314D', // Dark blue
         modal: 'rgba(0, 0, 0, 0.85)',
-        error: '#EE374A',
-        link: '#7C89FF',
+        error: '#EE374A', // Red
+        link: '#7C89FF', // Text link
       },
       fontFamily: {
         body: ['Inter'],
       },
       boxShadow: {
-        button: 'inset 0 0 0 1px #000000',
+        button: 'inset 0 0 0 1px #2D314D',
       },
     },
   },

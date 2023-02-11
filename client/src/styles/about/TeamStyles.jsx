@@ -1,11 +1,11 @@
 import tw, { styled } from 'twin.macro'
 
 export const TeamContainer = styled.div`
-  ${tw`py-12 md:py-16 lg:py-20`}
+  ${tw`bg-gradient-to-r from-bg1 to-bg2`}
 `
 
 export const TeamList = styled.div`
-  ${tw`mt-10 pt-12 pb-8 grid grid-flow-col gap-6 overflow-x-scroll snap-x snap-mandatory`}
+  ${tw`grid grid-flow-col gap-6 pt-12 pb-8 mt-10 overflow-x-scroll snap-x snap-mandatory`}
 
   -ms-scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
@@ -14,10 +14,14 @@ export const TeamList = styled.div`
 `
 
 export const TeamCardContainer = styled.div`
-  ${tw`relative w-[calc(100vw-48px)] md:w-[550px] pt-12 pb-8 px-8 snap-center flex flex-col items-center gap-y-4 text-center border border-accent1 rounded-md`}
+  ${tw`bg-bg3 relative w-[calc(100vw-48px)] md:w-[550px] pt-12 pb-8 px-8 snap-center flex flex-col items-center gap-y-4 text-center border border-bg4 rounded-md`}
 
   img {
-    ${tw`h-[72px] w-[72] absolute top-0 left-[50%] translate-x-[-50%] translate-y-[-50%]`}
+    ${tw`h-[72px] w-[72] filter grayscale rounded-full absolute top-0 left-[50%] translate-x-[-50%] translate-y-[-50%]`}
+  }
+
+  &:hover img {
+    ${tw`filter-none`}
   }
 `
 
@@ -31,7 +35,7 @@ export const ButtonsContainer = styled.div`
 // `
 
 export const RoundButton = styled.div`
-  ${tw`inline w-4 h-4 bg-white shadow-button rounded-full transition delay-300`}
+  ${tw`inline w-4 h-4 transition delay-300 rounded-full bg-bg3 shadow-button`}
 
   ${({ isActive }) => isActive && tw`bg-accent1`}
 `

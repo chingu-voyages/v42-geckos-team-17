@@ -21,7 +21,7 @@ export const FormSelectGroupContainer = styled.div(({ webapp }) => [
 
     // Dropdown list
     & > ul {
-      ${tw`absolute z-10 w-full py-1 mt-1 overflow-auto text-base bg-white border rounded-md shadow-lg snap-y border-text-200 max-h-48 ring-1 ring-black ring-opacity-5 focus:outline-none`}
+      ${tw`absolute z-10 w-full py-1 mt-1 overflow-auto text-base bg-bg3 border rounded-md shadow-lg snap-y border-text-200 max-h-48 ring-1 ring-black ring-opacity-5 focus:outline-none`}
     }
 
     & > ul > li {

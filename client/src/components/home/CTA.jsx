@@ -1,13 +1,10 @@
 import React from 'react'
+
+// Styled components
 import { Container, SectionHeadingContainer } from '../../styles/LayoutStyles'
-import {
-  CTAButton,
-  CTAInner,
-  CTASection,
-  CTATertiaryHeadingDark,
-  CTATertiaryHeadingLight,
-  GroupButtons,
-} from '../../styles/home/CTAStyles'
+import { TertiaryHeading } from '../../styles/TypographyStyles'
+import { SecondaryLink } from '../../styles/LinkStyles'
+import { CTAInner, CTASection, GroupButtons } from '../../styles/home/CTAStyles'
 
 function CTA() {
   return (
@@ -15,16 +12,12 @@ function CTA() {
       <Container>
         <CTAInner>
           <SectionHeadingContainer>
-            <CTATertiaryHeadingDark>
-              Ready to get started?
-            </CTATertiaryHeadingDark>
-            <CTATertiaryHeadingLight>
-              Sign up or contact us
-            </CTATertiaryHeadingLight>
+            <TertiaryHeading>Ready to get started?</TertiaryHeading>
+            <TertiaryHeading>Sign up or contact us</TertiaryHeading>
           </SectionHeadingContainer>
           <GroupButtons>
-            <CTAButton>Start free trial</CTAButton>
-            <CTAButton>Contact Us</CTAButton>
+            <SecondaryLink to="contact">Start free trial</SecondaryLink>
+            <SecondaryLink to="contact">Contact Us</SecondaryLink>
           </GroupButtons>
         </CTAInner>
       </Container>

@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 import MobileNav from './MobileNav'
 
 // Styled components
-import { TextLink, OutlineLink } from '../../styles/LinkStyles'
+import { TextLink, PrimaryLink } from '../../styles/LinkStyles'
 import { IconButton } from '../../styles/ButtonStyles'
 import {
   NavHeader,
@@ -59,9 +59,9 @@ function HeaderNav() {
         {/* End: Nav links (Desktop only) */}
         {/* Start: Sign in/up button (Desktop only) */}
         {user ? (
-          <OutlineLink to="dashboard">Dashboard</OutlineLink>
+          <PrimaryLink to="dashboard">Dashboard</PrimaryLink>
         ) : (
-          <OutlineLink to="signin">Sign In</OutlineLink>
+          <PrimaryLink to="signin">Sign In</PrimaryLink>
         )}
         {/* End: Sign in/up button (Desktop only) */}
         {/* Start: Hamburger/close button (Small screens only) */}

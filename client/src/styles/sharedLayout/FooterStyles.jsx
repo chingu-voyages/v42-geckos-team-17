@@ -2,7 +2,7 @@ import tw, { styled } from 'twin.macro'
 
 // Footer container
 export const FooterContainer = styled.footer`
-  ${tw`bg-bg2 py-[120px] px-6 md:px-10`}
+  ${tw`bg-bg3 pt-[120px] pb-[80px] px-6 md:px-10`}
 `
 // Footer Inner
 export const FooterInner = styled.div`

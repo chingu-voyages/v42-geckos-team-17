@@ -24,9 +24,9 @@ function Features() {
           <SectionHeadingContainer>
             <SecondaryHeading>Our Best Features</SecondaryHeading>
             <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna incididunt
-              dolor aliqua.
+              Our app is designed so that you can plan ahead for your financial
+              decisions, monitor checking, savings and credit card accounts and
+              so much more!
             </Paragraph>
           </SectionHeadingContainer>
           {/* End: Section heading */}

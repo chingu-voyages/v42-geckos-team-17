@@ -2,7 +2,7 @@ import tw, { styled, css } from 'twin.macro'
 
 // Website Container
 export const Container = styled.div`
-  ${tw`h-full max-w-[1170px] mx-auto px-6 md:px-10 xl:px-0`}
+  ${tw`h-full max-w-[1170px] mx-auto py-12 sm:py-20 lg:py-24 px-6 md:px-10 xl:px-0`}
 `
 
 // Website section's 'h2+p' container style

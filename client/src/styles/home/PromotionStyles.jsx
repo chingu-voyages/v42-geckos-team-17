@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro'
 
 export const PromotionSection = styled.section`
-  ${tw`pt-20 pb-24 bg-bg2 sm:py-24 bg-bg1`}
+  ${tw`bg-bg3`}
 `
 
 export const PromotionInner = styled.div`
@@ -13,7 +13,7 @@ export const StatsAndImageContainer = styled.div`
 `
 
 export const Stats = styled.div`
-  ${tw`relative w-full h-64 rounded-md sm:h-10 md:h-96 md:my-0`}
+  ${tw`relative w-full rounded-md md:my-0`}
   p {
     ${tw`font-semibold`}
   }
