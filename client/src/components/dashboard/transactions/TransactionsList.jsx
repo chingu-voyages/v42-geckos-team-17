@@ -2,10 +2,7 @@ import { useEffect, useState } from 'react'
 
 // styles
 import { SecondaryHeading } from '../../../styles/TypographyStyles'
-import {
-  TransactionContainer,
-  TransactionRow,
-} from '../../../styles/dashboard/transactions/TransactionStyles'
+import { TransactionContainer } from '../../../styles/dashboard/transactions/TransactionStyles'
 
 // importing data
 import * as TractionsData from '../../../assets/data/dashboard/userTransactionsData.json'
@@ -24,9 +21,7 @@ function TransitionList() {
     <TransactionContainer>
       <SecondaryHeading app>My Transactions</SecondaryHeading>
       {transactions.map((obj) => (
-        <TransactionRow key={obj.id}>
-          <TransactionItem item={obj} />
-        </TransactionRow>
+        <TransactionItem key={obj.id} item={obj} />
       ))}
     </TransactionContainer>
   )
