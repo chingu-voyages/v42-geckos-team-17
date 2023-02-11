@@ -5,7 +5,7 @@ export const Overlay = styled.div`
 `
 
 export const ModalContainer = styled.div`
-  ${tw`relative h-full min-w-0 overflow-x-scroll sm:min-w-[640px] px-4 py-6 sm:p-12 pt-16 bg-white flex flex-col gap-2 sm:gap-6`}
+  ${tw`relative h-full min-w-full overflow-x-scroll sm:min-w-[640px] px-4 py-6 sm:p-12 pt-16 bg-white flex flex-col gap-2 sm:gap-6`}
 
   // Close button
   &>button {
