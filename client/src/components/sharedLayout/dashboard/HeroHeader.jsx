@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
 
-// Components
-import Modal from '../../dashboard/modal/Modal'
+// Routing
+import { useLocation } from 'react-router-dom'
 
 // Redux
 import { useDispatch, useSelector } from 'react-redux'
 import { openModal, setType } from '../../../features/modal/ModalSlice'
 
-// Routing
-import { useLocation } from 'react-router-dom'
+// Components
+import Modal from '../../dashboard/modal/Modal'
 
 // Styled components
 import { HeroHeaderContainer } from '../../../styles/dashboard/HeroHeaderStyles'
@@ -21,7 +21,7 @@ function HeroHeader() {
   const [page, setPage] = useState({ title: '' })
 
   // Modal
-  const { isOpen, type } = useSelector((store) => store.modal)
+  const { isOpen } = useSelector((store) => store.modal)
 
   // No scrolling when Modal is open
   useEffect(() => {

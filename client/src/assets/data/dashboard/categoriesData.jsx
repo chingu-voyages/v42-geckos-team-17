@@ -11,6 +11,7 @@ import {
   DecorIcon,
   OtherIcon,
   AccountsIcon,
+  ArrowIcon,
 } from '../../icons/dashboardIcons'
 
 const categories = [
@@ -79,6 +80,12 @@ const categories = [
     name: 'account',
     icon: <AccountsIcon />,
     color: '#cfdbd5',
+  },
+  {
+    id: 'arrow',
+    name: 'arrow',
+    icon: <ArrowIcon />,
+    color: '#cfe1b9',
   },
 ]
 

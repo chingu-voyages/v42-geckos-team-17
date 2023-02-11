@@ -8,6 +8,7 @@ import Pricing from './Pricing'
 // Webapp
 import DashboardHome from './Dashboard/DashboardHome'
 import DashboardProfile from './Dashboard/DashboardProfile'
+import DashboardTransactions from './Dashboard/DashboardTransactions'
 
 export {
   Home,
@@ -18,4 +19,5 @@ export {
   Pricing,
   DashboardHome,
   DashboardProfile,
+  DashboardTransactions,
 }

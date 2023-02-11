@@ -12,7 +12,7 @@ const dashboardLinks = [
   {
     name: 'transaction',
     icon: <TransactionIcon />,
-    href: '/dashboard',
+    href: '/dashboard/transactions',
   },
   { name: 'stats', icon: <StatsIcon />, href: '/dashboard' },
 ]
