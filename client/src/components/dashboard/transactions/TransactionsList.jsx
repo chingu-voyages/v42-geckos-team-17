@@ -10,6 +10,7 @@ import {
 // importing data
 import * as TractionsData from '../../../assets/data/dashboard/userTransactionsData.json'
 
+// component
 import TransactionItem from './TransactionItem'
 
 function TransitionList() {
