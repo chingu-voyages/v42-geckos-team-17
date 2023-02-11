@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom'
 import { useSelector } from 'react-redux'
 
 // Styled Components
-import { OutlineLink, TextLink, IconLink } from '../../styles/LinkStyles'
+import { SecondaryLink, TextLink, IconLink } from '../../styles/LinkStyles'
 import {
   Overlay,
   MobileNavInner,
@@ -34,13 +34,13 @@ const MobileNav = ({ setNavIsOpen }) => {
           ))}
         </NavigationLinks>
         {user ? (
-          <OutlineLink onClick={() => setNavIsOpen(false)} to="dashboard">
+          <SecondaryLink onClick={() => setNavIsOpen(false)} to="dashboard">
             Dashboard
-          </OutlineLink>
+          </SecondaryLink>
         ) : (
-          <OutlineLink onClick={() => setNavIsOpen(false)} to="signin">
+          <SecondaryLink onClick={() => setNavIsOpen(false)} to="signin">
             Sign In
-          </OutlineLink>
+          </SecondaryLink>
         )}
         <SocialLinks>
           {socialLinks.map((link) => (

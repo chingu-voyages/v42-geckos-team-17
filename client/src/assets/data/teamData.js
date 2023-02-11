@@ -1,53 +1,54 @@
 // Images
-import image from '../images/user.png'
+import jane from '../images/team/jane.jpeg'
+import mohit from '../images/team/mohit.png'
+import ashwin from '../images/team/ashwin.jpeg'
+import gerwyn from '../images/team/gerwyn.png'
 
 const teamData = [
   {
     name: 'Jane',
-    image: image,
+    image: jane,
     position: 'Software Engineer',
     quote:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit aincididunt ut labore et dolore magna ',
+      'Coming together is a beginning. Keeping together is progress. Working together is success.',
     links: [
-      { name: 'github', href: '/' },
-      { name: 'linkedin', href: '/' },
-      { twitter: 'twitter', href: '/' },
+      { name: 'github', href: 'https://github.com/JaneMoroz' },
+      { name: 'linkedin', href: 'https://github.com/JaneMoroz' },
+      { twitter: 'twitter', href: 'https://github.com/JaneMoroz' },
     ],
   },
   {
     name: 'Mohit',
-    image: image,
+    image: mohit,
     position: 'Software Engineer',
-    quote:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit aincididunt ut labore et dolore magna ',
+    quote: 'The greatest asset of a company is its people.',
     links: [
-      { name: 'github', href: '/' },
-      { name: 'linkedin', href: '/' },
-      { twitter: 'twitter', href: '/' },
+      { name: 'github', href: 'https://github.com/mbramani' },
+      { name: 'linkedin', href: 'https://github.com/mbramani' },
+      { twitter: 'twitter', href: 'https://github.com/mbramani' },
     ],
   },
   {
     name: 'Gerwyn',
-    image: image,
+    image: gerwyn,
     position: 'Software Engineer',
     quote:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit aincididunt ut labore et dolore magna ',
+      'There is no such thing as a self-made man. You will reach your goals only with the help of others.',
     links: [
-      { name: 'github', href: '/' },
-      { name: 'linkedin', href: '/' },
-      { twitter: 'twitter', href: '/' },
+      { name: 'github', href: 'https://github.com/Gerwyn1' },
+      { name: 'linkedin', href: 'https://github.com/Gerwyn1' },
+      { twitter: 'twitter', href: 'https://github.com/Gerwyn1' },
     ],
   },
   {
     name: 'Ashwin',
-    image: image,
+    image: ashwin,
     position: 'Software Engineer',
-    quote:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit aincididunt ut labore et dolore magna ',
+    quote: 'Individually, we are one drop. Together, we are an ocean.',
     links: [
-      { name: 'github', href: '/' },
-      { name: 'linkedin', href: '/' },
-      { twitter: 'twitter', href: '/' },
+      { name: 'github', href: 'https://github.com/AshwinC8' },
+      { name: 'linkedin', href: 'https://github.com/AshwinC8' },
+      { twitter: 'twitter', href: 'https://github.com/AshwinC8' },
     ],
   },
 ]

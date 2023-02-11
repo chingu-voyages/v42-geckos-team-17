@@ -1,7 +1,7 @@
 import tw, { css, styled } from 'twin.macro'
 
 export const LocationContainer = styled.section`
-  ${tw`py-12 bg-bg2 md:py-16 lg:py-20`}
+  ${tw`bg-bg3`}
 
   // Leaflet map container
   .leaflet-container {
@@ -12,6 +12,11 @@ export const LocationContainer = styled.section`
   .leaflet-popup-content > p:nth-of-type(2) {
     ${tw`block md:hidden`}
   }
+
+  // Container
+  & > div {
+    ${tw`pb-0`}
+  }
 `
 
 export const MapNavigation = styled.div`
@@ -19,7 +24,7 @@ export const MapNavigation = styled.div`
 `
 
 export const LocationButton = styled.button(({ active }) => [
-  tw`flex flex-col items-center w-full gap-6 p-6 bg-white rounded-md lg:p-12 text-start md:items-start`,
+  tw`flex flex-col items-center w-full gap-6 p-6 rounded-md bg-bg3 lg:p-12 text-start md:items-start`,
 
   // Paragraphs
   css`

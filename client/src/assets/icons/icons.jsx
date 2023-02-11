@@ -109,10 +109,18 @@ export function RoundIcon() {
 
 export function TriangleIcon() {
   return (
-    <svg className="fill-accent1">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="1.5"
+      stroke="currentColor"
+      className="h-6 w-6"
+    >
       <path
-        xmlns="http://www.w3.org/2000/svg"
-        d="M18 27L35.3205 0.75H0.679504L18 27Z"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
       />
     </svg>
   )

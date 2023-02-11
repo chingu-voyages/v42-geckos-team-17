@@ -1,22 +1,22 @@
 export const faqData = [
   {
-    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
+    question: 'What budgeting features does Okane have?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit? Lorem ipsum dolor sit amet, consectetur adipiscing elit? adipiscing elit?',
+      'Okane tracks your expenses and places them in budget categories. You can also set limits for these categories, and Okane lets you know if you’re approaching those limits.',
   },
   {
-    question: 'Amet, consectetur adipiscing elit?',
+    question: 'Can I connect to my bank accounts?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit? Lorem ipsum dolor sit amet, consectetur adipiscing elit? adipiscing elit?',
+      'Right now Okane doesn’t connect your bank accounts. You can manually add account balances, as well as cash amounts, debts and income. You will be able connect your account in the end of 2023.',
   },
   {
-    question: 'Lorem ipsum dolor sit tetur adipiscing elit?',
+    question: 'Will I get budgeting advices?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit? Lorem ipsum dolor sit amet, consectetur adipiscing elit? adipiscing elit?',
+      'Okane provides custom reports and recommendations based on your habits. You can sign up for your newsletter to get more advices about managing your money flow.',
   },
   {
-    question: 'Lncididunt ut labore et dolore magna aliqua?',
+    question: "Can I view my partner's money flow?",
     answer:
-      'Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit? Lorem ipsum dolor sit amet, consectetur adipiscing elit? adipiscing elit?',
+      'Okane is designed so you and your partner can view both your financial pictures in one app. Both partners can sync bank accounts, credit cards, loans and investments. (Although you can choose how much you share with your significant other.)',
   },
 ]
