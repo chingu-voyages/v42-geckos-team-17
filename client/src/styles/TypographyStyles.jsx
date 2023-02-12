@@ -7,7 +7,7 @@ export const PrimaryHeading = styled.h1(({ app }) => [
   tw`text-5xl leading-[60px] sm:text-[64px] md:text-[70px] font-extrabold text-text-200`,
 
   // Webapp
-  app && tw`text-4xl leading-[40px] sm:text-4xl md:text-4xl font-bold`,
+  app && tw`text-3xl leading-[42px] sm:text-4xl md:text-4xl font-bold`,
 ])
 
 // H2

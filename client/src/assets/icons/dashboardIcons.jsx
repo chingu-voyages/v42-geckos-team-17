@@ -6,7 +6,7 @@ export function OkaneMiniIcon() {
       viewBox="0 0 39 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
     >
       <circle cx="27" cy="12" r="12" fill="url(#linear-gradient)" />
       <circle cx="12" cy="12" r="11.5" stroke="#2D314D" />
