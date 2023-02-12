@@ -99,7 +99,7 @@ function Footer() {
             placeholderText="Enter your email"
             errorMsg={error}
           />
-          <PrimaryButton small>Go</PrimaryButton>
+          <PrimaryButton small="true">Go</PrimaryButton>
         </SubscribeForm>
         {/* End: Subscription form column */}
         <Copyrights>&copy; Okane. All Rights Reserved</Copyrights>
