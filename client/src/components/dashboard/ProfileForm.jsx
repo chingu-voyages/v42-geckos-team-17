@@ -15,7 +15,7 @@ import {
 import { PrimaryButton } from '../../styles/ButtonStyles'
 
 // User image
-import userImg from '../../assets/images/user.png'
+import userImg from '../../assets/images/user.jpg'
 
 // Currency data
 const currency = ['usd', 'eur', 'yuan']

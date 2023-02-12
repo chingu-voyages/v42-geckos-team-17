@@ -14,6 +14,7 @@ module.exports = {
         bg2: 'rgba(42, 182, 217, 0.1)', // Transparent blue
         bg3: '#FFFFFE', // White
         bg4: '#2D314D', // Dark blue
+        bg5: '#FAFAFA', // Light grey
         modal: 'rgba(0, 0, 0, 0.85)',
         error: '#EE374A', // Red
         link: '#2AB6D9', // Text link

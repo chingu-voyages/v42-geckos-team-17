@@ -5,6 +5,10 @@ const CustomStyles = createGlobalStyle({
   body: {
     ...tw`bg-bg3 font-body`,
   },
+
+  main: {
+    ...tw`overflow-hidden`,
+  },
 })
 
 export default function GlobalStyles() {

@@ -38,12 +38,12 @@ export const FormSelectGroupContainer = styled.div(({ webapp }) => [
     css`
       // Webapp Select
       button {
-        ${tw`border-none bg-bg2 focus:border-none focus:ring-0`}
+        ${tw`border-none bg-bg5 focus:border-none focus:ring-0`}
       }
 
       // Weapp Select list
       ul {
-        ${tw`border-none bg-bg2`}
+        ${tw`border-none bg-bg5`}
       }
     `,
 ])

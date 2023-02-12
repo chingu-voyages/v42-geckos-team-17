@@ -14,7 +14,7 @@ export const PrimaryHeading = styled.h1(({ app }) => [
 // Website: every section heading
 // Webapp: every section heading
 export const SecondaryHeading = styled.h2(({ app }) => [
-  tw`text-3xl leading-[30px] sm:text-4xl sm:leading-[60px] md:text-5xl font-bold text-text-200`,
+  tw`text-3xl leading-[34px] sm:text-4xl sm:leading-[62px] md:text-5xl font-bold text-text-200`,
 
   // Webapp
   app && tw`text-xl font-medium leading-6 sm:text-2xl sm:leading-7 md:text-2xl`,
@@ -24,7 +24,7 @@ export const SecondaryHeading = styled.h2(({ app }) => [
 // Website: inside section element, example Features
 // Webapp: inside account card
 export const TertiaryHeading = styled.h3(({ app }) => [
-  tw`text-2xl sm:text-[32px] font-medium text-text-200`,
+  tw`text-2xl sm:text-[32px] sm:leading-[36px] font-medium text-text-200`,
 
   // Webapp
   app && tw`text-lg sm:text-lg`,

@@ -24,7 +24,7 @@ export const FormInputGroupContainer = styled.div(({ webapp }) => [
     css`
       // Webapp Input
       input {
-        ${tw`border-none bg-bg2 focus:border-none focus:ring-0`}
+        ${tw`border-none bg-bg5 focus:border-none focus:ring-0`}
       }
     `,
 ])

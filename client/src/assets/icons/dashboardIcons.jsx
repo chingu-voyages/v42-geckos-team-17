@@ -6,9 +6,23 @@ export function OkaneMiniIcon() {
       viewBox="0 0 39 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
     >
-      <circle cx="27" cy="12" r="12" fill="black" />
-      <circle cx="12" cy="12" r="11.5" stroke="black" />
+      <circle cx="27" cy="12" r="12" fill="url(#linear-gradient)" />
+      <circle cx="12" cy="12" r="11.5" stroke="#2D314D" />
+      <defs>
+        <linearGradient
+          id="linear-gradient"
+          x1="15"
+          y1="8.67528"
+          x2="38.8992"
+          y2="15.2966"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#33D35E" />
+          <stop offset="1" stopColor="#2AB6D9" />
+        </linearGradient>
+      </defs>
     </svg>
   )
 }

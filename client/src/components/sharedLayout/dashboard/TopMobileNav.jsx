@@ -14,7 +14,7 @@ import {
 import { OkaneMiniIcon } from '../../../assets/icons/dashboardIcons'
 
 // Images
-import userImg from '../../../assets/images/user.png'
+import userImg from '../../../assets/images/user.jpg'
 
 function TopMobileNav() {
   return (
