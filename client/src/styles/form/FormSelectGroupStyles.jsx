@@ -45,5 +45,10 @@ export const FormSelectGroupContainer = styled.div(({ webapp }) => [
       ul {
         ${tw`border-none bg-bg5`}
       }
+
+      // Error span
+      & > span {
+        ${tw`translate-y-[16px]`}
+      }
     `,
 ])

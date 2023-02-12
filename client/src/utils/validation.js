@@ -17,3 +17,9 @@ export const validatePhone = (phone) => {
 
   return regPhone.test(phone)
 }
+
+export const validateAmount = (amount) => {
+  const regAmount = /^\d+(?:[.,]\d+)*$/g
+
+  return regAmount.test(amount)
+}

@@ -41,7 +41,7 @@ const categories = [
   },
   {
     id: 'going out',
-    name: 'goingOut',
+    name: 'going out',
     icon: <GoingOutIcon />,
     color: '#FF8FA3',
   },

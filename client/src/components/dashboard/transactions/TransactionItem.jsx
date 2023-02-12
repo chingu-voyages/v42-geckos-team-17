@@ -20,7 +20,7 @@ function TransactionItem({ item }) {
         <ArrowIcon />
         <CategoryIcon categoryId={item.categoryId} />
       </TransactionIcons>
-      <p>-{item.amount} $</p>
+      <p>{item.amount} $</p>
     </TransactionRow>
   )
 }

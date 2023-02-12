@@ -32,7 +32,7 @@ const transactionSlice = createSlice({
 
     // Add new transaction
     builder.addCase(addNewTransaction.fulfilled, (state, { payload }) => {
-      state.transactions.push(payload.transaction)
+      state.transactions.unshift(payload.transaction)
     })
   },
 })

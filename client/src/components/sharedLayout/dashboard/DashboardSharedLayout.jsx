@@ -46,7 +46,7 @@ function DashboardSharedLayout() {
   // Get current page
   useEffect(() => {
     if (currentPage.pathname === '/dashboard')
-      setPage({ title: 'Dashboard', type: 'account' })
+      setPage({ title: 'Dashboard', type: 'expense' })
     if (currentPage.pathname === '/dashboard/accounts')
       setPage({ title: 'Accounts', type: 'account' })
     if (currentPage.pathname === '/dashboard/transactions')
