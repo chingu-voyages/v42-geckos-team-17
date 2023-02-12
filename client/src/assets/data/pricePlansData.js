@@ -13,7 +13,7 @@ export const pricePlaneData = [
   },
   {
     type: 'Pro',
-    description: 'Bank accounts integration.',
+    description: 'Multiple bank accounts integration.',
     price: '$5.99',
     features: [
       'Easy budgeting with advices',

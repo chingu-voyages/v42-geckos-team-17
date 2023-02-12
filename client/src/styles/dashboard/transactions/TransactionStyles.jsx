@@ -12,6 +12,6 @@ export const TransactionIcons = styled.div`
   ${tw`flex flex-row items-center gap-3`}
 
   svg {
-    ${tw`mx-0.5`}
+    ${tw`mx-0.5 fill-bg3`}
   }
 `

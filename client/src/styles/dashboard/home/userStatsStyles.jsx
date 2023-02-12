@@ -30,7 +30,7 @@ export const ChartsContainer = styled.div`
 `
 
 export const DoughnutChartContainer = styled.div`
-  ${tw`h-full grid grid-cols-1 sm:grid-cols-2 gap-14 items-center max-h-[400px]`}
+  ${tw`h-full p-8 grid grid-cols-1 sm:grid-cols-2 gap-14 items-center max-h-[400px]`}
 
   .doughnut {
     ${tw`w-full`}
