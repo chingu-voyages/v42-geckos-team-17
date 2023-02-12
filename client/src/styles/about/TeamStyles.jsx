@@ -37,5 +37,5 @@ export const ButtonsContainer = styled.div`
 export const RoundButton = styled.div`
   ${tw`inline w-4 h-4 transition delay-300 rounded-full bg-bg3 shadow-button`}
 
-  ${({ isActive }) => isActive && tw`bg-accent1`}
+  ${({ isActive }) => isActive && tw`bg-bg4`}
 `
