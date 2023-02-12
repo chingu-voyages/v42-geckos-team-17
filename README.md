@@ -41,6 +41,8 @@
 
 - [x] [Leaflet](https://leafletjs.com)
 - [x] [Twin.macro](https://github.com/ben-rogerson/twin.macro)
+- [x] [unDraw](https://undraw.co)
+- [x] [Unsplash](https://unsplash.com/s/photos/unspalsh)
 - [x] Responsive Design
 - [x] Local Storage
 
