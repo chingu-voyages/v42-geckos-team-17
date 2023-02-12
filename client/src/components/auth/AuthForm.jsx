@@ -6,8 +6,6 @@ import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { signUp, signIn } from '../../features/user/userSlice'
 
-// Routing
-
 // Components
 import FormInputGroup from '../form/FormInputGroup'
 import FormSelectGroup from '../form/FormSelectGroup'
@@ -148,6 +146,7 @@ function AuthForm({ isSignIn }) {
         <FacebookIcon />
         Facebook
       </PrimaryLink>
+      <PrimaryLink to="/dashboard">Sign in as a guest</PrimaryLink>
       {/* End: Auth options */}
       {/* Start: Email input */}
       <FormInputGroup

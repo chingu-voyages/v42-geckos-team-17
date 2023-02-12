@@ -12,18 +12,23 @@ export const AuthFormContainer = styled.form`
   ${tw`w-fit max-w-[600px] grid grid-cols-2 items-center gap-x-4 gap-y-4 sm:gap-y-8 px-6 py-10 border rounded-md border-text-100`}
 
   // First link
-  a:nth-of-type(1) {
+  & > a:nth-of-type(1) {
     ${tw`max-w-[140px] justify-self-end text-end text-link`}
   }
 
   // Auth links (google, facebook)
-  a:nth-of-type(2),
-  a:nth-of-type(3) {
+  & > a:nth-of-type(2),
+  & > a:nth-of-type(3) {
     ${tw`col-span-2 sm:col-span-1`}
   }
 
+  // Sign is as guest button
+  & > a:nth-of-type(4) {
+    ${tw`col-span-2`}
+  }
+
   // Forgot password link
-  a:nth-of-type(4) {
+  & > a:nth-of-type(5) {
     ${tw`col-span-2 pb-5 text-link justify-self-center md:justify-self-end`}
   }
 
