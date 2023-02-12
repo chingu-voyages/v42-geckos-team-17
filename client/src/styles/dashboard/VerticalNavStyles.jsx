@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro'
 
 export const VerticalNavContainer = styled.header`
-  ${tw`fixed bg-bg2 w-[100px] h-screen hidden md:block rounded-tr-3xl rounded-br-3xl`}
+  ${tw`fixed bg-bg5 w-[100px] h-screen hidden md:block rounded-tr-3xl rounded-br-3xl`}
 `
 
 export const VerticalNavInner = styled.nav`
@@ -28,5 +28,10 @@ export const VerticalNavInnerFooter = styled.div`
   // User link
   & > a {
     ${tw`pt-6 border-t`}
+
+    // User image
+    img {
+      ${tw`rounded-full`}
+    }
   }
 `

@@ -1,7 +1,7 @@
 export const pricePlaneData = [
   {
     type: 'Free',
-    description: 'Add expenses and incomes manually. Get monthly reports.',
+    description: 'Add expenses and incomes manually.',
     price: '$0',
     features: [
       'Easy budgeting',
@@ -13,7 +13,7 @@ export const pricePlaneData = [
   },
   {
     type: 'Pro',
-    description: 'Bank accounts integration. Get daily reports.',
+    description: 'Bank accounts integration.',
     price: '$5.99',
     features: [
       'Easy budgeting with advices',

@@ -36,11 +36,11 @@ export const SecondaryLink = styled(Link)`
 export const IconLink = styled(Link)`
   ${tw`flex items-center p-2 justify-items-center`}
 
-  svg path {
+  svg {
     ${tw`transition duration-300 shrink-0 fill-text-200`}
   }
 
-  &:hover svg path {
-    ${tw`transition duration-300 shrink-0 fill-text-100`}
+  &:hover svg {
+    ${tw`fill-text-100`}
   }
 `

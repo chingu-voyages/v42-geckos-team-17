@@ -9,7 +9,7 @@ export const ProfileFormContainer = styled.form`
 
   // User image
   &> img {
-    ${tw`w-40 h-40 justify-self-center`}
+    ${tw`w-40 h-40 rounded-full justify-self-center`}
   }
 
   // Buttons

@@ -21,8 +21,8 @@ function FAQ() {
           <SectionHeadingContainer center>
             <SecondaryHeading>Frequently asked questions</SecondaryHeading>
             <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Making—and sticking to—a monthly budget can be critical to your
+              financial success.
             </Paragraph>
           </SectionHeadingContainer>
           {/* End: Section heading */}

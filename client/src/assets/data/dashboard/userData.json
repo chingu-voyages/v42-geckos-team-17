@@ -2,7 +2,7 @@
   "user": {
     "email": "jsmith@contact.com",
     "token": "supersecretdummytoken",
-    "image": "/user.png",
+    "image": "/user.jpg",
     "currency": "usd"
   }
 }

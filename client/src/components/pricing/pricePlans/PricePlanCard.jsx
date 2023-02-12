@@ -2,11 +2,7 @@ import { RightIcon } from '../../../assets/icons/icons'
 
 // Styled Components
 import { PrimaryButton } from '../../../styles/ButtonStyles'
-import {
-  Paragraph,
-  SecondaryHeading,
-  TertiaryHeading,
-} from '../../../styles/TypographyStyles'
+import { Paragraph, SecondaryHeading } from '../../../styles/TypographyStyles'
 import {
   CardHeaderDiv,
   CardBodyDiv,
@@ -21,13 +17,13 @@ function PricePlanCard({ type, description, price, features }) {
       {type === 'Pro' && <BestValueDiv>Best Value</BestValueDiv>}
       {/* Start: Card heading */}
       <CardHeaderDiv>
-        <TertiaryHeading>{type}</TertiaryHeading>
+        <SecondaryHeading>{type}</SecondaryHeading>
         <Paragraph>{description}</Paragraph>
       </CardHeaderDiv>
       {/* End: Card heading */}
       {/* Start: Card body */}
       <CardBodyDiv>
-        <SecondaryHeading> {price}</SecondaryHeading>
+        <SecondaryHeading as="span"> {price}</SecondaryHeading>
         <Paragraph>
           per month <br />
           billed monthly
