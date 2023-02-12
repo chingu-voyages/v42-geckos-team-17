@@ -13,7 +13,7 @@ import FormSelectGroup from '../form/FormSelectGroup'
 // Styled Components
 import { TertiaryHeading } from '../../styles/TypographyStyles'
 import { AuthFormContainer } from '../../styles/auth/AuthStyles'
-import { TextLink, PrimaryLink } from '../../styles/LinkStyles'
+import { TextLink, PrimaryLink, SecondaryLink } from '../../styles/LinkStyles'
 
 // Icons
 import { GoogleIcon, FacebookIcon } from '../../assets/icons/icons'
@@ -138,14 +138,14 @@ function AuthForm({ isSignIn }) {
       </TextLink>
       {/* End: Form header */}
       {/* Start: Auth options */}
-      <PrimaryLink to="/">
+      <SecondaryLink to="/">
         <GoogleIcon />
         Google
-      </PrimaryLink>
-      <PrimaryLink to="/">
+      </SecondaryLink>
+      <SecondaryLink to="/">
         <FacebookIcon />
         Facebook
-      </PrimaryLink>
+      </SecondaryLink>
       <PrimaryLink to="/dashboard">Sign in as a guest</PrimaryLink>
       {/* End: Auth options */}
       {/* Start: Email input */}

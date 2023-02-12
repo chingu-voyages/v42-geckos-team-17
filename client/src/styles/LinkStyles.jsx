@@ -29,7 +29,19 @@ export const PrimaryLink = styled(Link)`
 `
 
 export const SecondaryLink = styled(Link)`
-  ${tw`px-10 py-3 text-lg font-normal text-center transition duration-300 rounded-md bg-bg3 text-text-200 whitespace-nowrap shadow-button hover:bg-bg4 hover:text-white`}
+  ${tw`flex min-h-[52px] items-center justify-center px-10 py-3 text-lg font-normal text-center transition duration-300 rounded-md gap-x-4 bg-bg3 text-text-200 whitespace-nowrap shadow-button hover:bg-bg4 hover:text-white`}
+
+  svg {
+    ${tw`shrink-0`}
+  }
+
+  svg path {
+    ${tw`fill-bg4`}
+  }
+
+  &:hover svg path {
+    ${tw`fill-white`}
+  }
 `
 
 // Icon link
