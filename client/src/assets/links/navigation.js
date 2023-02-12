@@ -18,9 +18,9 @@ export const footerLinks = [
     id: '1',
     title: 'Pricing',
     links: [
-      { id: '11', name: 'Options', href: '/' },
-      { id: '12', name: 'Testimonials', href: '/' },
-      { id: '13', name: 'FAQ', href: '/' },
+      { id: '11', name: 'Options', href: '/pricing' },
+      { id: '12', name: 'Testimonials', href: '/pricing' },
+      { id: '13', name: 'FAQ', href: '/pricing' },
     ],
   },
   {
