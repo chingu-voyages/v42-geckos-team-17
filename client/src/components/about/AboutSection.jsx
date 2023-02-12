@@ -31,7 +31,7 @@ export default function AboutSection() {
               <TextLink to="https://www.chingu.io">voyage</TextLink> which was
               organized by Jim Medlock and his awesome team. Thanks to this
               opportunity we gained confidence and levelled up soft and
-              technical skills.
+              technical skills to face any future challenges.
             </Paragraph>
           </SectionHeadingContainer>
           <ImageContainer>
