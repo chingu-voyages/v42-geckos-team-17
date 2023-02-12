@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro'
 
 export const PromotionSection = styled.section`
-  ${tw`bg-bg3`}
+  ${tw`bg-bg3 sm:mb-10 md:mb-0`}
 `
 
 export const PromotionInner = styled.div`

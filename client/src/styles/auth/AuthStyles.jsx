@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro'
 
 export const AuthWrapperContainer = styled.div`
-  ${tw`py-8 md:py-20`}
+  ${tw`border-b border-bg2`}
 `
 
 export const AuthInner = styled.div`
