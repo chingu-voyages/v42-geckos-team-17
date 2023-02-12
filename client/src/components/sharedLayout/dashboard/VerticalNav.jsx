@@ -20,7 +20,7 @@ import { OkaneMiniIcon, LightIcon } from '../../../assets/icons/dashboardIcons'
 import dashboardLinks from '../../../assets/links/dashboard'
 
 // Images
-import userImg from '../../../assets/images/user.png'
+import userImg from '../../../assets/images/user.jpg'
 
 function VerticalNav() {
   return (

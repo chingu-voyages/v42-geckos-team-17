@@ -11,7 +11,7 @@ export const FormInputGroupContainer = styled.div(({ webapp }) => [
 
     // Input
     & > input {
-      ${tw`w-full px-4 py-3 font-normal border rounded-md focus:border-accent1 focus:border border-text-100`}
+      ${tw`w-full px-4 py-3 font-normal border rounded-md border-bg4 focus:outline-none focus:border-accent2`}
     }
 
     // Error span
@@ -24,7 +24,7 @@ export const FormInputGroupContainer = styled.div(({ webapp }) => [
     css`
       // Webapp Input
       input {
-        ${tw`border-none bg-bg2 focus:border-none focus:ring-0`}
+        ${tw`border-none bg-bg5 focus:border-none focus:ring-0`}
       }
     `,
 ])

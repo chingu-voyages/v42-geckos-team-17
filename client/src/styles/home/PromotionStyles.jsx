@@ -1,11 +1,16 @@
 import tw, { styled } from 'twin.macro'
 
 export const PromotionSection = styled.section`
-  ${tw`pt-20 pb-24 bg-bg2 sm:py-24 bg-bg1`}
+  ${tw`bg-bg3`}
 `
 
 export const PromotionInner = styled.div`
-  ${tw`flex flex-col justify-center h-full gap-y-4`}
+  ${tw`relative flex flex-col justify-center h-full gap-y-4`}
+
+  // Heading
+  & > div:nth-of-type(1) {
+    ${tw`md:w-[50%]`}
+  }
 `
 
 export const StatsAndImageContainer = styled.div`
@@ -13,7 +18,7 @@ export const StatsAndImageContainer = styled.div`
 `
 
 export const Stats = styled.div`
-  ${tw`relative w-full h-64 rounded-md sm:h-10 md:h-96 md:my-0`}
+  ${tw`relative w-full rounded-md md:my-0`}
   p {
     ${tw`font-semibold`}
   }
@@ -32,8 +37,9 @@ export const MoneyStats = styled.div`
 `
 
 export const ImageContainer = styled.div`
-  ${tw`w-full rounded-md sm:px-12 md:px-0`}
+  ${tw`relative md:static overflow-hidden w-full min-h-[360px] sm:min-w-[340px] lg:min-w-[570px] md:min-h-[384px] sm:min-h-[640px] rounded-md sm:px-12 md:px-0`}
+
   img {
-    ${tw`object-cover w-full rounded-md sm:h-96`}
+    ${tw`absolute md:max-w-[600px] lg:max-w-[800px] top-0 right-0 translate-x-[0%] md:translate-y-[-15%] md:translate-x-[40%] lg:translate-x-[40%] xl:translate-x-[30%] z-50 object-cover w-full rounded-md`}
   }
 `

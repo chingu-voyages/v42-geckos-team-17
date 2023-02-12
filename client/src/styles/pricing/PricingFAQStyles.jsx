@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro'
 
 export const PricingFAQSection = styled.section`
-  ${tw`py-12 h-fit md:py-20`}
+  ${tw`h-fit`}
 `
 
 export const PricingFAQInner = styled.div`

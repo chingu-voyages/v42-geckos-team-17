@@ -1,27 +1,22 @@
 export const pricingFaqData = [
   {
-    question: 'What is Okane’s cancellation policy??',
+    question: 'What budgeting features does Okane have?',
     answer:
-      "You may cancel your Okane subscription or change plans at any time by clicking on the \"cancel subscription\" button on the My Account->Subscription page. Your paid plan will end on the date of your next billing cycle (i.e. the month or year anniversary of whenever you first paid for your subscription's start). We do not offer refunds for partial use, except in the cases of Okane-caused issues with account access or other problems. If this is the case, email us: support@okane.com and we'll look into any troubles you've experienced.",
+      'Okane tracks your expenses and places them in budget categories. You can also set limits for these categories, and Okane lets you know if you’re approaching those limits.',
   },
   {
-    question: 'Can I use software to run Okane searches?',
+    question: 'Can I connect to my bank accounts?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit? Lorem ipsum dolor sit amet, consectetur adipiscing elit? adipiscing elit?',
+      'Right now Okane doesn’t connect your bank accounts. You can manually add account balances, as well as cash amounts, debts and income. You will be able connect your account in the end of 2023.',
   },
   {
-    question: 'How do I switch to a different plan?',
+    question: 'Will I get budgeting advices?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit? Lorem ipsum dolor sit amet, consectetur adipiscing elit? adipiscing elit?',
+      'Okane provides custom reports and recommendations based on your habits. You can sign up for your newsletter to get more advices about managing your money flow.',
   },
   {
-    question: 'Can I subscribe monthly?',
+    question: "Can I view my partner's money flow?",
     answer:
-      'Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit? Lorem ipsum dolor sit amet, consectetur adipiscing elit? adipiscing elit?',
-  },
-  {
-    question: 'Additional billing questions?',
-    answer:
-      'Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit? Lorem ipsum dolor sit amet, consectetur adipiscing elit? adipiscing elit?',
+      'Okane is designed so you and your partner can view both your financial pictures in one app. Both partners can sync bank accounts, credit cards, loans and investments. (Although you can choose how much you share with your significant other.)',
   },
 ]

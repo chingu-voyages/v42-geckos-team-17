@@ -45,8 +45,9 @@ function Team() {
         <SectionHeadingContainer center>
           <SecondaryHeading>Meat out team</SecondaryHeading>
           <Paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Good teamwork is the keystone to a successful business and it should
+            never be taken for granted. Achieving great things is rarely
+            possible without a good set of humans behind.
           </Paragraph>
         </SectionHeadingContainer>
         {/* End: Heading */}

@@ -22,8 +22,7 @@ function Downloads() {
           <SectionHeadingContainer center>
             <SecondaryHeading>Download our app</SecondaryHeading>
             <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Our app works across Windows, iOS, and Android.
             </Paragraph>
           </SectionHeadingContainer>
           <GroupButtons>

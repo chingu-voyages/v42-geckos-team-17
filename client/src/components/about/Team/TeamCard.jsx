@@ -20,7 +20,7 @@ function TeamCard({ member }) {
     <TeamCardContainer>
       <img src={member.image} alt="" />
       <QuaternaryHeading>{member.name}</QuaternaryHeading>
-      <Paragraph>{member.quote}</Paragraph>
+      <Paragraph>"{member.quote}"</Paragraph>
       <SocialLinks>
         {member.links.map((link) => (
           <IconLink

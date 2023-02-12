@@ -30,7 +30,7 @@ export const ChartsContainer = styled.div`
 `
 
 export const DoughnutChartContainer = styled.div`
-  ${tw`h-full grid grid-cols-1 sm:grid-cols-2 gap-14 items-center max-h-[400px]`}
+  ${tw`h-full p-8 grid grid-cols-1 sm:grid-cols-2 gap-14 items-center max-h-[400px]`}
 
   .doughnut {
     ${tw`w-full`}
@@ -50,12 +50,12 @@ export const DoughnutLegend = styled.ul`
     ${tw`flex flex-col`}
 
     span:nth-of-type(1) {
-      ${tw`capitalize`}
+      ${tw`capitalize text-text-200`}
     }
   }
 
   // Expense price
   & > li > span {
-    ${tw`flex-1 text-end`}
+    ${tw`flex-1 text-end text-text-200`}
   }
 `

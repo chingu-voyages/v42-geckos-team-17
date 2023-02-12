@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Styled components
 import {
   AwardStats,
   DownloadStats,
@@ -13,6 +14,9 @@ import {
 import { Container, SectionHeadingContainer } from '../../styles/LayoutStyles'
 import { SecondaryHeading, Paragraph } from '../../styles/TypographyStyles'
 
+// Image
+import collageImg from '../../assets/images/mobile_ collage.svg'
+
 function PromotionStats() {
   return (
     <PromotionSection>
@@ -21,8 +25,8 @@ function PromotionStats() {
           <SectionHeadingContainer>
             <SecondaryHeading>The best app to track expenses</SecondaryHeading>
             <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
+              We help you understand your income and spending so you have
+              maximum control over your money.
             </Paragraph>
           </SectionHeadingContainer>
           <StatsAndImageContainer>
@@ -41,7 +45,7 @@ function PromotionStats() {
               </MoneyStats>
             </Stats>
             <ImageContainer>
-              <img src="https://picsum.photos/1200/1300" alt="" />
+              <img src={collageImg} alt="" />
             </ImageContainer>
           </StatsAndImageContainer>
         </PromotionInner>

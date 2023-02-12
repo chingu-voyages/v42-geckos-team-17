@@ -1,10 +1,10 @@
 import tw, { styled } from 'twin.macro'
 
 export const Overlay = styled.div`
-  ${tw`fixed top-0 left-0 flex justify-center items-center h-screen w-full bg-bg1`}
+  ${tw`fixed top-0 left-0 flex items-center justify-center w-full h-screen bg-bg3`}
 `
 export const MobileNavInner = styled.nav`
-  ${tw`flex flex-col gap-10 items-center pt-8`}
+  ${tw`flex flex-col items-center gap-10 pt-8`}
 `
 
 export const NavigationLinks = styled.ul`
