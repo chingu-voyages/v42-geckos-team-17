@@ -18,9 +18,13 @@ import {
 // Components
 import { SharedLayout, DashboardSharedLayout } from './components'
 
+// Scroll to top
+import ScrollToTop from './utils/ScrollToTop'
+
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
