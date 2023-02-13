@@ -1,8 +1,9 @@
 import React from 'react'
 
-// Hex to rgb converter
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
 import { Doughnut } from 'react-chartjs-2'
+
+// Hex to rgb converter
 import hexToRGB from '../../../../utils/hexToRGB'
 
 // Categories data
@@ -35,7 +36,7 @@ function DoughnutChart({ expenses }) {
   const colors = expenses
     .map((expense) => expense.categoryId)
     .map((categoryName) => {
-      const {color} = categories.find(
+      const { color } = categories.find(
         (category) => category.id === categoryName
       )
       return [color, hexToRGB(color, 0.2)]

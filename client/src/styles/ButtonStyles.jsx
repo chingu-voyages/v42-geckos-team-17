@@ -8,7 +8,7 @@ export const PrimaryButton = styled.button(({ small }) => [
 
 // Secondary button
 export const SecondaryButton = styled.button(({ small, active }) => [
-  tw`min-w-[200px] bg-bg3 text-text-200 text-lg font-medium py-5 px-10 shadow-button rounded-md sm:min-w-[280px] hover:bg-bg4 hover:text-white transition duration-300`,
+  tw`min-w-[200px] bg-bg3 text-text-200 text-lg whitespace-nowrap font-medium py-5 px-10 shadow-button rounded-md sm:min-w-[280px] hover:bg-bg4 hover:text-white transition duration-300`,
   small && tw`py-3 font-normal min-w-fit sm:min-w-fit`,
   active && tw`text-white bg-bg4`,
 ])
