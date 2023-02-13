@@ -10,6 +10,8 @@ import Error from './Error'
 import DashboardHome from './Dashboard/DashboardHome'
 import DashboardProfile from './Dashboard/DashboardProfile'
 import DashboardTransactions from './Dashboard/DashboardTransactions'
+import DashboardAccounts from './Dashboard/DashboardAccounts'
+import DashboardStats from './Dashboard/DashboardStats'
 
 export {
   Home,
@@ -22,4 +24,6 @@ export {
   DashboardProfile,
   Error,
   DashboardTransactions,
+  DashboardAccounts,
+  DashboardStats,
 }
