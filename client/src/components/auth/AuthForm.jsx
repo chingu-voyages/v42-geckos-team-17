@@ -121,7 +121,7 @@ function AuthForm({ isSignIn }) {
       setIsLoading(true)
       const timer = setTimeout(() => {
         setIsLoading(false)
-        navigate('/dashboard')
+        navigate('/dashboard/home')
       }, 3000)
       return () => clearTimeout(timer)
     }
@@ -146,7 +146,7 @@ function AuthForm({ isSignIn }) {
         <FacebookIcon />
         Facebook
       </SecondaryLink>
-      <PrimaryLink to="/dashboard">Sign in as a guest</PrimaryLink>
+      <PrimaryLink to="/dashboard/home">Sign in as a guest</PrimaryLink>
       {/* End: Auth options */}
       {/* Start: Email input */}
       <FormInputGroup

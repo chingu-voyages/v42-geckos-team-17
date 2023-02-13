@@ -1,5 +1,5 @@
 import tw, { styled } from 'twin.macro'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 // Text link
 export const TextLink = styled(Link)(({ small, big }) => [
@@ -45,11 +45,15 @@ export const SecondaryLink = styled(Link)`
 `
 
 // Icon link
-export const IconLink = styled(Link)`
+export const IconLink = styled(NavLink)`
   ${tw`flex items-center p-2 justify-items-center`}
 
   svg {
-    ${tw`transition duration-300 shrink-0 fill-text-200`}
+    ${tw`transition duration-300 shrink-0 fill-text-100`}
+  }
+
+  &.active svg {
+    ${tw`fill-text-200`}
   }
 
   &:hover svg {

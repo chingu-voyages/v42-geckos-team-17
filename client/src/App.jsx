@@ -36,7 +36,7 @@ function App() {
           <Route path="*" element={<Error />} />
         </Route>
         <Route path="/dashboard" element={<DashboardSharedLayout />}>
-          <Route index element={<DashboardHome />} />
+          <Route path="home" element={<DashboardHome />} />
           <Route path="transactions" element={<DashboardTransactions />} />
           <Route path="profile" element={<DashboardProfile />} />
         </Route>
