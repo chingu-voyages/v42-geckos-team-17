@@ -59,7 +59,7 @@ function HeaderNav() {
         {/* End: Nav links (Desktop only) */}
         {/* Start: Sign in/up button (Desktop only) */}
         {user ? (
-          <PrimaryLink to="dashboard">Dashboard</PrimaryLink>
+          <PrimaryLink to="dashboard/home">Dashboard</PrimaryLink>
         ) : (
           <PrimaryLink to="signin">Sign In</PrimaryLink>
         )}
