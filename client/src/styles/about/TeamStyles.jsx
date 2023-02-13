@@ -23,6 +23,10 @@ export const TeamCardContainer = styled.div`
   &:hover img {
     ${tw`filter-none`}
   }
+
+  svg {
+    ${tw`fill-text-200`}
+  }
 `
 
 export const SocialLinks = styled.div`
