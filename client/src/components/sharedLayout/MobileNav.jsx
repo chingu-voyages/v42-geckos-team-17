@@ -38,7 +38,10 @@ const MobileNav = ({ setNavIsOpen }) => {
           ))}
         </NavigationLinks>
         {user ? (
-          <SecondaryLink onClick={() => setNavIsOpen(false)} to="dashboard">
+          <SecondaryLink
+            onClick={() => setNavIsOpen(false)}
+            to="dashboard/home"
+          >
             Dashboard
           </SecondaryLink>
         ) : (

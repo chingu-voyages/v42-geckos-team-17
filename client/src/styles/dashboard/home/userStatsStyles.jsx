@@ -10,7 +10,7 @@ export const UserStatsContainer = styled.section`
 `
 
 export const ButtonsContainer = styled.div`
-  ${tw`flex justify-start gap-4 my-3`}
+  ${tw`flex flex-col sm:flex-row justify-start gap-4 my-3`}
 
   button {
     ${tw`w-full`}
@@ -18,7 +18,7 @@ export const ButtonsContainer = styled.div`
 `
 
 export const ChartsContainer = styled.div`
-  ${tw`max-h-screen h-[600px] sm:max-h-[400px] my-6`}
+  ${tw`min-h-[600px] sm:min-h-fit sm:max-h-[400px] my-6`}
 
   .vertical {
     ${tw`!hidden  sm:!block`}
@@ -30,10 +30,10 @@ export const ChartsContainer = styled.div`
 `
 
 export const DoughnutChartContainer = styled.div`
-  ${tw`h-full p-8 grid grid-cols-1 sm:grid-cols-2 gap-14 items-center max-h-[400px]`}
+  ${tw`h-full py-8 px-4 grid grid-cols-1 sm:grid-cols-2 gap-14 items-center`}
 
   .doughnut {
-    ${tw`w-full`}
+    ${tw`w-full justify-self-center max-w-[400px]`}
   }
 `
 

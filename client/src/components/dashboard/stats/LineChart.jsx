@@ -47,10 +47,6 @@ const verticalLineOptions = {
     legend: {
       position: 'top',
     },
-    title: {
-      display: true,
-      text: 'Expenses dynamic',
-    },
   },
 }
 

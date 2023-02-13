@@ -32,10 +32,11 @@ import Team from './about/Team/Team'
 // Dashboard/Profile
 import ProfileForm from './dashboard/ProfileForm'
 
-// Dashboard/Stats
+// Dashboard/Home
 import UserStats from './dashboard/home/stats/UserStats'
+import Totals from './dashboard/home/totals/Totals'
 
-// Stats
+// Dashboard/Stats
 import RadarChart from './dashboard/stats/RadarChart'
 import LineChart from './dashboard/stats/LineChart'
 
@@ -63,4 +64,5 @@ export {
   UserStats,
   RadarChart,
   LineChart,
+  Totals,
 }
