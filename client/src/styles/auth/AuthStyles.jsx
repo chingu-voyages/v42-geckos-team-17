@@ -9,7 +9,7 @@ export const AuthInner = styled.div`
 `
 // Form / Column 1
 export const AuthFormContainer = styled.form`
-  ${tw`w-fit max-w-[600px] grid grid-cols-2 items-center gap-x-4 gap-y-4 sm:gap-y-8 px-6 py-10 border rounded-md border-text-100`}
+  ${tw`w-fit max-w-[600px] grid grid-cols-2 items-center gap-x-4 gap-y-4 sm:gap-y-4 px-6 py-8 border rounded-md border-text-100`}
 
   // First link
   & > a:nth-of-type(1) {
@@ -52,7 +52,7 @@ export const AuthFormContainer = styled.form`
 
   // Span
   & > span {
-    ${tw`col-span-2 pt-8 text-center`}
+    ${tw`col-span-2 pt-4 text-center`}
 
     a {
       ${tw`text-accent2`}

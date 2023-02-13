@@ -7,6 +7,7 @@ import {
 } from '../../../styles/LayoutStyles'
 import { SecondaryHeading, Paragraph } from '../../../styles/TypographyStyles'
 import { LocationContainer } from '../../../styles/about/LocationStyles'
+import { TextLink } from '../../../styles/LinkStyles'
 
 // Components
 import Map from './Map'
@@ -26,8 +27,9 @@ function Location() {
         <SectionHeadingContainer>
           <SecondaryHeading>Where to find us</SecondaryHeading>
           <Paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna.
+            We have two beautiful offices and 24/7 support team. You can use{' '}
+            <TextLink to="/contact">contact form</TextLink> to get additional
+            information.
           </Paragraph>
         </SectionHeadingContainer>
         {/* End: Section Heading */}

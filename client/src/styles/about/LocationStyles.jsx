@@ -17,6 +17,11 @@ export const LocationContainer = styled.section`
   & > div {
     ${tw`pb-0`}
   }
+
+  // Paragraph link
+  & > div > div > p > a {
+    ${tw`text-accent2`}
+  }
 `
 
 export const MapNavigation = styled.div`
