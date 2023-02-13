@@ -13,6 +13,8 @@ import {
   DashboardProfile,
   Error,
   DashboardTransactions,
+  DashboardAccounts,
+  DashboardStats,
 } from './pages'
 
 // Components
@@ -36,9 +38,11 @@ function App() {
           <Route path="*" element={<Error />} />
         </Route>
         <Route path="/dashboard" element={<DashboardSharedLayout />}>
-          <Route index element={<DashboardHome />} />
+          <Route path="home" element={<DashboardHome />} />
           <Route path="transactions" element={<DashboardTransactions />} />
           <Route path="profile" element={<DashboardProfile />} />
+          <Route path="stats" element={<DashboardStats />} />
+          <Route path="accounts" element={<DashboardAccounts />} />
         </Route>
       </Routes>
     </Router>

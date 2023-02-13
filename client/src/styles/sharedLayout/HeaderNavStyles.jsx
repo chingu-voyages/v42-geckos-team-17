@@ -25,4 +25,9 @@ export const Navigation = styled.nav`
 
 export const NavigationLinks = styled.ul`
   ${tw`hidden gap-x-8 md:flex md:w-full md:justify-end`}
+
+  // Active link
+  & > li > a.active {
+    ${tw`text-text-200`}
+  }
 `

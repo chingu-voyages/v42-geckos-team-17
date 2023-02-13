@@ -7,14 +7,14 @@ import {
 } from '../icons/dashboardIcons'
 
 const dashboardLinks = [
-  { name: 'home', icon: <HomeIcon />, href: '/dashboard' },
-  { name: 'account', icon: <AccountsIcon />, href: '/dashboard' },
+  { name: 'home', icon: <HomeIcon />, href: '/dashboard/home' },
+  { name: 'account', icon: <AccountsIcon />, href: '/dashboard/accounts' },
   {
     name: 'transaction',
     icon: <TransactionIcon />,
     href: '/dashboard/transactions',
   },
-  { name: 'stats', icon: <StatsIcon />, href: '/dashboard' },
+  { name: 'stats', icon: <StatsIcon />, href: '/dashboard/stats' },
 ]
 
 export default dashboardLinks

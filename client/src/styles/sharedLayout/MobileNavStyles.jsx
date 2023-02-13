@@ -9,6 +9,11 @@ export const MobileNavInner = styled.nav`
 
 export const NavigationLinks = styled.ul`
   ${tw`flex flex-col items-center gap-8 pb-10`}
+
+  // Active link
+  & > li > a.active {
+    ${tw`text-text-200`}
+  }
 `
 
 export const SocialLinks = styled.ul`
