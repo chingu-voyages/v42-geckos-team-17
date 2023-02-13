@@ -5,7 +5,7 @@ export const TeamContainer = styled.div`
 `
 
 export const TeamList = styled.div`
-  ${tw`grid grid-flow-col gap-6 pt-12 pb-8 mt-10 overflow-x-scroll snap-x snap-mandatory`}
+  ${tw`scrollbar-thin scrollbar-thumb-text-100 scrollbar-track-bg5 scrollbar-track-rounded-md scrollbar-thumb-rounded-md grid grid-flow-col gap-6 pt-12 pb-8 mt-10 overflow-x-scroll snap-x snap-mandatory`}
 
   -ms-scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
