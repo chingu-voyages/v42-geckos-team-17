@@ -1,8 +1,8 @@
-import tw, { styled } from 'twin.macro'
+import tw, { styled, css } from 'twin.macro'
 import { Link, NavLink } from 'react-router-dom'
 
 // Text link
-export const TextLink = styled(Link)(({ small, big }) => [
+export const TextLink = styled(NavLink)(({ small, big }) => [
   tw`text-lg capitalize transition duration-300 text-text-100 hover:text-text-200`,
 
   // Small link
