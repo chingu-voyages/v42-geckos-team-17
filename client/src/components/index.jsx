@@ -35,6 +35,10 @@ import ProfileForm from './dashboard/ProfileForm'
 // Dashboard/Stats
 import UserStats from './dashboard/home/stats/UserStats'
 
+// Stats
+import RadarChart from './dashboard/stats/RadarChart'
+import LineChart from './dashboard/stats/LineChart'
+
 export {
   SharedLayout,
   DashboardSharedLayout,
@@ -57,4 +61,6 @@ export {
   Team,
   ProfileForm,
   UserStats,
+  RadarChart,
+  LineChart,
 }

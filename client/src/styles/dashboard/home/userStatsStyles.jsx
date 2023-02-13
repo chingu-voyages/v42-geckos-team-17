@@ -10,7 +10,7 @@ export const UserStatsContainer = styled.section`
 `
 
 export const ButtonsContainer = styled.div`
-  ${tw`flex justify-start gap-4 my-8`}
+  ${tw`flex justify-start gap-4 my-3`}
 
   button {
     ${tw`w-full`}
@@ -18,7 +18,7 @@ export const ButtonsContainer = styled.div`
 `
 
 export const ChartsContainer = styled.div`
-  ${tw`max-h-screen h-[800px] sm:max-h-[400px] my-6`}
+  ${tw`max-h-screen h-[600px] sm:max-h-[400px] my-6`}
 
   .vertical {
     ${tw`!hidden  sm:!block`}
