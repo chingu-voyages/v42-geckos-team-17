@@ -39,7 +39,7 @@ export const Navigation = styled.ul`
   }
 `
 export const AddButton = styled.button`
-  ${tw`absolute top-0 left-[50%] translate-x-[-50%] translate-y-[-25%] inline-block p-3 sm:p-4 rounded-full bg-gradient-to-r from-accent1 to-accent2`}
+  ${tw`absolute top-0 left-[50%] translate-x-[-50%] translate-y-[-25%] inline-block p-3 sm:p-4 rounded-full shadow-md bg-gradient-to-r from-accent1 to-accent2`}
 
   // Icons
   & > svg {
