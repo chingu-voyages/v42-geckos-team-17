@@ -19,7 +19,7 @@ import {
 import { SecondaryButton } from '../../../../styles/ButtonStyles'
 
 function UserStats() {
-  const [isBarChart, setIsBarChart] = useState(true)
+  const [isBarChart, setIsBarChart] = useState(false)
 
   // Redux
   const dispatch = useDispatch()

@@ -4,9 +4,9 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
 // Initial State
 const initialState = {
-  totalAvailable: '',
-  totalMonSpend: '',
-  totalMonSaved: '',
+  totalAvailable: { title: 'Total Available', amount: '' },
+  totalMonSpend: { title: 'Total Spend This Month', amount: '' },
+  totalMonSaved: { title: 'Total Saved This Month', amount: '' },
   totalSaved: '',
   totalCash: '',
   accounts: [],
@@ -14,15 +14,17 @@ const initialState = {
 
 // Get totals
 export const getTotals = createAsyncThunk('expense/getTotals', async () => ({
-    totalAvailable: '6000',
-    totalMonSpend: '2478',
-    totalMonSaved: '1600',
-    totalSaved: '2000',
-    totalCash: '1567',
-  }))
+  totalAvailable: '6000',
+  totalMonSpend: '2478',
+  totalMonSaved: '1600',
+  totalSaved: '2000',
+  totalCash: '1567',
+}))
 
 // Get accounts
-export const getAccounts = createAsyncThunk('expense/getAccounts', async () => ({
+export const getAccounts = createAsyncThunk(
+  'expense/getAccounts',
+  async () => ({
     accounts: [
       {
         id: 'account-1',
@@ -37,14 +39,15 @@ export const getAccounts = createAsyncThunk('expense/getAccounts', async () => (
         amount: '1450',
       },
     ],
-  }))
+  })
+)
 
 // Add new account
 export const addNewAccount = createAsyncThunk(
   'expense/addNewAccount',
   async (account) => ({
-      account,
-    })
+    account,
+  })
 )
 
 const accountSlice = createSlice({
@@ -53,9 +56,9 @@ const accountSlice = createSlice({
   extraReducers: (builder) => {
     // Get totals
     builder.addCase(getTotals.fulfilled, (state, { payload }) => {
-      state.totalAvailable = payload.totalAvailable
-      state.totalMonSpend = payload.totalMonSpend
-      state.totalMonSaved = payload.totalMonSaved
+      state.totalAvailable.amount = payload.totalAvailable
+      state.totalMonSpend.amount = payload.totalMonSpend
+      state.totalMonSaved.amount = payload.totalMonSaved
       state.totalSaved = payload.totalSaved
       state.totalCash = payload.totalCash
     })
