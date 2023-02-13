@@ -53,6 +53,8 @@ function DashboardSharedLayout() {
       setPage({ title: 'Transactions', type: 'expense' })
     if (currentPage.pathname === '/dashboard/profile')
       setPage({ title: 'Profile' })
+    if (currentPage.pathname === '/dashboard/stats')
+      setPage({ title: 'Statistics' })
   }, [currentPage])
 
   return (
