@@ -56,6 +56,10 @@ export const IconLink = styled(NavLink)`
     ${tw`fill-text-200`}
   }
 
+  &:hover&.active svg {
+    ${tw`fill-text-200`}
+  }
+
   &:hover svg {
     ${tw`fill-text-100`}
   }
