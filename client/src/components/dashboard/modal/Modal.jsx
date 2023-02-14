@@ -74,22 +74,24 @@ const Modal = () => {
         </PrimaryHeading>
         {/* End: Heading */}
         {/* Start: Buttons */}
-        <ButtonsContainer>
-          <SecondaryButton
-            small
-            active={type === 'expense'}
-            onClick={() => dispatch(setType('expense'))}
-          >
-            Expense
-          </SecondaryButton>
-          <SecondaryButton
-            small
-            active={type === 'income'}
-            onClick={() => dispatch(setType('income'))}
-          >
-            Income
-          </SecondaryButton>
-        </ButtonsContainer>
+        {type !== 'account' && (
+          <ButtonsContainer>
+            <SecondaryButton
+              small
+              active={type === 'expense'}
+              onClick={() => dispatch(setType('expense'))}
+            >
+              Expense
+            </SecondaryButton>
+            <SecondaryButton
+              small
+              active={type === 'income'}
+              onClick={() => dispatch(setType('income'))}
+            >
+              Income
+            </SecondaryButton>
+          </ButtonsContainer>
+        )}
         {/* End: Buttons */}
         {/* Start: Form */}
         {type === 'account' ? (
